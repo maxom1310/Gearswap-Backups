@@ -735,7 +735,7 @@ legs="Hashishin Tayt +3",
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Resistant
 
-	sets.element.Dark = {head="Pixie Hairpin +1",body="Amalric Doublet +1",ring2="Archon Ring"}
+	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring"}
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {

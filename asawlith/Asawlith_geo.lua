@@ -235,9 +235,9 @@ function get_sets()
 		})	
 -- Elemental Magic --
     sets.midcast.Elemental = {
-     main="Idris",
-    sub="Culminus",
-    ammo="Pemphredo Tathlum",
+    main="Idris",
+    sub="Ammurapi Shield",
+    range="Dunna",
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
@@ -247,8 +247,25 @@ function get_sets()
     waist="Eschan Stone",
     left_ear="Barkaro. Earring",
     right_ear="Malignance Earring",
-    left_ring="Metamor. Ring +1",
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Vertigo Ring",
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
+	} 
+	    sets.midcast['Absorb-TP'] = {
+    main="Idris",
+    sub="Ammurapi Shield",
+    range="Dunna",
+    head="Azimuth Hood +3",
+    body="Azimuth Coat +3",
+    hands="Azimuth Gloves +3",
+    legs="Azimuth Tights +3",
+    feet="Azimuth Gaiters +3",
+    neck="Erra Pendant",
+    waist="Cornelia's Belt",
+    left_ear="Malignance Earring",
+    right_ear={ name="Azimuth Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+14','Damage taken-5%',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Stikini Ring +1",
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	} 
 	sets.midcast.Elemental.MB = set_combine(sets.midcast.Elemental, {})	
@@ -517,6 +534,8 @@ function midcast(spell)
                 equip(sets.midcast.Drain)
             elseif spell.english == 'Stun' then
                 equip(sets.midcast['Stun'])	
+			elseif spell.english == 'Absorb-TP' then
+			equip(sets.midcast['Absorb-TP'])	
 	    	end	
 -- Elemental Magic --		
         elseif spell.skill == 'Elemental Magic' then

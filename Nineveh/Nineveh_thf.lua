@@ -18,9 +18,7 @@
 -- Initialization function for this job file.
 function get_sets()
     mote_include_version = 2
-    send_command('bind ^pagedown send simaron cure 5 kiratal')
-	send_command('bind !^pagedown send simaron erase kiratal')
-	send_command('bind !pagedown send simaron curaga 4 kiratal')
+    
     -- Load and initialize the include file.
     include('Mote-Include.lua')
 end
@@ -53,10 +51,6 @@ function user_setup()
     state.PhysicalDefenseMode:options('Evasion', 'PDT')
 
 
-    gear.default.weaponskill_neck = "Asperity Necklace"
-    gear.default.weaponskill_waist = "Caudata Belt"
-    gear.AugQuiahuiz = {name="Quiahuiz Trousers", augments={'Haste+2','"Snapshot"+2','STR+8'}}
-
     -- Additional local binds
     send_command('bind ^` input /ja "Flee" <me>')
     send_command('bind ^= gs c cycle treasuremode')
@@ -77,7 +71,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-    sets.TreasureHunter = {ammo="Per. Lucky Egg",feet="Skulk. Poulaines +3"}
+    sets.TreasureHunter = {ammo="Per. Lucky Egg",waist="Chaac Belt",feet="Skulk. Poulaines +2",}
     sets.ExtraRegen = {}
     sets.Kiting = {}
 
@@ -100,7 +94,7 @@ function init_gear_sets()
     sets.precast.JA['Accomplice'] = {}
     sets.precast.JA['Flee'] = {}
     sets.precast.JA['Hide'] = {}
-    sets.precast.JA['Conspirator'] = {body="Skulker's Vest +3"}
+    sets.precast.JA['Conspirator'] = {} -- {body="Raider's Vest +2"}
     sets.precast.JA['Steal'] = {}
     sets.precast.JA['Despoil'] = {}
     sets.precast.JA['Perfect Dodge'] = {}
@@ -118,21 +112,13 @@ function init_gear_sets()
 
 
     -- Fast cast sets for spells
-    sets.precast.FC = {    main="Tauret",
-    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
-    range="Antitail +1",
-    head={ name="Herculean Helm", augments={'"Mag.Atk.Bns."+10','"Fast Cast"+6','INT+6',}},
-    body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
-    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+21','"Fast Cast"+6','Mag. Acc.+4',}},
-    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+4','"Fast Cast"+6','MND+5','Mag. Acc.+15',}},
-    neck="Voltsurge Torque",
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear="Etiolation Earring",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    sets.precast.FC = { 
+	 head="Malignance Chapeau",
+    body={ name="Taeon Tabard", augments={'Evasion+25','"Fast Cast"+4','Phalanx +3',}},
+    hands={ name="Taeon Gloves", augments={'Evasion+15','"Fast Cast"+5','Phalanx +3',}},
+    feet={ name="Taeon Boots", augments={'Evasion+20','"Fast Cast"+5','Phalanx +3',}},
+    neck="Orunmila's Torque",
+    left_ear="Mendi. Earring",
 	}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})
@@ -145,21 +131,21 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head="Skulker's Bonnet +3",
-    body="Skulker's Vest +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Fotia Gorget",
+    sets.precast.WS = {   
+    ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Meg. Gloves +2",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Rep. Plat. Medal",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','"Store TP"+7','DEX+11 AGI+11',}},
-    left_ring="Ephramad's Ring",
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ilabrat Ring",
     right_ring="Regal Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},}
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -177,28 +163,39 @@ function init_gear_sets()
     sets.precast.WS['Dancing Edge'].TA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {})
     sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {})
 
-    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Yetshila +1",
-    head="Skulker's Bonnet +3",
-    body="Meg. Cuirie +2",
-    hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-    legs={ name="Gleti's Breeches", augments={'Path: A',}},
-    feet={ name="Gleti's Boots", augments={'Path: A',}},
-    neck="Fotia Gorget",
-    waist="Soil Belt",
-    left_ear="Odr Earring",
-    right_ear="Skulk. Earring +2",
-    left_ring="Ephramad's Ring",
-    right_ring="Regal Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
+    sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {   
+    ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
+    body="Mummu Jacket +2",
+    hands="Meg. Gloves +2",
+    legs="Meg. Chausses +2",
+    feet="Malignance Boots",
+    neck="Caro Necklace",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Sherida Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ring="Regal Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {})
     sets.precast.WS['Evisceration'].Mod = set_combine(sets.precast.WS['Evisceration'], {})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
     sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
 
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {})
+    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {    ammo="Crepuscular Pebble",
+    head="Malignance Chapeau",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Caro Necklace",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Odr Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {})
     sets.precast.WS["Rudra's Storm"].Mod = set_combine(sets.precast.WS["Rudra's Storm"], {})
     sets.precast.WS["Rudra's Storm"].SA = set_combine(sets.precast.WS["Rudra's Storm"].Mod, {})
@@ -219,22 +216,39 @@ function init_gear_sets()
     sets.precast.WS['Mandalic Stab'].TA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {})
     sets.precast.WS['Mandalic Stab'].SATA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {})
 
-    sets.precast.WS['Aeolian Edge'] = {    main="Tauret",
+    sets.precast.WS['Aeolian Edge'] = {   
+	main="Tauret",
     sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
-    range={ name="Antitail +1", augments={'Path: A',}},
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-    feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-    neck="Sanctity Necklace",
-    waist="Orpheus's Sash",
+	ammo="Seething Bomblet",
+    head="Malignance Chapeau",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+      neck="Caro Necklace",
+    waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    left_ring="Dingir Ring",
-    right_ring="Epaminondas's Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},}
+    left_ring="Apate Ring",
+    right_ring="Stikini Ring +1",
+	back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},}
 
+	sets.precast.WS['Savage Blade'] = {
+    ammo="Oshasha's Treatise",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands="Nyame Gauntlets",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Epaminondas's Ring",
+    right_ring="Regal Ring",
+    back={ name="Toutatis's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+	
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
 
@@ -247,20 +261,21 @@ function init_gear_sets()
 
     -- Specific spells
     sets.midcast.Utsusemi = {}
-	sets.midcast.Sleepga = {    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
-    range="Antitail +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance gloves",
-    legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-    feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-    neck="Loricate Torque +1",
-    waist="Eschan Stone",
-    left_ear="Hermetic Earring",
-    right_ear="Etiolation Earring",
-    left_ring="Metamor. Ring +1",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	sets.midcast.Sleepga = {     main="Tauret",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    ammo="Per. Lucky Egg",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Skulk. Poulaines +2",
+    neck="Elite Royal Collar",
+    waist="Chaac Belt",
+    left_ear="Crep. Earring",
+    right_ear="Mimir Earring",
+    left_ring="Shneddick Ring",
+    right_ring="Stikini Ring +1",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
     -- Ranged gear
     sets.midcast.RA = {}
@@ -280,113 +295,98 @@ function init_gear_sets()
 
     sets.idle = {    
     main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    feet="Skulk. Poulaines +2",
+    neck="Elite Royal Collar",
+    waist="Svelt. Gouriz +1",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Stikini Ring +1",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
 
     sets.idle.Town = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Nyame Flanchard",
+    feet="Malignance Boots",
+    neck="Elite Royal Collar",
+    waist="Eschan Stone",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Fortified Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
     sets.idle.Weak = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Oneiros Torque",
+    waist="Eschan Stone",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Fortified Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
 
     -- Defense sets
 
     sets.defense.Evasion = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+   head="Malignance Chapeau",
+   body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Oneiros Torque",
+    waist="Eschan Stone",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Fortified Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 	}
 
     sets.defense.PDT = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    head="Malignance Chapeau",
+  body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Oneiros Torque",
+    waist="Eschan Stone",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Fortified Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
     sets.defense.MDT = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Chuq'aba Belt",
-    left_ear="Thureous Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    head="Malignance Chapeau",
+   body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Meg. Chausses +2",
+    feet="Meg. Jam. +2",
+    neck="Oneiros Torque",
+    waist="Eschan Stone",
+    left_ear="Assuage Earring",
+    right_ear="Infused Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    right_ring="Fortified Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
 
@@ -396,135 +396,145 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-    main="Tauret",
-    sub={ name="Gleti's Knife", augments={'Path: A',}},
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head="Skulker's Bonnet +3",
+    main="Naegling",
+    sub={ name="Fusetto +2", augments={'TP Bonus +1000',}},
+    ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
-    neck="Anu Torque",
+    neck="Ainia Collar",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +2",
+    right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Gere Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
+    right_ring="Hetairoi Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
     sets.engaged.Acc = {
-			main="Tauret",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Fusetto +2", augments={'TP Bonus +1000',}},
+    ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {
-			main="Tauret",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
     -- Mod set for trivial mobs (Thaumas)
     sets.engaged.Mod2 = {
-			main="Tauret",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
     sets.engaged.Evasion = {
-			main="Tauret",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
     sets.engaged.Acc.Evasion = {
-			main="Tauret",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
     sets.engaged.PDT = {
-			main="Tauret",
-
-		range="Antitail +1",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
     sets.engaged.Acc.PDT = {
-			main="Tauret",
-
-		range="Antitail +1",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-		neck="Loricate Torque +1",
-		waist="Chuq'aba Belt",
-		left_ear="Thureous Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Gelatinous Ring +1",
-		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+       main="Naegling",
+    sub={ name="Sandung", augments={'Accuracy+50','Crit. hit rate+5%','"Triple Atk."+3',}},
+    range="Raider's Bmrng.",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Ainia Collar",
+    waist="Cetl Belt",
+    left_ear="Sherida Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+44%','HP+11','"Mag.Atk.Bns."+3','DEF+2',}},
 		}
 
 end
@@ -722,13 +732,13 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(2, 5)
+        set_macro_page(2, 1)
     elseif player.sub_job == 'WAR' then
-        set_macro_page(3, 5)
+        set_macro_page(2, 1)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(4, 5)
+        set_macro_page(2, 1)
     else
-        set_macro_page(2, 5)
+        set_macro_page(2, 1)
     end
 end
 

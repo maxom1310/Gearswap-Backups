@@ -77,7 +77,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-    sets.TreasureHunter = {ammo="Per. Lucky Egg",feet="Skulk. Poulaines +2"}
+    sets.TreasureHunter = {waist="Chaac belt",feet="Skulk. Poulaines +2"}
     sets.ExtraRegen = {}
     sets.Kiting = {}
 
@@ -138,7 +138,7 @@ function init_gear_sets()
 
 
     -- Ranged snapshot gear
-    sets.precast.RA = {head={ name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}},left_ring="Crepuscular Ring",}
+    sets.precast.RA = {head={ name="Taeon Chapeau", augments={'Accuracy+19 Attack+19','"Snapshot"+5','"Snapshot"+5',}},left_ring="Crepuscular Ring",range="Raider's Boomerang",}
 
 
     -- Weaponskill sets
@@ -209,7 +209,8 @@ function init_gear_sets()
     sets.precast.WS['Shark Bite'].TA = set_combine(sets.precast.WS['Shark Bite'].Mod, {})
     sets.precast.WS['Shark Bite'].SATA = set_combine(sets.precast.WS['Shark Bite'].Mod, {})
 
-    sets.precast.WS['Mandalic Stab'] = set_combine(sets.precast.WS, {})
+	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, {neck="Rep. Plat. Medal"})
+    sets.precast.WS['Mandalic Stab'] = set_combine(sets.precast.WS, {neck="Rep. Plat. Medal"})
     sets.precast.WS['Mandalic Stab'].Acc = set_combine(sets.precast.WS['Mandalic Stab'], {})
     sets.precast.WS['Mandalic Stab'].Mod = set_combine(sets.precast.WS['Mandalic Stab'], {})
     sets.precast.WS['Mandalic Stab'].SA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {})
@@ -258,7 +259,7 @@ function init_gear_sets()
     right_ring="Defending Ring",}
 
     -- Ranged gear
-    sets.midcast.RA = {}
+    sets.midcast.RA = {range="Raider's Boomerang",}
 
     sets.midcast.RA.Acc = {}
 
@@ -402,7 +403,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -419,7 +420,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -437,7 +438,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -456,7 +457,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -474,7 +475,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -491,7 +492,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -509,7 +510,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",
@@ -526,7 +527,7 @@ function init_gear_sets()
     neck="Anu Torque",
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
-    right_ear="Skulk. Earring +1",
+    right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
     back="Moonlight Cape",

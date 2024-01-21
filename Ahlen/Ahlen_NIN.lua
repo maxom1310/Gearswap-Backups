@@ -25,7 +25,7 @@ end
 
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal','Hybrid','DT','Nyame')
+    state.OffenseMode:options('Normal','Hybrid','DT','Nyame','DWgear')
     state.HybridMode:options('Normal', 'Evasion', 'PDT')
     state.WeaponskillMode:options('Normal', 'Acc', 'Mod')
     state.CastingMode:options('Normal','Resistant')
@@ -277,19 +277,19 @@ function init_gear_sets()
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {feet="Hattori Kyahan +2",})
 
     sets.midcast.ElementalNinjutsu = {
-		ammo="Pemphredo Tathlum",
-    head="Nyame Helm",
-    body="Nyame Mail",
-    hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet="Nyame Sollerets",
-		neck="Sanctity Necklace",
-		waist="Orpheus's Sash",
-		left_ear="Friomisi Earring",
-		right_ear="Hecate's Earring",
-		left_ring="Metamor. Ring +1",
-		right_ring="Shiva Ring +1",
-		back={ name="Andartia's Mantle", augments={'"Fast Cast"+10',}},
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Sibyl Scarf",
+    waist="Orpheus's Sash",
+    left_ear="Friomisi Earring",
+    right_ear="Hecate's Earring",
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 
 	sets.midcast['Kurayami: Ni'] = 	{
@@ -421,7 +421,7 @@ function init_gear_sets()
     head="Malignance Chapeau",  --6
     body="Malignance Tabard", --9
     hands="Malignance Gloves",  --5 
-    legs="Mpaca's Hose ", --9
+    legs="Mpaca's Hose", --9
     feet="Malignance Boots",  --4
     neck="Ninja Nodowa +2",  
     waist="Windbuffet Belt +1",
@@ -448,7 +448,21 @@ function init_gear_sets()
     right_ring="Gere Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}	
-		
+	 sets.engaged.DWgear = {
+	    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Friomisi Earring",
+    right_ear="Hecate's Earring",
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		}
 
     sets.buff.Migawari = {}
     sets.buff.Doom = {}

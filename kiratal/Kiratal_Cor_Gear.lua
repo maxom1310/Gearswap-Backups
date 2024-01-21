@@ -7,7 +7,7 @@ function user_job_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh')
 	state.HybridMode:options('Normal','DT')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
-	state.Weapons:options('Default','DualSavage','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualRanged','SWSavage','SWWildfire','Low','DualWildMelee','None','SWOngo','DualFomal','SWFomal','SWEvis','SWmeeleeFomal')
+	state.Weapons:options('Default','DualSavage','Terminus','DualLeadenRanged','DualLeadenMelee','DWEvis','DualAeolian','DualRanged','SWSavage','SWWildfire','Low','DualWildMelee','None','SWOngo','DualFomal','SWFomal','SWEvis','SWmeeleeFomal')
 	state.CompensatorMode:options('Always','300','1000','Never')
 	
 	send_command('lua l autocor')
@@ -221,7 +221,7 @@ function init_gear_sets()
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {})
 
-	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
+	sets.precast.WS['Savage Blade'] = {ammo="Bayeux Bullet",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Chasseur's Gants +3",
@@ -235,7 +235,7 @@ function init_gear_sets()
     right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
 
-    sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
+    sets.precast.WS['Savage Blade'].Acc = {ammo="Bayeux Bullet",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Chasseur's Gants +3",
@@ -276,6 +276,34 @@ function init_gear_sets()
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
+	    sets.precast.WS['Terminus'] = {ammo=gear.WSbullet,
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Ikenga's Vest", augments={'Path: A',}},
+    hands="Chasseur's Gants +3",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Comm. Charm +2", augments={'Path: A',}},
+    waist="Aqua Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
+		    sets.precast.WS['Terminus'].Acc = {ammo=gear.WSbullet,
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Ikenga's Vest", augments={'Path: A',}},
+    hands="Chasseur's Gants +3",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Comm. Charm +2", augments={'Path: A',}},
+    waist="Aqua Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
 		
     sets.precast.WS['Detonator'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -302,6 +330,20 @@ function init_gear_sets()
     left_ring="Dingir Ring",
     right_ring="Archon Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
+	sets.precast.WS['Leaden Salute'].Proc = {ammo=gear.MAbullet,
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Iskur Gorget",
+   waist="Kentarch Belt +1",
+    left_ear="Dedition Earring",
+    right_ear="Telos Earring",
+    left_ring="Crepuscular Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10','Damage taken-5%',}},}
 
     sets.precast.WS['Aeolian Edge'] = {ammo=gear.MAbullet,
     head="Nyame Helm",
@@ -363,10 +405,11 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	sets.precast['Evisceration'] = {
-	   range={ name="Anarchy +2", augments={'Delay:+60','TP Bonus +1000',}},
+    range="Earp",
+    ammo="Bayeux Bullet",
     head="Mummu Bonnet +2",
     body="Meg. Cuirie +2",
-    hands="Mummu Wrists +2",
+    hands="Chasseur's Gants +3",
     legs="Mummu Kecks +2",
     feet="Mummu Gamash. +2",
     neck="Fotia Gorget",
@@ -484,6 +527,20 @@ function init_gear_sets()
     left_ring="Ilabrat Ring",
     right_ring="Crepuscular Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10','Damage taken-5%',}},}
+	
+	   sets.midcast['Absorb-TP'] = {    ammo="Living Bullet",
+    head="Chass. Tricorne +3",
+    body="Chasseur's Frac +3",
+    hands="Chasseur's Gants +3",
+    legs="Chas. Culottes +3",
+    feet="Chass. Bottes +3",
+    neck={ name="Comm. Charm +2", augments={'Path: A',}},
+    waist="Eschan Stone",
+    left_ear="Crep. Earring",
+    right_ear={ name="Chas. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Crit.hit rate+4',}},
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
     head="Malignance Chapeau",
@@ -543,7 +600,7 @@ function init_gear_sets()
     
 
     -- Idle sets
-    sets.idle = {ammo=gear.RAbullet,
+    sets.idle = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -557,7 +614,7 @@ function init_gear_sets()
 	right_ring="Shneddick Ring",
     back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},}
 		
-    sets.idle.PDT = {ammo=gear.RAbullet,
+    sets.idle.PDT = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -571,7 +628,7 @@ function init_gear_sets()
     right_ring="Shneddick Ring",
     back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},}
 		
-    sets.idle.Refresh = {ammo=gear.RAbullet,
+    sets.idle.Refresh = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -586,7 +643,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},}
     
     -- Defense sets
-    sets.defense.PDT = {ammo=gear.RAbullet,
+    sets.defense.PDT = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -600,7 +657,7 @@ function init_gear_sets()
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},}
 
-    sets.defense.MDT = {ammo=gear.RAbullet,
+    sets.defense.MDT = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -614,7 +671,7 @@ function init_gear_sets()
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},}
 		
-    sets.defense.MEVA = {ammo=gear.RAbullet,
+    sets.defense.MEVA = {
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -636,6 +693,8 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Naegling",sub={ name="Demers. Degen +1", augments={'Path: A',}}, range="Anarchy +2",}
 	sets.weapons.SWSavage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2",}
 	sets.weapons.DualSavage = {main="Naegling",sub={ name="Demers. Degen +1", augments={'Path: A',}}, range="Anarchy +2",}
+	sets.weapons.Terminus =  {main={ name="Rostam", augments={'Path: B',}},sub="Gleti's Knife",range="Earp",}
+	sets.weapons.DWEvis = {main="Tauret",sub="Gleti's Knife",range="Earp",}
 	sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualLeadenMelee = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range="Anarchy +2",}
@@ -647,7 +706,7 @@ function init_gear_sets()
 	sets.weapons.DualFomal = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range="Fomalhaut",}
 	sets.weapons.SWFomal = {main={ name="Rostam", augments={'Path: A',}},sub="Nusku Shield",range="Fomalhaut",}
 	sets.weapons.SWmeeleeFomal = {main={ name="Rostam", augments={'Path: B',}},sub="Nusku Shield",range="Fomalhaut",}
-	sets.weapons.SWEvis = {main="Tauret",sub="Nusku Shield",range="Anarchy +2",}
+	sets.weapons.SWEvis = {main="Tauret",sub="Nusku Shield",range="Earp",}
     -- Engaged sets
 
     -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
@@ -657,6 +716,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
+
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -671,6 +731,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
     
     sets.engaged.Acc = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -685,6 +746,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 		
     sets.engaged.DT = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -699,6 +761,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
     
     sets.engaged.Acc.DT = {
+	
      head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -713,6 +776,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
     sets.engaged.DW = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -727,6 +791,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
     
     sets.engaged.DW.Acc = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -741,6 +806,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 		
     sets.engaged.DW.DT = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -755,6 +821,7 @@ function init_gear_sets()
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
     
     sets.engaged.DW.Acc.DT = {
+	
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
