@@ -154,8 +154,8 @@ function init_gear_sets()
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Sherida Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    left_ring="Gere Ring",
-    right_ring="Epaminondas's Ring",
+    left_ring="Ephramad's Ring",
+    right_ring="Gere Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 	}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -185,8 +185,8 @@ function init_gear_sets()
     waist="Light Belt",
     left_ear="Odr Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    left_ring="Gere Ring",
-    right_ring="Begrudging Ring",
+    left_ring="Ephramad's Ring",
+    right_ring="Gere Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {})
     sets.precast.WS['Evisceration'].Mod = set_combine(sets.precast.WS['Evisceration'], {})
@@ -285,7 +285,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 		}
@@ -303,7 +303,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 		}
@@ -321,7 +321,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 		}
@@ -342,7 +342,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 	}
@@ -360,7 +360,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 		}
@@ -378,7 +378,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Infused Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 		}

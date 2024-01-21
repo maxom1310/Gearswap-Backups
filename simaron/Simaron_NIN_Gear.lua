@@ -9,7 +9,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','Heishi','Savage','Evis','Tank')
+	state.Weapons:options('None','Prime','Heishi','Savage','Evis','Tank')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None','SuppaBrutal','DWEarrings','DWMax'}
 
 	gear.wsd_jse_back = {name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
@@ -18,8 +18,7 @@ function user_job_setup()
 	send_command('bind ^` input /ja "Innin" <me>')
 	send_command('bind !` input /ja "Yonin" <me>')
 	send_command('bind @` gs c cycle Stance')
-	send_command('bind !r gs c set WeaponskillMode Proc;gs c set CastingMode Proc;gs c update')
-	send_command('bind ^r gs c set WeaponskillMode Normal;gs c set CastingMode Normal;gs c update')
+
 
 	utsusemi_cancel_delay = .3
 	utsusemi_ni_cancel_delay = .06
@@ -97,9 +96,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
-    right_ring="Epaminondas's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -115,7 +114,7 @@ function init_gear_sets()
     left_ear="Telos Earring",
     right_ear="Crep. Earring",
     left_ring="Ilabrat Ring",
-    right_ring="Epaminondas's Ring",
+    right_ring="Chirich Ring +1",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -141,9 +140,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Light Belt",
     left_ear="Lugra Earring +1",
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
-    right_ring="Regal Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},})
     sets.precast.WS['Blade: Shun'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS['Blade: Shun'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -160,9 +159,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
-	right_ring="Epaminondas's Ring",
+	right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
     sets.precast.WS['Blade: Ten'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Blade: Ten'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -179,9 +178,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Lugra Earring +1",
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Regal Ring",
-	right_ring="Epaminondas's Ring",
+	right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	sets.precast.WS['Blade: Metsu'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Blade: Metsu'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -196,9 +195,9 @@ function init_gear_sets()
     neck="Fotia Gorget",
     waist="Orpheus's Sash",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Friomisi Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
-    right_ring="Epaminondas's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
     sets.precast.WS['Blade: Chi'].Acc = set_combine(sets.precast.WS.Acc, {})
     sets.precast.WS['Blade: Chi'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -229,10 +228,25 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
-    right_ring="Epaminondas's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+		sets.precast.WS['Zesho Meppo'] = {
+    ammo="Crepuscular Pebble",
+    head={ name="Mpaca's Cap", augments={'Path: A',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Hattori Kyahan +3",
+    neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
+    waist="Light Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Hattori Earring +2",
+    left_ring="Regal Ring",
+    right_ring="Ephramad's Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 		sets.precast.WS['Blade: Kamu'] = {
 	ammo="Crepuscular Pebble",
@@ -244,9 +258,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Lugra Earring +1",
-    right_ear="Hattori Earring +1",
+    right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
-    right_ring="Gere Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 		sets.precast.WS['Blade: Ku'] = {
@@ -259,9 +273,9 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Light Belt",
     left_ear={ name="Lugra Earring +1", augments={'Path: A',}},
-    right_ear={ name="Hattori Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Store TP"+3',}},
+    right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
-    right_ring="Gere Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Andartia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
@@ -322,7 +336,21 @@ function init_gear_sets()
     neck="Voltsurge Torque",
     waist="Eschan Stone",
     left_ear="Crep. Earring",
-    right_ear="Digni. Earring",
+    right_ear="Hattori Earring +2",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+	
+	sets.midcast['Absorb-TP'] = {    ammo="Pemphredo Tathlum",
+    head="Hattori Zukin +3",
+    body="Hattori Ningi +3",
+    hands="Hattori Tekko +3",
+    legs="Hattori Hakama +3",
+    feet="Hattori Kyahan +3",
+    neck="Voltsurge Torque",
+    waist="Eschan Stone",
+    left_ear="Crep. Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
@@ -356,12 +384,12 @@ function init_gear_sets()
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},})
 
     sets.midcast.RA = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",right_ear="Hattori Earring +2",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Telos Earring",    right_ear="Hattori Earring +2",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -383,7 +411,7 @@ function init_gear_sets()
     waist="Kasiri Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
-    left_ring="Gurebu's Ring",
+    left_ring="Gelatinous Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -439,7 +467,7 @@ function init_gear_sets()
     waist="Kasiri Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
-    left_ring="Gurebu's Ring",
+    left_ring="Gelatinous Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -465,12 +493,12 @@ function init_gear_sets()
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs="Hattori Hakama +3",
+    legs="Malignance tights",
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -483,8 +511,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -497,8 +525,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -511,8 +539,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -525,8 +553,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -540,7 +568,7 @@ function init_gear_sets()
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear="Odr Earring",
-    right_ear="Telos Earring",
+	right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -553,8 +581,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -567,8 +595,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -581,8 +609,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -595,8 +623,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -609,8 +637,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
+    left_ear="Telos Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -623,8 +651,8 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Hattori Earring +2",
     left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -637,8 +665,8 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Hattori Earring +2",
     left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -651,8 +679,8 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -665,8 +693,8 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -679,8 +707,8 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
     back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -694,7 +722,7 @@ function init_gear_sets()
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
     waist="Kasiri Belt",
     left_ear="Infused Earring",
-    right_ear="Eabani Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
@@ -708,7 +736,7 @@ function init_gear_sets()
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
     waist="Kasiri Belt",
     left_ear="Infused Earring",
-    right_ear="Eabani Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
@@ -722,7 +750,7 @@ function init_gear_sets()
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
     waist="Kasiri Belt",
     left_ear="Infused Earring",
-    right_ear="Eabani Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
@@ -736,7 +764,7 @@ function init_gear_sets()
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
     waist="Kasiri Belt",
     left_ear="Infused Earring",
-    right_ear="Eabani Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
@@ -750,7 +778,7 @@ function init_gear_sets()
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
     waist="Kasiri Belt",
     left_ear="Infused Earring",
-    right_ear="Eabani Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
@@ -776,6 +804,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'Spell interruption rate down -4%','Pet: STR+3','Phalanx +4',}},
     feet={ name="Herculean Boots", augments={'Pet: STR+8','Phalanx +3','Accuracy+8 Attack+8',}}}
 	-- Weapons sets
+	sets.weapons.Prime = {main="Dokoku",sub="Uzura +2"}
 	sets.weapons.Heishi = {main="Heishi Shorinken",sub="Yagyu Darkblade"}
 	sets.weapons.Savage = {main="Naegling",sub="Yagyu Darkblade"}
 	sets.weapons.Evis = {main="Tauret",sub="Yagyu Darkblade"}

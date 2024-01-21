@@ -181,7 +181,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -197,7 +197,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -213,7 +213,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -229,7 +229,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -245,7 +245,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -261,7 +261,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -277,7 +277,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -293,7 +293,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -309,7 +309,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -325,7 +325,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -342,7 +342,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Janniston Ring",
+    left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -688,118 +688,118 @@ function init_gear_sets()
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {     main="Daybreak",
+	sets.idle = {         main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
-	sets.idle.PDT = {       main="Daybreak",
+	sets.idle.PDT = {          main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
-	sets.idle.MDT = {     main="Daybreak",
+	sets.idle.MDT = {       main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
-	sets.idle.Weak = {      main="Daybreak",
+	sets.idle.Weak = {        main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
     -- Defense sets
 
-	sets.defense.PDT = {      main="Daybreak",
+	sets.defense.PDT = {        main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
-	sets.defense.MDT = {      main="Daybreak",
+	sets.defense.MDT = {        main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
-    sets.defense.MEVA = {      main="Daybreak",
+    sets.defense.MEVA = {       main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
 		-- Engaged sets
@@ -811,20 +811,20 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {  
-    main="Daybreak",
+       main="Daybreak",
     sub="Genmei Shield",
     ammo="Crepuscular Pebble",
     head="Nyame Helm",
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
     sets.engaged.Acc = {       main="Daybreak",
@@ -834,13 +834,13 @@ function init_gear_sets()
     body="Ebers Bliaut +3",
     hands="Nyame Gauntlets",
     legs="Ebers Pant. +3",
-    feet="Nyame Sollerets",
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.engaged.DW = {      main="Daybreak",
@@ -911,6 +911,7 @@ function init_gear_sets()
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Sleep = {main="Lorg Mor"}
 
 end
 

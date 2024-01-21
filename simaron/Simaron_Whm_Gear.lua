@@ -307,7 +307,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Nourish. Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -323,7 +323,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Nourish. Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -340,7 +340,7 @@ function init_gear_sets()
     waist="Austerity Belt",
     left_ear="Nourish. Earring",
     right_ear="Nourish. Earring +1",
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -419,7 +419,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Mimir Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Defending Ring",
     back="Perimede Cape",}
 
@@ -696,7 +696,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -713,7 +713,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -729,7 +729,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -745,7 +745,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -761,7 +761,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -779,7 +779,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -795,7 +795,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -811,7 +811,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -834,7 +834,7 @@ function init_gear_sets()
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -848,7 +848,7 @@ function init_gear_sets()
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -862,7 +862,7 @@ function init_gear_sets()
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -876,7 +876,7 @@ function init_gear_sets()
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -895,7 +895,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Mimir Earring",
     right_ear="Meili Earring",
-    left_ring="Gurebu's Ring",
+    left_ring="Stikini Ring +1",
     right_ring="Defending Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
