@@ -139,7 +139,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Calamitous Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back="Thauma. Cape",}
@@ -180,7 +180,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -196,7 +196,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -212,7 +212,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -228,7 +228,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -244,7 +244,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -260,7 +260,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -276,7 +276,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -292,7 +292,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -308,7 +308,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -324,7 +324,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -341,7 +341,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Malignance Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Naji's loop",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -385,7 +385,7 @@ function init_gear_sets()
     neck="Debilis Medallion",
     waist="Embla Sash",
     left_ear="Meili Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Haoma's Ring",
     right_ring="Menelaus's Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -422,7 +422,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Embla Sash",
     left_ear="Calamitous Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -531,7 +531,7 @@ function init_gear_sets()
     neck="Sibyl Scarf",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
-	right_ear="Ebers Earring +1",
+	right_ear="Ebers Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Stikini Ring +1",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -547,7 +547,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Fucho-no-Obi",
     left_ear="Malignance Earring",
-	right_ear="Ebers Earring +1",
+	right_ear="Ebers Earring +2",
     left_ring="Evanescence Ring",
     right_ring="Stikini Ring +1",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -563,7 +563,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Fucho-no-Obi",
     left_ear="Malignance Earring",
-	right_ear="Ebers Earring +1",
+	right_ear="Ebers Earring +2",
     left_ring="Evanescence Ring",
     right_ring="Stikini Ring +1",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -582,7 +582,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
-	right_ear="Ebers Earring +1",
+	right_ear="Ebers Earring +2",
     left_ring="Kishar Ring",
     right_ring="Stikini Ring +1",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -598,7 +598,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
-	right_ear="Ebers Earring +1",
+	right_ear="Ebers Earring +2",
     left_ring="Kishar Ring",
     right_ring="Stikini Ring +1",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -614,7 +614,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Regal Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Kishar Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
@@ -632,7 +632,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. Ring +1",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -648,7 +648,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. Ring +1",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -682,7 +682,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -699,7 +699,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -715,7 +715,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -731,7 +731,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -747,7 +747,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -765,7 +765,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -781,7 +781,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -797,7 +797,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -822,7 +822,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -838,7 +838,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Damage taken-5%',}},
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -854,7 +854,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -870,7 +870,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -889,7 +889,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -905,7 +905,7 @@ function init_gear_sets()
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Ebers Earring +1",
+    right_ear="Ebers Earring +2",
     left_ring="Gurebu's Ring",
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}

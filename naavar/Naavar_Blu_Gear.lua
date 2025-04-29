@@ -534,7 +534,7 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {    ammo="Crepuscular Pebble",
+	sets.midcast['Blue Magic'].Magical = {     ammo="Ghastly Tathlum +1",
     head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
     hands="Hashi. Bazu. +3",
@@ -542,9 +542,9 @@ function init_gear_sets()
     feet="Hashi. Basmak +3",
     neck="Sibyl Scarf",
     waist="Orpheus's Sash",
-    left_ear="Regal Earring",
+    left_ear="Novio Earring",
     right_ear="Friomisi Earring",
-    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    left_ring="Metamor. Ring +1",
     right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 					 
@@ -1202,9 +1202,9 @@ function init_gear_sets()
 	sets.recphalanx = 	{
 		ammo="Staunch Tathlum +1",
     head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-    hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
-    legs={ name="Herculean Trousers", augments={'Accuracy+2 Attack+2','Mag. Acc.+9','Phalanx +4','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+    body={ name="Herculean Vest", augments={'DEX+3','Pet: Mag. Acc.+11','Phalanx +4',}},
+    hands={ name="Taeon Gloves", augments={'Accuracy+19','Spell interruption rate down -10%','Phalanx +3',}},
+    legs={ name="Taeon Tights", augments={'Accuracy+20','Spell interruption rate down -7%','Phalanx +3',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     neck="Elite Royal Collar",
     waist="Flume Belt",
@@ -1214,6 +1214,9 @@ function init_gear_sets()
     right_ring="defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}}, 
 		}	
+	sets.Phalanx_Received = 	{    body={ name="Herculean Vest", augments={'DEX+3','Pet: Mag. Acc.+11','Phalanx +4',}},
+    hands={ name="Taeon Gloves", augments={'Accuracy+19','Spell interruption rate down -10%','Phalanx +3',}},
+    legs={ name="Taeon Tights", augments={'Accuracy+20','Spell interruption rate down -7%','Phalanx +3',}},}
 end
 
 -- Select default macro book on initial load or subjob change.

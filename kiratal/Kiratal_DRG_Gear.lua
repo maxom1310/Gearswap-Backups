@@ -9,7 +9,7 @@ function user_job_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.IdleMode:options('Normal', 'PDT','Refresh','Reraise')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None'}
-	state.Weapons:options('Trishula','Shining','Naegling','NaeglingDW')
+	state.Weapons:options('Prime','Trishula','Shining','Naegling','NaeglingDW')
 	state.Passive = M{['description'] = 'Passive Mode','None','MP','Twilight'}
 
     select_default_macro_book()
@@ -30,7 +30,7 @@ function init_gear_sets()
 	
 	-- Precast Sets
 	-- Precast sets to enhance JAs
-	sets.precast.JA.Angon = {ammo="Angon"} --hands="Ptero. Fin. G. +1"
+	sets.precast.JA.Angon = {ammo="Angon",hands="Ptero. Fin. G. +1"}
 	
 	sets.precast.JA.Jump = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Flam. Zucchetto +2",
@@ -144,7 +144,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -162,9 +162,9 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-    waist="Soil Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Sroda Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Mag. Evasion+15',}},})
@@ -176,9 +176,9 @@ function init_gear_sets()
     legs={ name="Gleti's Breeches", augments={'Path: A',}},
     feet={ name="Gleti's Boots", augments={'Path: A',}},
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-    waist="Soil Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Sroda Ring",
 	right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Mag. Evasion+15',}},})
@@ -190,9 +190,9 @@ function init_gear_sets()
     legs={ name="Gleti's Breeches", augments={'Path: A',}},
     feet={ name="Gleti's Boots", augments={'Path: A',}},
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-    waist="Soil Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Sroda Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Mag. Evasion+15',}},})
@@ -204,9 +204,9 @@ function init_gear_sets()
     legs={ name="Gleti's Breeches", augments={'Path: A',}},
     feet={ name="Gleti's Boots", augments={'Path: A',}},
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-    waist="Soil Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Sroda Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Mag. Evasion+15',}},})
@@ -225,7 +225,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -239,7 +239,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -253,7 +253,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -267,10 +267,38 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
+	
+		sets.precast.WS['Diarmuid'] = set_combine(sets.precast.WS, {ammo="Knobkierrie",
+    head="Peltast's Mezail +3",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Dgn. Collar +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Peltast's Earring +2",
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
+	
+		sets.precast.WS['Leg Sweep'] = set_combine(sets.precast.WS, {    ammo="Pemphredo Tathlum",
+    head="Peltast's Mezail +3",
+    body="Pelt. Plackart +3",
+    hands="Pel. Vambraces +3",
+    legs="Pelt. Cuissots +3",
+    feet="Pelt. Schyn. +3",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Pel. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Crit.hit rate+7','STR+13 VIT+13',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Stikini Ring +1",
+    back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Mag. Evasion+15',}},})
 	
 	sets.precast.WS['Impulse Drive'] = set_combine(sets.precast.WS, {    ammo="Knobkierrie",
    head="Peltast's Mezail +3",
@@ -281,7 +309,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -295,7 +323,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -309,7 +337,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -323,7 +351,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -337,7 +365,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -351,7 +379,7 @@ function init_gear_sets()
     neck={ name="Dgn. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Peltast's Earring +1",
+    right_ear="Peltast's Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
@@ -365,7 +393,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Orpheus's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -379,7 +407,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Orpheus's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -398,7 +426,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Orpheus's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -414,7 +442,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Orpheus's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -430,7 +458,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Orpheus's Sash",
     left_ear="Eabani Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -449,18 +477,19 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
+	sets.weapons.Prime = {main="Gae Buide",sub="Utu Grip"}
 	sets.weapons.Trishula = {main="Trishula",sub="Utu Grip"}
 	sets.weapons.Shining = {main="Shining one", sub="Utu Grip"}
 	sets.weapons.Naegling = {main="Naegling",sub=Empty}
 	sets.weapons.NaeglingDW = {main="Naegling", sub="Demers. Degen +1"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Sherida Earring",ear2="Peltast's Earring +1"}
-	sets.AccMaxTP = {ear1="Sherida Earring",ear2="Peltast's Earring +1"}
-	sets.AccDayMaxTPWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +1"}
-	sets.DayMaxTPWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +1"}
-	sets.AccDayWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +1"}
-	sets.DayWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +1",}
+	sets.MaxTP = {ear1="Sherida Earring",ear2="Peltast's Earring +2"}
+	sets.AccMaxTP = {ear1="Sherida Earring",ear2="Peltast's Earring +2"}
+	sets.AccDayMaxTPWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +2"}
+	sets.DayMaxTPWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +2"}
+	sets.AccDayWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +2"}
+	sets.DayWSEars = {ear1="Sherida Earring",ear2="Peltast's Earring +2",}
 	
 	-- Engaged sets
 

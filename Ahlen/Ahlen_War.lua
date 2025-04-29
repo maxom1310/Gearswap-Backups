@@ -14,7 +14,7 @@ function user_setup()
 		send_command('bind ^f9 input /equipset 25;wait1;input /echo Naegling;wait1;aws use savage blade')
 		send_command('bind !f9 input /equipset 26;wait1;input /echo Chango;wait1;aws use upheaval')
 		send_command('bind ^@!f9 input /equipset 32;wait1;input /echo Gsword;wait1;aws use Resolution')	
-		send_command('bind ^!f9 input /equipset 23;wait1;input /echo Shining One')
+		send_command('bind ^!f9 input /equipset 34;wait1;input /echo Shining One')
 		send_command('bind @f9 input /equipset 30;wait1;input /echo Club;wait1;aws use Judgment')
 		send_command('bind !f11 gs disable main, sub;wait1;input /echo Disable Main')
 		send_command('bind !f12 gs enable main, sub;wait1;input /echo Enable Main')
@@ -26,7 +26,19 @@ function init_gear_sets()
         head="Agoge Mask +3",
     }
     sets.precast.JA["Mighty Strikes"] = {
-        hands="Agoge Mufflers",
+    ammo="Crepuscular Pebble",
+    head={ name="Ebur Armet", augments={'Path: B',}},
+    body={ name="Ebon Breastplate", augments={'Path: B',}},
+    hands={ name="Agoge Mufflers +1", augments={'Enhances "Mighty Strikes" effect',}},
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Etiolation Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Defending Ring",
+    back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 	    sets.precast.JA.Tomahawk = {
 		feet="Agoge calligae +3",
@@ -59,25 +71,22 @@ sets.precast.JA.Restraint = {
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	    sets.engaged.Ukon = {
-
     ammo="Yetshila +1",
-    head="Boii Mask +3",
-    body="Boii Lorica +3",
-    hands="Boii Mufflers +3",
+    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
     neck={ name="War. Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Crit.hit rate+5',}},
-    left_ring="Ephramad's Ring",
-    right_ring="Niqmaddu Ring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','System: 1 ID: 640 Val: 4',}},
 	}
 	
 	sets.engaged.Counter = {
-	    main={ name="Ukonvasara", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Yetshila +1",
     head="Boii Mask +3",
     body={ name="Sakpata's Plate", augments={'Path: A',}},
@@ -100,7 +109,7 @@ sets.precast.JA.Restraint = {
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear="Genmei Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -118,7 +127,7 @@ sets.precast.JA.Restraint = {
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear="Genmei Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -133,7 +142,7 @@ sets.precast.JA.Restraint = {
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear="Genmei Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -159,8 +168,8 @@ sets.precast.JA.Restraint = {
 	sets.precast.WS.Upheaval = {
     ammo="Knobkierrie",
       head="Agoge Mask +3",
-   body={ name="Sakpata's Plate", augments={'Path: A',}},
-	 --  body={ name="Nyame Mail", augments={'Path: B',}},
+     -- body={ name="Sakpata's Plate", augments={'Path: A',}},
+	   body={ name="Nyame Mail", augments={'Path: B',}},
        hands="Boii Mufflers +3",
 	legs="Boii Cuisses +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -175,8 +184,8 @@ sets.precast.JA.Restraint = {
 	  sets.precast.WS["King's Justice"] = {
     ammo="Knobkierrie",
        head="Agoge Mask +3",
-    body="Sakpata's Plate",
-    hands="Sakpata's Gauntlets",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+	hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Nyame Sollerets",
     neck="War. Beads +2",
@@ -217,17 +226,17 @@ sets.precast.JA.Restraint = {
     right_ring="Sroda Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
-	sets.precast.WS["Ukko's Fury"] = {
+	sets.precast.WS["Ukko's Fury"] = { ammo="Yetshila +1",
     head={ name="Blistering Sallet +1", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
-    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
     neck={ name="War. Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Boii Earring +1",
-    left_ring="Sroda Ring",
+    left_ring="Niqmaddu ring",
     right_ring="Ephramad's Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
@@ -248,9 +257,9 @@ sets.precast.JA.Restraint = {
 	}
 			sets.precast.WS["Impulse Drive"] = {
 	 ammo="Knobkierrie",
-    head="Sakpata's Helm",
+    head="Nyame Helm",
     body={ name="Sakpata's Plate", augments={'Path: A',}},
-       hands="Boii Mufflers +3",
+    hands="Boii Mufflers +3",
 	legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
     neck={ name="War. Beads +2", augments={'Path: A',}},
@@ -292,7 +301,7 @@ sets.precast.JA.Restraint = {
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	sets.precast.WS["Armor Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -306,7 +315,7 @@ sets.precast.JA.Restraint = {
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	
 		sets.precast.WS["Full Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -320,7 +329,7 @@ sets.precast.JA.Restraint = {
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	
 		sets.precast.WS["Weapon Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -334,7 +343,7 @@ sets.precast.JA.Restraint = {
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	
 	sets.precast.WS["Shield Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",

@@ -97,7 +97,7 @@ function init_gear_sets()
 
 	-- Precast sets to enhance JAs
 
-	sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants"}
+	sets.precast.JA['Tabula Rasa'] = {legs="Pedagogy Pants +1"}
 	sets.precast.JA['Dark Arts'] = {"Academic's Gown +1"}
 	sets.precast.JA['Light Arts'] = {"Academic's Pants +1"}
 	
@@ -245,7 +245,7 @@ function init_gear_sets()
     body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
-    feet={ name="Telchine Pigaches", augments={'Mag. Evasion+24','Song spellcasting time -7%','Enh. Mag. eff. dur. +10',}},
+    feet={ name="Peda. Loafers +1", augments={'Enhances "Stormsurge" effect',}},
     neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Andoaa Earring",
@@ -313,7 +313,7 @@ function init_gear_sets()
 
 	sets.midcast.ElementalEnfeeble = sets.midcast.IntEnfeebles
 	
-	sets.midcast.Kaustra = sets.midcast['Elemental Magic']
+
 
 	sets.midcast['Dark Magic'] = {
     main="Bunzi's Rod",
@@ -364,16 +364,17 @@ function init_gear_sets()
     sub="Ammurapi Shield",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Arbatel Bonnet +3",
-    body="Arbatel Gown +3",
-    hands="Arbatel Bracers +3",
-    legs="Arbatel Pants +3",
+	body="Agwu's Robe",
+    --  body={ name="Nyame Mail", augments={'Path: C',}},
+    hands="Agwu's Gages",
+    legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet="Arbatel Loafers +3",
-    neck="Mizu. Kubikazari",
-    waist="Eschan Stone",
+    neck={ name="Argute Stole +2", augments={'Path: A',}},
+    waist="Hachirin-no-Obi",
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
-    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Acumen Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    left_ring="Freke Ring",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 
 	sets.midcast['Elemental Magic'].Resistant = sets.midcast['Elemental Magic'] 
@@ -386,26 +387,56 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].HighTierNuke)
 	
 
-
-	sets.midcast.Impact = {main="Akademos",sub="Mephitis Grip",ammo="Hydrocera",
-		head=empty,neck="Mizu. Kubikazari",ear1="Barkarole Earring",ear2="Gwati Earring",
-		body="Twilight Cloak",hands=gear.macc_hagondes,left_ring="Weatherspoon Ring",right_ring="Sangoma Ring",
-		back="Refraction Cape",waist="Yamabuki-no-Obi",legs="Psycloth Lappas",feet="Medium's Sabots"}
+	sets.midcast['Kaustra'] = {
+    main={ name="Bunzi's Rod", augments={'Path: A',}},
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
+	body="Agwu's Robe",
+   -- body={ name="Nyame Mail", augments={'Path: C',}},
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+    legs={ name="Agwu's Slops", augments={'Path: A',}},
+    feet="Arbatel Loafers +3",
+    neck={ name="Argute Stole +2", augments={'Path: A',}},
+    waist="Hachirin-no-Obi",
+    left_ear="Regal Earring",
+    right_ear="Malignance Earring",
+    left_ring="Archon Ring",
+    right_ring="Freke Ring",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+	}
+	
+	sets.midcast.Impact = {    main="Malignance Pole",
+    sub="Enki Strap",
+    ammo="Pemphredo Tathlum",
+	head=empty,
+    body="Twilight Cloak",
+    hands="Volte Bracers",
+    legs={ name="Chironic Hose", augments={'Attack+29','Mag. Acc.+29','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    feet="Volte Boots",
+    neck="Erra Pendant",
+    waist="Luminary Sash",
+    left_ear="Gwati Earring",
+    right_ear="Crep. Earring",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back="Solemnity Cape",}
 		
-	sets.midcast.Helix = {      main="Bunzi's Rod",
+	sets.midcast.Helix = {       main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Culminus",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Arbatel Bonnet +3",
-    body="Arbatel Gown +3",
-    hands="Arbatel Bracers +3",
-    legs="Arbatel Pants +3",
+	body="Agwu's Robe",
+  --  body={ name="Nyame Mail", augments={'Path: C',}},
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+    legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet="Arbatel Loafers +3",
-    neck="Mizu. Kubikazari",
-    waist="Eschan Stone",
+    neck={ name="Argute Stole +2", augments={'Path: A',}},
+    waist="Skrymir Cord +1",
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
-    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Acumen Ring",
+    left_ring="Freke Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Bookworm's Cape", augments={'INT+2','MND+1','Helix eff. dur. +10','"Regen" potency+10',}},}
 
 	-- Sets to return to when not performing an action.
@@ -535,18 +566,35 @@ function init_gear_sets()
 	sets.buff['Ebullience'] = {head="Arbatel Bonnet +3"}
 	sets.buff['Rapture'] = {head="Arbatel Bonnet +3"}
 	sets.buff['Perpetuance'] = {hands="Arbatel Bracers +3"}
-	sets.buff['Immanence'] = {hands="Arbatel Bracers +3"}
+	sets.buff['Immanence'] = {  main=empty,
+		sub="Genmei Shield",
+		ammo="Staunch Tathlum +1",
+		head=empty,
+		body=empty,
+		hands=empty,
+		legs=empty,
+		feet=empty,
+		neck="Elite Royal Collar",
+		waist="Plat. Mog. Belt",
+		left_ear="Digni. Earring",
+		right_ear="Meili Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Chirich Ring +1",
+		back="Solemnity Cape",}
 	sets.buff['Penury'] = {legs="Arbatel Pants +3"}
 	sets.buff['Parsimony'] = {legs="Arbatel Pants +3"}
 	sets.buff['Celerity'] = {feet="Pedagogy Loafers +1"}
 	sets.buff['Alacrity'] = {head="Nahtirah Hat",feet="Pedagogy Loafers +1"}
-	sets.buff['Stormsurge'] = {feet="Pedagogy Loafers +1"}
+	--sets.buff['Stormsurge'] = {feet="Pedagogy Loafers +1"}
 	sets.buff['Klimaform'] = {feet="Arbatel Loafers +3"}
 
 	sets.buff.FullSublimation = {}
 	sets.buff.PDTSublimation = {}
-	sets.midcast.Noctohelix = set_combine(sets.midcast.Helix, {head="Pixie Hairpin +1"})
+	
+	sets.midcast.Noctohelix = set_combine(sets.midcast.Helix, {})
 	sets.midcast['Noctohelix II'] = set_combine(sets.midcast.Helix, {head="Pixie Hairpin +1"})
+	sets.midcast.Luminohelix = set_combine(sets.midcast.Helix, {})
+	sets.midcast['Luminohelix II'] = set_combine(sets.midcast.Helix, {main="Daybreak",})
 
 	
 	
@@ -869,10 +917,10 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     if player.sub_job == 'RDM' then
-        set_macro_page(1, 8)
+        set_macro_page(5, 1)
     elseif player.sub_job == 'BLM' then
-        set_macro_page(1, 8)	
+        set_macro_page(5, 1)	
     elseif player.sub_job == 'WHM' then
-        set_macro_page(2, 8)
+        set_macro_page(5, 1)
 	end	
 end

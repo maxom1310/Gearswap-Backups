@@ -68,7 +68,7 @@ function init_gear_sets()
 
 	-- CURING WALTZ
 	sets.precast.Waltz = {
-		head=gear.valorous_pet_head,neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+		head=gear.valorous_pet_head,neck="Elite Royal Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
 		body="Tot. Jackcoat +3",hands="Regimen Mittens",ring1="Valseur's Ring",ring2="Asklepian Ring",
 		back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet="Valorous Greaves"}
 
@@ -95,7 +95,7 @@ function init_gear_sets()
     legs="Nukumi Quijotes +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Orunmila's Torque",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Enchntr. Earring +1",
     right_ear="Loquac. Earring",
     left_ring="Rahab Ring",
@@ -110,7 +110,7 @@ function init_gear_sets()
     legs="Nukumi Quijotes +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Orunmila's Torque",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Enchntr. Earring +1",
     right_ear="Loquac. Earring",
     left_ring="Rahab Ring",
@@ -158,7 +158,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -172,7 +172,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -186,7 +186,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -200,7 +200,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -214,7 +214,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -229,7 +229,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Thrud Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Gere Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},})
@@ -264,7 +264,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Sherida Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Gere Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -278,7 +278,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -292,7 +292,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -306,7 +306,7 @@ function init_gear_sets()
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Sherida Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Gere Ring",
     back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -328,7 +328,7 @@ function init_gear_sets()
     neck="Shulmanu Collar",
     waist="Incarnation Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="C. Palug Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -346,7 +346,7 @@ function init_gear_sets()
     neck="Adad Amulet",
     waist="Incarnation Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="C. Palug Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -360,7 +360,7 @@ function init_gear_sets()
     neck="Adad Amulet",
     waist="Incarnation Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="C. Palug Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -383,7 +383,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -397,7 +397,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -413,7 +413,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -427,7 +427,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Incarnation Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -441,7 +441,7 @@ function init_gear_sets()
     neck={ name="Bst. Collar +2", augments={'Path: A',}},
     waist="Incarnation Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -456,7 +456,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -470,7 +470,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -484,7 +484,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -503,7 +503,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -517,7 +517,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Pet: "Dbl. Atk."+6',}},
+    right_ear="Nukumi Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Eva.+20 /Mag. Eva.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -776,7 +776,7 @@ function init_gear_sets()
 	sets.engaged.DW.PetTank.Fodder = set_combine(sets.engaged.DW.Fodder, {})
 
 	sets.buff['Killer Instinct'] = {body="Nukumi Gausape +3"}
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Knockback = {}

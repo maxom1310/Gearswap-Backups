@@ -34,7 +34,6 @@ function user_job_setup()
 	send_command('bind @backspace input /ja "Convergence" <me>')
 	send_command('bind @f10 gs c toggle LearningMode')
 	send_command('bind ^@!` gs c cycle MagicBurstMode')
-	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !@^f7 gs c toggle AutoWSMode')
 	--send_command('bind !r gs c weapons None;gs c update')
 	send_command('bind @q gs c weapons MaccWeapons;gs c update')
@@ -56,16 +55,16 @@ function init_gear_sets()
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {}
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
 
 	sets.HPDown = {    ammo="Staunch Tathlum +1",
     head="Pixie Hairpin +1",
     body="Emet Harness +1",
     hands="Jhakri Cuffs +2",
-    legs={ name="Herculean Trousers", augments={'"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+9',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Genmei Earring",
     right_ear="Mimir Earring",
     left_ring="Vengeful Ring",
@@ -88,7 +87,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Eihwaz Ring",
@@ -101,7 +100,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Eihwaz Ring",
@@ -114,7 +113,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Eihwaz Ring",
@@ -127,7 +126,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Eihwaz Ring",
@@ -283,7 +282,7 @@ function init_gear_sets()
     neck="Mirage Stole +2",
     waist="Fotia Belt",
     left_ear="Odr Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Begrudging Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},})
@@ -389,8 +388,8 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
-	left_ring="Ephramad's Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
+    left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	sets.precast.WS['Expiacion'].Acc = set_combine(sets.precast.WS.Acc, {    
@@ -403,12 +402,12 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
-   left_ring="Ephramad's Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
+    left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	sets.precast.WS['Expiacion'].FullAcc = set_combine(sets.precast.WS.FullAcc, { 
-	    ammo="Crepuscular Pebble",
+    ammo="Crepuscular Pebble",
     head="Hashishin Kavuk +3",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -417,12 +416,12 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
-   left_ring="Ephramad's Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
+    left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	sets.precast.WS['Expiacion'].DT = set_combine(sets.precast.WS.DT, {  
-	    ammo="Crepuscular Pebble",
+    ammo="Crepuscular Pebble",
     head="Hashishin Kavuk +3",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -431,12 +430,12 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
-   left_ring="Ephramad's Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
+    left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	sets.precast.WS['Expiacion'].Fodder = set_combine(sets.precast.WS['Expiacion'], {      
-	ammo="Crepuscular Pebble",
+    ammo="Crepuscular Pebble",
     head="Hashishin Kavuk +3",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -445,8 +444,8 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
-   left_ring="Ephramad's Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
+    left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 
@@ -454,7 +453,7 @@ function init_gear_sets()
     head="Pixie Hairpin +1",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs="Luhlaza Shalwar +3",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Hashi. Basmak +3",
     neck="Sibyl Scarf",
     waist="Orpheus's Sash",
@@ -468,7 +467,7 @@ function init_gear_sets()
     head="Pixie Hairpin +1",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Luhlaza Shalwar +3", augments={'Enhances "Assimilation" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Sibyl Scarf",
     waist="Orpheus's Sash",
@@ -482,7 +481,7 @@ function init_gear_sets()
     head="Hashishin Kavuk +3",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Luhlaza Shalwar +3", augments={'Enhances "Assimilation" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Sibyl Scarf",
     waist="Orpheus's Sash",
@@ -496,7 +495,7 @@ function init_gear_sets()
     head="Hashishin Kavuk +3",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Luhlaza Shalwar +3", augments={'Enhances "Assimilation" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Sibyl Scarf",
     waist="Orpheus's Sash",
@@ -529,7 +528,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
     left_ear="Telos Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -543,7 +542,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
     left_ear="Telos Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -557,7 +556,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
     left_ear="Telos Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -571,7 +570,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
     left_ear="Telos Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -719,6 +718,34 @@ function init_gear_sets()
     right_ring="Metamor. Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 	
+		sets.midcast['Reaving Wind'] = {      ammo="Sapience Orb",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Hashi. Earring +2",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+	
+	sets.midcast['Feather Tickle'] = {      ammo="Sapience Orb",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Hashi. Earring +2",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+	
 	
 
 	sets.midcast['Enhancing Magic'] = {head="Telchine Cap",neck="Melic Torque",left_ear="Andoaa Earring",right_ear="Mimir Earring",
@@ -728,7 +755,7 @@ function init_gear_sets()
 	sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{	   
     ammo="Staunch Tathlum +1",
     head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Herculean Vest", augments={'Rng.Acc.+15','Damage taken-1%','Phalanx +5',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+2 Attack+2','Mag. Acc.+9','Phalanx +4','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
@@ -809,7 +836,7 @@ function init_gear_sets()
     hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
     legs="Pinga Pants +1",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Mendi. Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -859,13 +886,13 @@ function init_gear_sets()
 	-- Other Specific Spells --
 
 	sets.midcast['Blue Magic']['White Wind'] = {    ammo="Staunch Tathlum +1",
-    head="Pinga Crown +1",    ammo="Staunch Tathlum +1",
+    head="Pinga Crown +1",    
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Pinga Tunic +1",
     hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
     legs="Pinga Pants +1",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Mendi. Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -881,7 +908,7 @@ function init_gear_sets()
     hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
     legs="Pinga Pants +1",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Mendi. Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -901,7 +928,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Plat. Mog. Belt",
     left_ear="Njordr Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Cornflower Cape", augments={'MP+20','Accuracy+2','Blue Magic skill +10',}},}
@@ -964,7 +991,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Eihwaz Ring",
@@ -989,7 +1016,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
 	feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Vengeful Ring",
@@ -1004,7 +1031,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
 	feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Shneddick Ring",
@@ -1020,7 +1047,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
@@ -1037,7 +1064,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
@@ -1051,7 +1078,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
@@ -1065,7 +1092,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
@@ -1078,7 +1105,7 @@ function init_gear_sets()
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
-    sets.MP = {waist="Flume Belt",}
+    sets.MP = {waist="Flume Belt +1",}
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {}
 	sets.DWEarrings = {}
@@ -1105,7 +1132,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1124,7 +1151,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Dbl.Atk."+5',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Chirich Ring +1",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
@@ -1135,7 +1162,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1150,7 +1177,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1164,7 +1191,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1178,7 +1205,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1192,7 +1219,7 @@ function init_gear_sets()
         head="Malignance Chapeau",  --6
 		neck="Mirage Stole +2", 
 		left_ear="Telos Earring",
-		right_ear="Hashi. Earring +1",
+		right_ear="Hashi. Earring +2",
 		body="Malignance Tabard",  --9
 		hands="Malignance gloves", --5
 		ring1="Epona's Ring",  
@@ -1202,32 +1229,32 @@ function init_gear_sets()
 		legs="Malignance tights", --7
 		feet="Malignance Boots",}
 
-	sets.engaged.Fodder = {ammo="Ginsen",
+	sets.engaged.Fodder = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
-    body="Adhemar Jacket +1",
-    hands="Adhemar wristbands +1",
-    legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'DEX+10','Accuracy+26', 'Attack+13','Triple Atk.+4',}},
-    neck="Mirage Stole +2",
+    body="Malignance Tabard",
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+26','"Triple Atk."+4','DEX+10','Attack+13',}},
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Epona's Ring",
-    right_ring="Ilabrat Ring",
+    right_ring="Chirich Ring +1",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 
-	sets.engaged.Fodder.AM = {ammo="Ginsen",
+	sets.engaged.Fodder.AM = {    ammo="Aurgelmir Orb +1",
     head="Malignance Chapeau",
-    body="Adhemar Jacket +1",
-    hands="Adhemar wristbands +1",
-    legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'DEX+10','Accuracy+26', 'Attack+13','Triple Atk.+4',}},
-    neck="Mirage Stole +2",
+    body="Malignance Tabard",
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    legs="Malignance Tights",
+    feet={ name="Herculean Boots", augments={'Accuracy+26','"Triple Atk."+4','DEX+10','Attack+13',}},
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Dedition Earring",
     left_ring="Epona's Ring",
-    right_ring="Ilabrat Ring",
+    right_ring="Chirich Ring +1",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 
 	sets.engaged.DT = {    ammo="Staunch Tathlum +1",
@@ -1239,7 +1266,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1253,7 +1280,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1267,7 +1294,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1281,7 +1308,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1295,7 +1322,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1309,7 +1336,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1323,7 +1350,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Defending Ring",
      back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
@@ -1336,12 +1363,12 @@ function init_gear_sets()
 	sets.Phalanx_Received = 	{
 		ammo="Staunch Tathlum +1",
     head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Herculean Vest", augments={'Rng.Acc.+15','Damage taken-1%','Phalanx +5',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+2 Attack+2','Mag. Acc.+9','Phalanx +4','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vengeful Ring",
@@ -1351,12 +1378,12 @@ function init_gear_sets()
 	sets.recphalanx = 	{
 		ammo="Staunch Tathlum +1",
     head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Herculean Vest", augments={'Rng.Acc.+15','Damage taken-1%','Phalanx +5',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+2 Attack+2','Mag. Acc.+9','Phalanx +4','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     neck="Elite Royal Collar",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vengeful Ring",
@@ -1369,19 +1396,19 @@ end
 function select_default_macro_book()
 	-- Default macro set/book
 	if player.sub_job == 'DNC' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	elseif player.sub_job == 'NIN' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	elseif player.sub_job == 'WAR' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	elseif player.sub_job == 'RUN' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	elseif player.sub_job == 'THF' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	elseif player.sub_job == 'RDM' then
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	else
-		set_macro_page(1, 2)
+		set_macro_page(7, 1)
 	end
 end
 

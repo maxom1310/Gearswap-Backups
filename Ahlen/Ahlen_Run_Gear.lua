@@ -117,7 +117,19 @@ function init_gear_sets()
     sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
     sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{hands="Futhark Mitons +1"})
     sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
-    sets.precast.JA['One For All'] = set_combine(sets.Enmity,{hands="Regal Gauntlets"})
+    sets.precast.JA['One For All'] = set_combine(sets.Enmity,{    ammo="Aqreqaq Bomblet",
+    head="Halitus Helm",
+    body={ name="Emet Harness +1", augments={'Path: A',}},
+    hands="Regal Gauntlets",
+    legs="Eri. Leg Guards +3",
+    feet="Erilaz Greaves +3",
+    neck={ name="Futhark Torque +2", augments={'Path: A',}},
+    waist="Plat. Mog. Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Cryptic Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},})
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Warcry'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Defender'] = set_combine(sets.Enmity, {})
@@ -136,7 +148,19 @@ function init_gear_sets()
     sets.precast.JA['Elemental Sforzo'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +1"})
     sets.precast.JA['Swordplay'].DT = set_combine(sets.Enmity.DT,{hands="Futhark Mitons +1"})
     sets.precast.JA['Embolden'].DT = set_combine(sets.Enmity.DT,{})
-    sets.precast.JA['One For All'].DT = set_combine(sets.Enmity.DT,{})
+    sets.precast.JA['One For All'].DT = set_combine(sets.Enmity.DT,{    ammo="Aqreqaq Bomblet",
+    head="Halitus Helm",
+    body={ name="Emet Harness +1", augments={'Path: A',}},
+    hands="Regal Gauntlets",
+    legs="Eri. Leg Guards +3",
+    feet="Erilaz Greaves +3",
+    neck={ name="Futhark Torque +2", augments={'Path: A',}},
+    waist="Plat. Mog. Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Cryptic Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},})
     sets.precast.JA['Provoke'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Warcry'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Defender'].DT = set_combine(sets.Enmity.DT, {})
@@ -195,7 +219,7 @@ function init_gear_sets()
     head={ name="Herculean Helm", augments={'"Fast Cast"+6','STR+7','Mag. Acc.+4',}},
     body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Herculean Trousers", augments={'"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+9',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
     feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
     neck="Orunmila's Torque",
     waist="Eschan Stone",
@@ -210,7 +234,7 @@ function init_gear_sets()
     head={ name="Herculean Helm", augments={'"Fast Cast"+6','STR+7','Mag. Acc.+4',}},
     body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Herculean Trousers", augments={'"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+9',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
     feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
     neck="Orunmila's Torque",
     waist="Eschan Stone",
@@ -346,7 +370,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -360,7 +384,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -374,23 +398,23 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
 
     sets.midcast['Enhancing Magic'] = set_combine(sets.midcast.FastRecast,{head="Erilaz Galea +3",legs="Futhark Trousers +3",hands="Regal Gauntlets",})
     sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{left_ear="Mimir Earring",  head={ name="Fu. Bandeau +3", augments={'Enhances "Battuta" effect',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Herculean Vest", augments={'Rng.Acc.+15','Damage taken-1%','Phalanx +5',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},})
     sets.midcast['Regen'] = set_combine(sets.midcast['Enhancing Magic'],{head="Rune. Bandeau +1",}) 
 	sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'],{head="Erilaz Galea +3"}) 
 	sets.midcast['Temper'] = set_combine(sets.midcast['Enhancing Magic'],{    ammo="Staunch Tathlum +1",
-    head="Erilaz Galea +3",
+    head="Carmine Mask +1",
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands="Regal Gauntlets",
+    hands="Runeist Mitons +3",
     legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
     feet="Erilaz Greaves +3",
     neck="Melic Torque",
@@ -445,7 +469,7 @@ function init_gear_sets()
 	sets.Cure_Received = {}
 	sets.Self_Refresh = {}
 	sets.Phalanx_Received = {   head={ name="Fu. Bandeau +3", augments={'Enhances "Battuta" effect',}},
-    body={ name="Herculean Vest", augments={'"Blood Boon"+1','Enmity-2','Phalanx +4','Accuracy+13 Attack+13','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Herculean Vest", augments={'Rng.Acc.+15','Damage taken-1%','Phalanx +5',}},
      hands={ name="Herculean Gloves", augments={'Mag. Acc.+25','Pet: Crit.hit rate +1','Phalanx +4','Accuracy+20 Attack+20','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+2 Attack+2','Mag. Acc.+9','Phalanx +4','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
     feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},}
@@ -468,7 +492,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -484,7 +508,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -498,7 +522,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -512,7 +536,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -545,7 +569,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -558,7 +582,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -571,7 +595,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Erilaz Earring +1",
+    right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -584,7 +608,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Erilaz Earring +1",
+    right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -598,7 +622,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -611,7 +635,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -625,7 +649,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -638,7 +662,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -652,7 +676,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -666,7 +690,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -680,7 +704,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
      waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -702,7 +726,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Engraved Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -715,7 +739,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
      left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -728,7 +752,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -741,7 +765,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -754,7 +778,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -767,7 +791,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -780,7 +804,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -793,7 +817,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -806,7 +830,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -819,7 +843,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Defending Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -832,7 +856,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
        waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -845,7 +869,7 @@ function init_gear_sets()
     neck={ name="Futhark Torque +2", augments={'Path: A',}},
        waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-	right_ear="Erilaz Earring +1",
+	right_ear="Erilaz Earring +2",
     left_ring="Vengeful Ring",
     right_ring="Moonlight Ring",
     back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},}
@@ -870,7 +894,7 @@ function init_gear_sets()
 	--------------------------------------
 	-- Custom buff sets
 	--------------------------------------
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 	sets.buff.Battuta = {hands="Turms Mittens +1"}
 	sets.buff.Embolden = {back="Evasionist's Cape"}

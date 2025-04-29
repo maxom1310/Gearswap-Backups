@@ -16,8 +16,8 @@ end
  
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal', 'Subtle')
-    state.HybridMode:options ('Normal','Subtle')
+    state.OffenseMode:options('Normal','Aminon','Subtle')
+    state.HybridMode:options ('Normal','Aminon','Subtle')
     state.WeaponskillMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
     state.PhysicalDefenseMode:options('PDT')
@@ -43,7 +43,7 @@ end
             -- Precast sets to enhance JAs
             sets.precast.JA['Diabolic Eye'] = {hands="Fallen's finger gauntlets +1"}
             sets.precast.JA['Arcane Circle'] = {feet="Ignominy Sollerets +1"}
-            sets.precast.JA['Nether Void'] = {legs="Heathen's Flanchard +3"}
+            sets.precast.JA['Nether Void'] = {legs="Heath. Flanchard +3",}
             sets.precast.JA['Souleater'] = {head="Ignominy Burgeonet +1"}
             sets.precast.JA['Weapon Bash'] = {hands="Ignominy Gauntlets +1"}
             sets.precast.JA['Last Resort'] = {back="Ankou's Mantle",feet="Abyss Sollerets"}
@@ -122,7 +122,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Metamor. ring +1",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -150,7 +150,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -199,7 +199,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Kishar Ring",
     back="Chuparrosa Mantle",}
@@ -213,7 +213,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Kishar Ring",
     back="Chuparrosa Mantle",}
@@ -227,7 +227,7 @@ end
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Kishar Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -241,7 +241,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Archon Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -255,7 +255,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Archon Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -269,7 +269,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Archon Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -284,7 +284,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Archon Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -298,7 +298,7 @@ end
     neck="Erra Pendant",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Archon Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -334,7 +334,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -347,7 +347,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -368,9 +368,9 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
-    left_ring="Ephramad's Ring",
-    right_ring="Epaminondas's Ring",
+    right_ear="Heath. Earring +2",
+	left_ring="Niqmaddu Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},}
 	
     sets.precast.WS['Origin'] = {                    
@@ -383,7 +383,8 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Schere Earring", augments={'Path: A',}},
+	right_ear="Heath. Earring +2",
+  --  right_ear={ name="Schere Earring", augments={'Path: A',}},
     left_ring="Ephramad's Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -404,7 +405,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -423,7 +424,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -438,7 +439,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -454,7 +455,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -470,7 +471,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -486,7 +487,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Accuracy+20 Attack+20','INT+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -504,7 +505,7 @@ end
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Fotia Belt",
-      right_ear="Heath. Earring +1",
+      right_ear="Heath. Earring +2",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
     right_ring="Ephramad's Ring",
@@ -524,7 +525,7 @@ end
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Fotia Belt",
-      right_ear="Heath. Earring +1",
+      right_ear="Heath. Earring +2",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Niqmaddu Ring",
     right_ring="Ephramad's Ring",
@@ -544,7 +545,7 @@ end
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-     right_ear="Heath. Earring +1",
+     right_ear="Heath. Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Ephramad's Ring",
     back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -561,7 +562,7 @@ end
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Crep. Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Crepuscular Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
@@ -578,7 +579,7 @@ end
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Crep. Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Crepuscular Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
@@ -595,7 +596,7 @@ end
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Crep. Earring",
-    right_ear="Heath. Earring +1",
+    right_ear="Heath. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Crepuscular Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
@@ -645,7 +646,8 @@ end
     left_ring="Niqmaddu Ring",
     right_ring="Moonlight Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-    sets.defense.Subtle = {   
+  
+  sets.defense.Subtle = {   
     sub="Utu Grip",
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
@@ -661,22 +663,34 @@ end
     right_ring="Moonlight Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
       
-    sets.defense.MDT = {}
+    sets.defense.MDT = {     sub="Utu Grip",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Ratri Sallet +1",
+    body="Ratri Plate +1",
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    neck={ name="Vim Torque +1", augments={'Path: A',}},
+    waist="Ioskeha Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Brutal Earring",
+    left_ring="Roller's Ring",
+    right_ring="Moonlight Ring",
+    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
       
       
       
             -- Engaged sets
              
     sets.engaged.Normal = {
-
     sub="Utu Grip",
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
     body={ name="Sakpata's Plate", augments={'Path: A',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Vim Torque +1", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear="Cessance Earring",
 --	left_ear="Dedition Earring",
@@ -687,6 +701,23 @@ end
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
              
+	sets.engaged.Aminon = {		     sub="Utu Grip",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Ratri Sallet +1",
+    body="Ratri Plate +1",
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    neck={ name="Vim Torque +1", augments={'Path: A',}},
+    waist="Ioskeha Belt +1",
+    left_ear="Cessance Earring",
+    right_ear="Brutal Earring",
+    left_ring="Roller's Ring",
+    right_ring="Moonlight Ring",
+    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	}
+			 
+			 
     sets.engaged.Subtle = {   
     sub="Utu Grip",
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
@@ -695,7 +726,7 @@ end
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+    neck={ name="Vim Torque +1", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
 	left_ear="Schere Earring",
 	right_ear="Digni. Earring",
@@ -705,12 +736,12 @@ end
              
      	sets.recphalanx = {
     ammo="Crepuscular Pebble",
-    head={ name="Odyssean Helm", augments={'Attack+8','Crit. hit damage +2%','Phalanx +3','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    head={ name="Valorous Mask", augments={'"Cure" potency +2%','Accuracy+24 Attack+24','Phalanx +4',}},
     body={ name="Valorous Mail", augments={'Weapon skill damage +4%','"Dbl.Atk."+2','Phalanx +4','Accuracy+2 Attack+2',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Ioskeha Belt +1",
     left_ear="Genmei Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -763,7 +794,7 @@ function job_buff_change(buff, gain)
     end
     if buff:lower()=='sleep' then
         if gain and player.hp > 120 and player.status == "Engaged" then -- Equip Berserker's Torque When You Are Asleep
-            equip({neck="Vim Torque"})
+            equip({neck={ name="Vim Torque +1", augments={'Path: A',}},})
         elseif not gain then -- Take Berserker's off
             handle_equipping_gear(player.status)
         end
@@ -772,7 +803,7 @@ end
  
 function customize_melee_set(meleeSet)
     if state.Buff.Sleep and player.hp > 120 and player.status == "Engaged" then -- Equip Berserker's Torque When You Are Asleep
-        meleeSet = set_combine(meleeSet,{neck="Vim Torque"})
+        meleeSet = set_combine(meleeSet,{neck={ name="Vim Torque +1", augments={'Path: A',}},})
     end
     return meleeSet
 end

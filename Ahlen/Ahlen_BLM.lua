@@ -83,7 +83,7 @@ main="Bunzi's Rod",
     ear1="Etiolation Earring", --1
     left_ring="Prolix Ring", --2
     right_ring="Kishar Ring", --4
-    back="Moonlight Cape", --0
+    back="Taranus's cape", --0
 }
 sets.precast.FC['Impact'] = {
 main="Bunzi's Rod",
@@ -100,7 +100,7 @@ main="Bunzi's Rod",
     ear1="Etiolation Earring", --1
     left_ring="Prolix Ring", --2
     right_ring="Kishar Ring", --4
-    back="Moonlight Cape",
+    back="Taranus's cape",
 	}
    sets.precast.FC.Death = {
 	main="Bunzi's Rod",
@@ -174,7 +174,7 @@ main="Bunzi's Rod",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Lebeche Ring",
     right_ring="Fenrir Ring +1",
-    back="Moonlight Cape",
+    back="Taranus's cape",
 		}
 		sets.precast.WS['Starlight'] =
 		{
@@ -190,7 +190,7 @@ main="Bunzi's Rod",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Lebeche Ring",
     right_ring="Fenrir Ring +1",
-    back="Moonlight Cape",
+    back="Taranus's cape",
 	}
     
     ---- Midcast Sets ----
@@ -217,14 +217,14 @@ main="Bunzi's Rod",
     sets.midcast.Cure = {  --10 +5 + 16 + 3 + 7 = 41
     head="Vanya Hood",  --10
 	ammo="Staunch Tathlum +1",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation earring",
 	ear2="Mendicant's earring", --5
     body="Vanya Robe",
 	hands="Telchine Gloves", --16
 	ring1="Stikini Ring +1",
 	ring2="Lebeche ring", --3
-    back="Moonlight Cape",
+    back="Taranus's cape",
 	waist="Hachirin-No-Obi",
 	feet="Medium's Sabots" --7
 	}
@@ -293,7 +293,7 @@ main="Bunzi's Rod",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
     body="Spaekona's Coat +2",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-     legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','CHR+2','Mag. Acc.+12','"Mag.Atk.Bns."+15',}},
+    legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet={ name="Medium's Sabots", augments={'MP+50','MND+10','"Conserve MP"+7','"Cure" potency +5%',}},
     neck="Erra Pendant",
     waist="Luminary Sash",
@@ -462,22 +462,22 @@ main="Bunzi's Rod",
     -- Elemental Magic sets
     
     sets.midcast['Elemental Magic'] = { 
-		main="Bunzi's Rod",
-		sub="Ammurapi Shield",
-		ammo="Pemphredo Tathlum",
-		head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
-		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst dmg.+11%','"Mag.Atk.Bns."+14',}},
-		hands="Amalric gages +1",
-		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst dmg.+9%','Mag. Acc.+8',}},
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','Magic burst dmg.+11%','AGI+6',}},
-		neck="Mizu. Kubikazari",
-		waist="Orpheus's Sash",
-		left_ear="Barkarole Earring",
-		right_ear="Malignance Earring",
-		left_ring="Shiva Ring +1",
-		right_ring="Metamor. Ring +1",
-		back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
-	}
+    main={ name="Bunzi's Rod", augments={'Path: A',}},
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Ea Hat +1",
+    body={ name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+    legs={ name="Agwu's Slops", augments={'Path: A',}},
+    feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
+    neck="Mizu. Kubikazari",
+    waist="Orpheus's Sash",
+    left_ear="Regal Earring",
+    right_ear="Malignance Earring",
+    left_ring="Freke Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},}
+	
     -- Minimal damage gear for procs.
     sets.midcast['Elemental Magic'].Death = {
 		ammo="Pemphredo tathlum",
@@ -503,14 +503,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Genmei Earring",
 	body="Amalric Doublet +1",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",
@@ -523,14 +523,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Odnowa Earring +1",
 	body="Amalric Doublet +1",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
@@ -548,7 +548,7 @@ sets.resting = {
         back="Pahtli cape",
 		waist="Fucho-no-obi",
 		ammo="Staunch Tathlum +1",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		}
 
     -- Defense sets
@@ -558,14 +558,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Odnowa Earring +1",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
@@ -575,14 +575,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Odnowa Earring +1",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
@@ -592,14 +592,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Odnowa Earring +1",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
@@ -610,14 +610,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Odnowa Earring +1",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
@@ -654,14 +654,14 @@ sets.resting = {
 	sub="Ammurapi Shield",
 	ammo="Staunch Tathlum +1",
 	head="Nyame Helm",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Genmei Earring",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
 	right_ring="Defending Ring",
-	back="Moonlight Cape",
+	back="Taranus's cape",
 	waist="Eschan Stone",
 	legs="Assiduity Pants +1",
 	feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Phys. dmg. taken -4%','CHR+3','Mag. Acc.+4',}}}

@@ -40,7 +40,9 @@ function user_setup()
 		send_command('bind ^f9 input /equipset 21;wait1;input /echo Doji')
 		send_command('bind !f9 input /equipset 22;wait1;input /echo Soboro')
 		send_command('bind @f9 input /equipset 24;wait1;input /echo Masamune')	
-		send_command('bind ^!f9 input /equipset 23;wait1;input /echo Shining One')
+		send_command('bind @!f9 input /equipset 23;wait1;input /echo Prime')	
+		send_command('bind ^@!f9 input /equipset 35;wait1;input /echo Sword')	
+		send_command('bind ^!f9 input /equipset 34;wait1;input /echo Shining One')
 		send_command('bind !f11 gs disable main;wait1;input /echo Disable Main')
 		send_command('bind !f12 gs enable main;wait1;input /echo Enable Main')
 		
@@ -68,8 +70,8 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto"}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
     sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
 
     -- Waltz set (chr and vit)
@@ -82,8 +84,6 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-    main="Dojikiri Yasutsuna",
-    sub="Utu Grip",
     ammo="Knobkierrie",
     head="Mpaca's Cap",
     body="Nyame Mail",
@@ -92,8 +92,8 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Samurai's Nodowa +2",
     waist="Sailfi Belt +1",
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Kasuga Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -119,6 +119,52 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Gekko'] = set_combine(sets.precast.WS, {})
 
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",waist="Fotia Belt"})
+	
+	 sets.precast.WS['Tachi: Muemei'] = {
+    ammo="Knobkierrie",
+    head="Mpaca's Cap",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Samurai's Nodowa +2",
+    waist="Sailfi Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Kasuga Earring +2",
+    left_ring="Ephramad's Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+		 sets.precast.WS['Burning Blade'] = {
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Kasuga Kabuto +3",
+    body="Kasuga Domaru +3",
+    hands="Wakido Kote +3",
+    legs="Kasuga Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Fotia Gorget",
+    waist="Flume Belt +1",
+    left_ear="Dedition Earring",
+    right_ear="Kasuga Earring +2",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+			 sets.precast.WS['Flat Blade'] = {
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Kasuga Kabuto +3",
+    body="Kasuga Domaru +3",
+    hands="Wakido Kote +3",
+    legs="Kasuga Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Fotia Gorget",
+    waist="Flume Belt +1",
+    left_ear="Dedition Earring",
+    right_ear="Kasuga Earring +2",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
 
     sets.precast.WS['Tachi: Ageha'] = set_combine(sets.precast.WS, {
     ammo="Pemphredo Tathlum",
@@ -130,14 +176,12 @@ function init_gear_sets()
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Eschan Stone",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Stikini Ring +1",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 	
 	sets.precast.WS['Impulse Drive'] = set_combine(sets.precast.WS, {  
-    main="Shining One",
-    sub="Utu Grip",
     ammo="Knobkierrie",
     head="Mpaca's Cap",
     body="Nyame Mail",
@@ -146,15 +190,13 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Kasuga Earring +2",
     left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 
     sets.precast.WS['Tachi: Jinpu'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -170,8 +212,6 @@ function init_gear_sets()
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	})
 	sets.precast.WS['Tachi: Kagero'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -187,8 +227,6 @@ function init_gear_sets()
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	})
 		sets.precast.WS['Tachi: Koki'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -214,7 +252,7 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Orunmila's Torque",
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Loquac. Earring",
     left_ring="Rahab Ring",
@@ -230,16 +268,14 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle.Town = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Flume Belt",
+    neck="Elite Royal Collar",
+    waist="Flume Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Defending Ring",
@@ -248,16 +284,14 @@ function init_gear_sets()
 	}
     
     sets.idle.Field = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Flume Belt",
+    neck="Elite Royal Collar",
+    waist="Flume Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Defending Ring",
@@ -265,16 +299,14 @@ function init_gear_sets()
     back="Moonlight Cape",}
 
     sets.idle.Weak = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Flume Belt",
+    neck="Elite Royal Collar",
+    waist="Flume Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Defending Ring",
@@ -283,8 +315,6 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
     body="Mpaca's Doublet",
@@ -292,7 +322,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Nyame Sollerets",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cessance Earring",
     right_ear="Telos Earring",
     left_ring="Defending Ring",
@@ -302,7 +332,7 @@ function init_gear_sets()
     sets.defense.Reraise = {
         ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Crepuscular Mail",
@@ -310,13 +340,11 @@ function init_gear_sets()
 		ring1="Defending Ring",
 		right_ring="Shneddick Ring",
         back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist="Flume Belt",
+		waist="Flume Belt +1",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets"}
 
     sets.defense.MDT = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
     body="Mpaca's Doublet",
@@ -324,7 +352,7 @@ function init_gear_sets()
     legs="Mpaca's Hose",
     feet="Nyame Sollerets",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-    waist="Flume Belt",
+    waist="Flume Belt +1",
     left_ear="Cessance Earring",
     right_ear="Telos Earring",
     left_ring="Defending Ring",
@@ -354,7 +382,7 @@ function init_gear_sets()
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -370,7 +398,7 @@ function init_gear_sets()
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -385,7 +413,7 @@ function init_gear_sets()
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -402,7 +430,7 @@ function init_gear_sets()
     waist="Ioskeha Belt +1",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -417,7 +445,7 @@ function init_gear_sets()
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -433,7 +461,7 @@ function init_gear_sets()
     waist="Ioskeha Belt +1",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear="Kasuga Earring +1",
+    right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
     right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -442,7 +470,7 @@ function init_gear_sets()
     sets.engaged.Reraise = {
 		ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Crepuscular Mail",
@@ -457,7 +485,7 @@ function init_gear_sets()
     sets.engaged.Meva.Reraise = {
 		ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Crepuscular Mail",
@@ -497,6 +525,9 @@ end
 -- Run after the default precast() is done.
 -- eventArgs is the same one used in job_precast, in case information needs to be persisted.
 function job_post_precast(spell, action, spellMap, eventArgs)
+	if player.equipment.main == "empty" or player.equipment.sub == "empty" then
+		equip({main="Kusanagi",sub="Utu Grip"})
+	end
     if spell.type:lower() == 'weaponskill' then
         if state.Buff.Sekkanoki then
             equip(sets.buff.Sekkanoki)

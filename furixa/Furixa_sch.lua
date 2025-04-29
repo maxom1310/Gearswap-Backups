@@ -52,7 +52,7 @@ end
 function user_setup()
     state.OffenseMode:options('None', 'Normal')
     state.CastingMode:options('Normal', 'Resistant')
-    state.IdleMode:options('Normal', 'PDT')
+    state.IdleMode:options('Normal','PDT','MDT')
 
     state.MagicBurst = M(false, 'Magic Burst')
 	
@@ -379,16 +379,16 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
 	sets.midcast['Elemental Magic'] = {
     main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
-    ammo="Sroda Tathlum",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Arbatel Bonnet +3",
     body="Arbatel Gown +3",
     hands="Arbatel Bracers +3",
     legs="Agwu's Slops",
     feet="Arbatel Loafers +3",
-    neck="Sanctity Necklace",
+    neck="Sibyl Scarf",
     waist="Eschan Stone",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +1",
+    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
     left_ring="Mallquis Ring",
     right_ring="Shiva Ring +1",
     back={ name="Bookworm's Cape", augments={'INT+4','MND+1','Helix eff. dur. +16','"Regen" potency+9',}},
@@ -423,7 +423,7 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
 	sets.midcast.Helix = {
     main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Culminus",
-    ammo="Sroda Tathlum",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Arbatel Bonnet +3",
     body="Arbatel Gown +3",
     hands="Arbatel Bracers +3",
@@ -460,26 +460,26 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
     left_ear="Etiolation Earring",
     right_ear="Domin. Earring +1",
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
 	}
 
 
 	sets.idle.Field = {
     main="Daybreak",
-    sub="Genmei Shield",
-    ammo="Brigantia Pebble",
-    head="Nyame Helm",
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
     body="Arbatel Gown +3",
     hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
+    legs="Arbatel Pants +3",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Domin. Earring +1",
+    right_ear="Malignance Earring",
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
 	}
 
@@ -501,9 +501,26 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
     left_ear="Etiolation Earring",
     right_ear="Domin. Earring +1",
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
 	} 
+	sets.idle.MDT = {
+	    main="Daybreak",
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
+    body="Arbatel Gown +3",
+    hands="Nyame Gauntlets",
+    legs="Arbatel Pants +3",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Malignance Earring",
+    left_ring="Gurebu's Ring",
+    right_ring="Shneddick Ring",
+    back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
+	}
 	
 	sets.defense.PDT = {
     main="Daybreak",
@@ -519,25 +536,25 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
     left_ear="Etiolation Earring",
     right_ear="Domin. Earring +1",
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
 	}
 
 	sets.defense.MDT = {
     main="Daybreak",
-    sub="Genmei Shield",
-    ammo="Brigantia Pebble",
-    head="Nyame Helm",
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
     body="Arbatel Gown +3",
     hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
+    legs="Arbatel Pants +3",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Domin. Earring +1",
+    right_ear="Malignance Earring",
     left_ring="Gurebu's Ring",
-    right_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},
 	}
 
@@ -586,7 +603,36 @@ back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion
 	sets.buff['Klimaform'] = {feet="Arbatel Loafers +3"}
 
 	sets.buff.FullSublimation = {}
-	sets.buff.PDTSublimation = {}
+	sets.buff.PDTSublimation = {    main="Daybreak",
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
+    body="Arbatel Gown +3",
+    hands="Nyame Gauntlets",
+    legs="Arbatel Pants +3",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Malignance Earring",
+    left_ring="Gurebu's Ring",
+    right_ring="Shneddick Ring",
+    back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},}
+	sets.buff.MDTSublimation = {    main="Daybreak",
+    sub="Ammurapi Shield",
+    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Arbatel Bonnet +3",
+    body="Arbatel Gown +3",
+    hands="Nyame Gauntlets",
+    legs="Arbatel Pants +3",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Malignance Earring",
+    left_ring="Gurebu's Ring",
+    right_ring="Shneddick Ring",
+    back={ name="Lugh's Cape", augments={'VIT+4','Eva.+5 /Mag. Eva.+5','Mag. Evasion+3','"Fast Cast"+10','Damage taken-2%',}},}
 	sets.midcast.Noctohelix = set_combine(sets.midcast.Helix, {head="Pixie Hairpin +1",right_ring="Archon Ring"})
 	sets.midcast['Noctohelix II'] = set_combine(sets.midcast.Helix, {head="Pixie Hairpin +1",right_ring="Archon Ring"})
 	sets.midcast.Luminohelix = set_combine(sets.midcast.Helix, {main="Daybreak",})
@@ -689,6 +735,8 @@ function customize_idle_set(idleSet)
             idleSet = set_combine(idleSet, sets.buff.FullSublimation)
         elseif state.IdleMode.value == 'PDT' then
             idleSet = set_combine(idleSet, sets.buff.PDTSublimation)
+		        elseif state.IdleMode.value == 'MDT' then
+            idleSet = set_combine(idleSet, sets.buff.MDTSublimation)
         end
     end
 

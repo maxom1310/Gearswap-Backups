@@ -12,7 +12,7 @@ function user_setup()
     state.OffenseMode:options('Normal','DT', 'SubtleBlow')
 	state.IdleMode:options('Normal', 'Nyame')
 		send_command('bind ^f9 input /equipset 25;wait1;input /echo Naegling;wait1;aws use savage blade')
-		send_command('bind !f9 input /equipset 26;wait1;input /echo Chango')
+		send_command('bind !f9 input /equipset 26;wait1;input /echo Chango;wait1;aws use upheaval')
 		send_command('bind ^@!f9 input /equipset 27;wait1;input /echo Axe;wait1;aws use cloudsplitter')	
 		send_command('bind ^!f9 input /equipset 23;wait1;input /echo Shining One')
 		send_command('bind @f9 input /equipset 30;wait1;input /echo Club;wait1;aws use Judgment')
@@ -86,7 +86,7 @@ function init_gear_sets()
     left_ear="Schere Earring",
     right_ear="Boii Earring +1",
     left_ring="Moonlight Ring",
-    right_ring="Beithir Ring",
+    right_ring="Shneddick Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
       sets.idle.Nyame = {
@@ -101,16 +101,16 @@ function init_gear_sets()
     left_ear="Schere Earring",
 	right_ear="Boii Earring +1",
     left_ring="Vengeful Ring",
-    right_ring="Supershear Ring",
+    right_ring="Shneddick Ring",
     back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
   sets.precast.WS = {
     ammo="Knobkierrie",
     head="Agoge Mask +3",
-    body="Sakpata's Plate",
+    body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
-    feet="Sulev. Leggings +2",
+    feet="Nyame Sollerets",
     neck={ name="War. Beads +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
@@ -122,10 +122,10 @@ function init_gear_sets()
 	sets.precast.WS.Upheaval = {
     ammo="Knobkierrie",
     head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-    body="Sakpata's Plate",
+    body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
-    feet="Sulev. Leggings +2",
+    feet="Nyame Sollerets",
     neck={ name="War. Beads +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
@@ -152,7 +152,7 @@ function init_gear_sets()
 	sets.precast.WS["Ukko's Fury"] = {
 	    ammo="Yetshila +1",
     head="Sakpata's Helm",
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Nyame Mail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 	legs="Boii Cuisses +3",
    -- legs={ name="Nyame Flanchard", augments={'Path: B',}},

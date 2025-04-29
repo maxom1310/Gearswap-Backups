@@ -101,11 +101,11 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Stringing Pummel'] = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
-        ring1="Spiral Ring",waist="Soil Belt"})
+        ring1="Spiral Ring",waist="Fotia Belt"})
     sets.precast.WS['Stringing Pummel'].Mod = set_combine(sets.precast.WS['Stringing Pummel'], {legs="Nahtirah Trousers"})
 
     sets.precast.WS['Victory Smite'] = set_combine(sets.precast.WS, {neck="Rancor Collar",ear1="Brutal Earring",ear2="Moonshade Earring",
-        waist="Thunder Belt"})
+        waist="Fotia Belt"})
 
     sets.precast.WS['Shijin Spiral'] = set_combine(sets.precast.WS, {neck="Light Gorget",waist="Light Belt"})
 
@@ -136,7 +136,7 @@ function init_gear_sets()
 
     sets.idle = {
 	head="Anwig Salade",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Rimeice earring",
 	ear2="Domesticator's Earring",
     body="Rao Togi +1",

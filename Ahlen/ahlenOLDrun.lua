@@ -306,7 +306,7 @@ function get_sets()
     head={ name="Herculean Helm", augments={'"Fast Cast"+6','STR+7','Mag. Acc.+4',}},
     body={ name="Taeon Tabard", augments={'Spell interruption rate down -7%','Phalanx +3',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Herculean Trousers", augments={'"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+9',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
     feet="Carmine Greaves +1",
     neck="Orunmila's Torque",
     waist="Eschan Stone",

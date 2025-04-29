@@ -3,7 +3,7 @@ function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','Refresh','DT')
-	state.Weapons:options('None','CarnSW','NaeglingSW','DualCarn','DualTwash','DualNaegling','DualTauret','DualNaeglingAcc','Staff')
+	state.Weapons:options('None','CarnSW','NaeglingSW','DualCarn','DualTwash','DualPrime','DualNaegling','DualTauret','DualNaeglingAcc','Staff')
 			send_command('bind f11 gs c toggle AutoSambaMode')	
 			send_command('bind ^f7 gs c cycle UnlockWeapons')	
 			
@@ -32,6 +32,7 @@ function init_gear_sets()
 	sets.weapons.NaeglingSW = {main="Naegling",sub="Genmei Shield"}
 	sets.weapons.DualCarn = {main="Carnwenhan",sub="Crepuscular Knife"}
 	sets.weapons.DualTwash = {main="Twashtar",sub="Fusetto +2"}
+	sets.weapons.DualPrime = {main="Mpu Gandring",sub="Fusetto +2"}
 	sets.weapons.DualNaegling = {main="Naegling",sub="Fusetto +2"}
 	sets.weapons.DualTauret = {main="Tauret",sub="Crepuscular Knife"}
 	sets.weapons.DualNaeglingAcc = {main="Malevolence",sub="Crepuscular Knife"}
@@ -56,7 +57,7 @@ function init_gear_sets()
     right_ear="Enchanter's Earring +1",
     left_ring="Lebeche Ring",
     right_ring="Kishar ring",
-    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}}, }
+    back="Perimede Cape", }
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
@@ -113,7 +114,19 @@ function init_gear_sets()
 	
 	sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
 	sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
-	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
+	sets.precast.JA['Soul Voice'] = {    range={ name="Nibiru Harp", augments={'Mag. Evasion+20','Phys. dmg. taken -3','Magic dmg. taken -3',}},
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Ebur Frock", augments={'Path: C',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Genmei Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Defending Ring",
+    back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}}}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}
@@ -138,7 +151,7 @@ function init_gear_sets()
     head="Nyame Helm",
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
-   	 legs="Nyame Flanchard",
+   	legs={ name="Nyame Flanchard", augments={'Path: B',}},
 	feet="Nyame Sollerets",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
@@ -153,7 +166,7 @@ function init_gear_sets()
     head="Nyame Helm",
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
        hands="Nyame Gauntlets",
-	legs="Nyame Flanchard",
+	legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Nyame Sollerets",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
@@ -166,7 +179,7 @@ function init_gear_sets()
 		sets.precast.WS["Aeolian Edge"] = {
     range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: A',}},
+    body="Nyame Mail", 
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -183,7 +196,7 @@ function init_gear_sets()
     head="Nyame Helm",
     body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
-   	 legs="Nyame Flanchard",
+  legs={ name="Nyame Flanchard", augments={'Path: B',}},
   feet="Nyame Sollerets",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
@@ -483,7 +496,8 @@ function init_gear_sets()
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},}
 	
 	sets.midcast['Absorb-TP'] = {    
-    head="Fili Calot +3",
+    range={ name="Linos", augments={'Mag. Acc.+19','"Fast Cast"+6','INT+8',}},
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Fili Rhingrave +3",
@@ -547,7 +561,7 @@ function init_gear_sets()
     hands="Inyan. Dastanas +2",
     legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Luminary Sash",
     left_ear="Regal Earring",
     right_ear="Mendi. Earring",
@@ -591,7 +605,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
@@ -606,7 +620,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
@@ -621,7 +635,7 @@ function init_gear_sets()
     hands={ name="Chironic Gloves", augments={'Pet: Accuracy+4 Pet: Rng. Acc.+4','Weapon Skill Acc.+1','"Refresh"+2','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
     legs="Inyanga Shalwar +2",
     feet="Inyan. Crackows +2",
-   	neck="Loricate Torque +1",
+   	neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
@@ -636,7 +650,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
@@ -653,7 +667,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
@@ -668,7 +682,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",

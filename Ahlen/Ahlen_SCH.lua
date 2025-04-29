@@ -287,7 +287,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Luminary Sash",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +1",
+    right_ear="Arbatel Earring +2",
     left_ring="Stikini Ring +1",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
@@ -311,7 +311,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Fucho-no-Obi",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +1", 
+    right_ear="Arbatel Earring +2", 
     left_ring="Archon Ring",
     right_ring="Evanescence Ring",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},}
@@ -328,7 +328,7 @@ function init_gear_sets()
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist="Hachirin-no-Obi",
     left_ear="Malignance Earring",
-    right_ear="Regal Earring",
+    right_ear="Arbatel Earring +2",
     left_ring="Metamor. ring +1",
     right_ring="Archon Ring",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},}
@@ -353,7 +353,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Luminary Sash",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +1", 
+    right_ear="Arbatel Earring +2", 
     left_ring="Stikini Ring +1",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
@@ -375,7 +375,7 @@ function init_gear_sets()
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
-    right_ear="Regal Earring",
+    right_ear="Arbatel Earring +2",
     left_ring="Mujin Band",
     right_ring="Freke Ring",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
@@ -403,7 +403,7 @@ function init_gear_sets()
     neck="Erra Pendant",
     waist="Luminary Sash",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +1",
+    right_ear="Arbatel Earring +2",
     left_ring="Stikini Ring +1",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
@@ -421,7 +421,7 @@ function init_gear_sets()
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist="Skrymir Cord +1",
     left_ear="Malignance Earring",
-    right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
+    right_ear="Arbatel Earring +2",
     left_ring="Mujin Band",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Bookworm's Cape", augments={'INT+4','MND+2','Helix eff. dur. +20',}},
@@ -569,7 +569,7 @@ function init_gear_sets()
 	sets.buff['Penury'] = {legs="Arbatel Pants +1"}
 	sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
 	sets.buff['Celerity'] = {feet="Pedagogy Loafers +1"}
-	sets.buff['Alacrity'] = {head="Nahtirah Hat",feet="Pedagogy Loafers +1"}
+	sets.buff['Alacrity'] = {feet="Pedagogy Loafers +1"}
 	sets.buff['Stormsurge'] = {feet="Pedagogy Loafers +1"}
 	sets.buff['Klimaform'] = {feet="Arbatel Loafers +3"}
 
