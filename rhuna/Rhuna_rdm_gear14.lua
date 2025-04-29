@@ -74,7 +74,7 @@ function init_gear_sets()
     hands="Atrophy Gloves +3",
     legs="Atrophy Tights +3",
     feet={ name="Merlinic Crackows", augments={'Mag. Acc.+12','"Fast Cast"+4',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear="Malignance Earring",
@@ -176,7 +176,7 @@ function init_gear_sets()
     hands="Kaykaus Cuffs +1",
     legs="Atrophy Tights +3",
     feet={ name="Merlinic Crackows", augments={'Mag. Acc.+12','"Fast Cast"+4',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear="Etiolation Earring",
     right_ear="Malignance Earring",
@@ -415,20 +415,20 @@ function init_gear_sets()
 	
 	-- Resting sets
 	sets.resting = {main="Chatoyant Staff",sub="Oneiros Grip",range=empty,ammo="Impatiens",
-		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		head="Viti. Chapeau +3",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
 		back="Umbra Cape",waist="Flume Belt +1",legs="Lengo Pants",feet=gear.chironic_refresh_feet}
 	
 
 	-- Idle sets
 	sets.idle = {main="Daybreak",sub="Genmei Shield",range=empty,ammo="Homiliary",
-		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Viti. Chapeau +3",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Lethargy Sayon +3",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Stikini Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Damage taken-5%',}},
 		waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
@@ -438,7 +438,7 @@ function init_gear_sets()
 		back="Moonlight Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",range=empty,ammo="Homiliary",
-		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head="Viti. Chapeau +3",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Atrophy Tabard +3",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flume Belt +1",legs="Lengo Pants",feet=gear.chironic_refresh_feet}
 	
@@ -446,7 +446,7 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
@@ -533,17 +533,17 @@ function init_gear_sets()
 		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Cessance Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Windbuffet Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.Acc.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Cessance Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Cessance Earring",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
@@ -573,17 +573,17 @@ function init_gear_sets()
 		back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.DW.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Suppanomimi",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
 		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.engaged.DW.Acc.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Suppanomimi",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
 		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.engaged.DW.FullAcc.DT = {ammo="Ginsen",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
+		head="Malignance Chapeau",neck="Elite Royal Collar",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
 		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 end

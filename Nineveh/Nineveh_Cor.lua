@@ -72,7 +72,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Grunfeld Rope",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring",
@@ -90,18 +90,19 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     main="Naegling",
     sub="Blurred Knife +1",
     range={ name="Anarchy +2", augments={'Delay:+60','TP Bonus +1000',}},
+    ammo="Chrono Bullet",
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Iskur Gorget",
-    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Crep. Earring",
+    waist="Reiki Yotai",
+    left_ear="Dedition Earring",
     right_ear="Telos Earring",
-    left_ring="Chirich Ring +1",
-    right_ring="Chirich Ring +1",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    left_ring="Defending Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 		} 
 		-- Haste: 4+4+5+4+4=21 haste
 
@@ -284,21 +285,17 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	-- So it's easy to determine if new obtained gear can replace anything, listed str stats per piece
 -------------------------------------------
 	sets.precast.Normal.WSStr = {
-    main="Naegling",
-    sub={ name="Rostam", augments={'Path: C',}},
-    range={ name="Anarchy +2", augments={'Delay:+60','TP Bonus +1000',}},
-    ammo="Chrono Bullet",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Regal Necklace",
+    neck="Rep. Plat. Medal",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 		} --23 (no wsd, but kept for the acc, look to replace with herc when augmented)
 		
@@ -345,7 +342,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Archon Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	} 
 	
@@ -410,13 +407,13 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	--	neck="Magoraga Beads",})
 		
 	sets.precast.CorsairRoll = set_combine(sets.aftercast.Idle, {
-	--	main="Lanun Knife",
-		head="Lanun Tricorne",
+		main={ name="Rostam", augments={'Path: C',}},
+		head="Lanun Tricorne +1",
 		neck="Regal Necklace",
 		hands="Chasseur's Gants +3",
 		rring="Luzaf's Ring",
 		range="Compensator",
-		back={ name="Camulus's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Snapshot"+10','Damage taken-5%',}},
+		back="Camulus's Mantle",
 		}
 		)
 	

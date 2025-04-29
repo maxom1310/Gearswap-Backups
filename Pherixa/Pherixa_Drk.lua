@@ -90,31 +90,55 @@ end
             -- Weaponskill sets
             -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-	    ammo="Knobkierrie",
+    ammo="Knobkierrie",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Shifting Neck. +1",
+    neck="Rep. Plat. Medal",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Weapon skill damage +2%',}},
     left_ring="Ephramad's Ring",
-    right_ring="Epaminondas's Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 
 	}
  
  
             -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Catastrophe'] = {}
+    sets.precast.WS['Catastrophe'] = {    ammo="Knobkierrie",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Weapon skill damage +2%',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
                      
     sets.precast.WS['Catastrophe'].Acc = {}
                      
     sets.precast.WS['Sanguine Blade'] = {}
       
-    sets.precast.WS['Torcleaver'] = {}
+    sets.precast.WS['Torcleaver'] = {    ammo="Knobkierrie",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Weapon skill damage +2%',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
                      
     sets.precast.WS['Torcleaver'].Acc = {}
  
@@ -123,25 +147,50 @@ end
     sets.precast.WS['Scourge'].Acc = {}
  
     sets.precast.WS['Savage Blade'] = {
-	    main="Naegling",
-    sub="Blurred Shield +1",
     ammo="Knobkierrie",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Shifting Neck. +1",
+    neck="Rep. Plat. Medal",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Ephramad's Ring",
-    right_ring="Epaminondas's Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
+	    sets.precast.WS['Fimbulvetr'] = {
+    ammo="Knobkierrie",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Thrud Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
              
     sets.precast.WS['Requiescat'] = {}
              
-    sets.precast.WS['Cross Reaper'] = {}
+    sets.precast.WS['Cross Reaper'] = {    ammo="Knobkierrie",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Weapon skill damage +2%',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
                      
     sets.precast.WS['Cross Reaper'].Acc = {}
                      
@@ -186,15 +235,13 @@ end
       
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle = {
-	    main={ name="Montante +1", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Crepuscular Pebble",
     head={ name="Sakpata's Helm", augments={'Path: A',}},
     body={ name="Sakpata's Plate", augments={'Path: A',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear="Cryptic Earring",
     right_ear="Etiolation Earring",
@@ -215,15 +262,13 @@ end
             -- Engaged sets
              
     sets.engaged.Rag = {
-		main={ name="Montante +1", augments={'Path: A',}},
-    sub="Utu Grip",
     ammo="Coiste Bodhar",
     head={ name="Sakpata's Helm", augments={'Path: A',}},
     body={ name="Sakpata's Plate", augments={'Path: A',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck="Shifting Neck. +1",
+    neck={ name="Vim Torque +1", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear="Crep. Earring",
     right_ear="Telos Earring",
@@ -291,7 +336,7 @@ function job_buff_change(buff, gain)
     end
     if buff:lower()=='sleep' then
         if gain and player.hp > 120 and player.status == "Engaged" then -- Equip Berserker's Torque When You Are Asleep
-            equip({neck="Vim Torque"})
+            equip({neck="Vim Torque +1"})
         elseif not gain then -- Take Berserker's off
             handle_equipping_gear(player.status)
         end
@@ -300,7 +345,7 @@ end
  
 function customize_melee_set(meleeSet)
     if state.Buff.Sleep and player.hp > 120 and player.status == "Engaged" then -- Equip Berserker's Torque When You Are Asleep
-        meleeSet = set_combine(meleeSet,{neck="Vim Torque"})
+        meleeSet = set_combine(meleeSet,{neck="Vim Torque +1"})
     end
     return meleeSet
 end

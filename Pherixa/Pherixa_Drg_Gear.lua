@@ -123,12 +123,12 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
-		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
+		head="Loess Barbuta +1",neck="Elite Royal Collar",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Dark Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Amm Greaves"}
 		
 	sets.idle.Refresh = {ammo="Staunch Tathlum +1",
-		head="Jumalik Helm",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
+		head="Jumalik Helm",neck="Elite Royal Collar",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Jumalik Mail",hands="Sulev. Gauntlets +2",ring1="Defending Ring",ring2="Dark Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Amm Greaves"}
 
@@ -138,7 +138,7 @@ function init_gear_sets()
 	
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
-		head="Loess Barbuta +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
+		head="Loess Barbuta +1",neck="Elite Royal Collar",ear1="Genmei Earring",ear2="Ethereal Earring",
 		body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Moonbeam Ring",ring2="Moonlight Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Arke Cosc. +1",feet="Amm Greaves"}
 		

@@ -161,7 +161,7 @@ function get_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Epaminondas's Ring",
@@ -177,7 +177,7 @@ function get_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Epaminondas's Ring",
@@ -191,7 +191,7 @@ function get_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Epaminondas's Ring",
@@ -206,7 +206,7 @@ function get_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Epaminondas's Ring",
@@ -377,7 +377,7 @@ function get_sets()
     waist="Embla Sash",
     left_ear="Gwati Earring",
     right_ear="Mimir Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back="Fi Follet Cape +1",
 	})
@@ -403,7 +403,7 @@ function get_sets()
     waist="Embla Sash",
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back="Fi Follet Cape +1",})	
 	sets.midcast.Buffs = set_combine(sets.midcast.ConserveMP, {	
@@ -412,7 +412,7 @@ function get_sets()
     ammo="Staunch Tathlum +1",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
     body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+25','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
@@ -447,7 +447,7 @@ function get_sets()
     waist="Luminary Sash",
     left_ear="Digni. Earring",
     right_ear="Malignance Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
     sets.midcast.Banish = set_combine(sets.midcast.ConserveMP, {
@@ -466,7 +466,7 @@ function get_sets()
 	waist="Hachirin-no-Obi",
     left_ear="Malignance Earring",
     right_ear="Friomisi Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 	})
 	sets.midcast.Holy = set_combine(sets.midcast.ConserveMP, {
@@ -481,7 +481,7 @@ function get_sets()
     waist="Hachirin-no-Obi",
     left_ear="Malignance Earring",
     right_ear="Friomisi Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 	})
     sets.midcast.Flash = set_combine(sets.midcast.Recast, {   
@@ -514,7 +514,7 @@ function get_sets()
     waist="Luminary Sash",
     left_ear="Malignance Earring",
     right_ear="Regal Earring",
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Evanescence Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},})
     -- Enfeebling Magic --
@@ -532,7 +532,7 @@ function get_sets()
     left_ear="Malignance Earring",
     right_ear="Digni. Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	sets.midcast.thspells = {
@@ -544,7 +544,7 @@ function get_sets()
     hands={ name="Chironic Gloves", augments={'"Fast Cast"+2','"Dbl.Atk."+1','"Treasure Hunter"+1',}},
     legs={ name="Chironic Hose", augments={'INT+2','MND+1','"Treasure Hunter"+2',}},
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Chaac Belt",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -561,7 +561,7 @@ function get_sets()
     hands={ name="Chironic Gloves", augments={'"Fast Cast"+2','"Dbl.Atk."+1','"Treasure Hunter"+1',}},
     legs={ name="Chironic Hose", augments={'INT+2','MND+1','"Treasure Hunter"+2',}},
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Chaac Belt",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -578,7 +578,7 @@ function get_sets()
     hands={ name="Chironic Gloves", augments={'"Fast Cast"+2','"Dbl.Atk."+1','"Treasure Hunter"+1',}},
     legs={ name="Chironic Hose", augments={'INT+2','MND+1','"Treasure Hunter"+2',}},
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Chaac Belt",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -603,7 +603,7 @@ function get_sets()
     left_ear="Malignance Earring",
     right_ear="Regal Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
     sets.midcast['Impact'] = {
@@ -619,7 +619,7 @@ function get_sets()
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}	
 ---- .::Aftercast Sets::. ---->
@@ -634,11 +634,11 @@ function get_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
 	}	   
@@ -651,11 +651,11 @@ function get_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},})	
     sets.aftercast.Town = set_combine(sets.aftercast.Idle, {})	   
@@ -672,11 +672,11 @@ function get_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Thureous Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
 		}		

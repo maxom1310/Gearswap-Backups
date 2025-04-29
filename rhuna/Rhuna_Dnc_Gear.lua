@@ -9,7 +9,7 @@ function user_job_setup()
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','Twashtar','Aeneas','Tauret')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
-
+	state.AutoContradanceMode = M(false, 'Auto Contradance Mode')
 	
 	gear.stp_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.wsd_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
@@ -102,7 +102,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Chaac Belt",
     left_ear="Friomisi Earring",
     right_ear="Odnowa Earring +1",
@@ -130,7 +130,7 @@ function init_gear_sets()
 
     sets.precast.Flourish3 = {}
     sets.precast.Flourish3['Striking Flourish'] = {} --body="Charis Casaque +2"
-    sets.precast.Flourish3['Climactic Flourish'] = {}
+    sets.precast.Flourish3['Climactic Flourish'] = {head="Maculele Tiara +3"}
 
     -- Fast cast sets for spells
     
@@ -192,7 +192,7 @@ function init_gear_sets()
     legs="Gleti's Breeches",
     feet="Gleti's Boots",
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-    waist="Shadow Belt",
+    waist="Fotia Belt",
     left_ear="Odr Earring",
     right_ear="Maculele Earring +1",
     left_ring="Gere Ring",
@@ -205,7 +205,7 @@ function init_gear_sets()
     legs="Gleti's Breeches",
     feet="Gleti's Boots",
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-    waist="Shadow Belt",
+    waist="Fotia Belt",
     left_ear="Odr Earring",
     right_ear="Maculele Earring +1",
     left_ring="Gere Ring",
@@ -218,7 +218,7 @@ function init_gear_sets()
     legs="Gleti's Breeches",
     feet="Gleti's Boots",
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-    waist="Shadow Belt",
+    waist="Fotia Belt",
     left_ear="Odr Earring",
     right_ear="Maculele Earring +1",
     left_ring="Gere Ring",
@@ -231,7 +231,7 @@ function init_gear_sets()
     legs="Gleti's Breeches",
     feet="Gleti's Boots",
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-    waist="Shadow Belt",
+    waist="Fotia Belt",
     left_ear="Odr Earring",
     right_ear="Maculele Earring +1",
     left_ring="Gere Ring",
@@ -294,7 +294,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Eschan Stone",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
@@ -312,7 +312,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Eschan Stone",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
@@ -326,7 +326,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Eschan Stone",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
@@ -340,7 +340,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Eschan Stone",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring +1",
@@ -515,7 +515,7 @@ function init_gear_sets()
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Saber Dance'] = {} --legs="Horos Tights"
     sets.buff['Climactic Flourish'] = {ammo="Charis Feather",head="Maculele Tiara +3"}
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 end
 

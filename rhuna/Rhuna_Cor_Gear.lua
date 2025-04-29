@@ -10,7 +10,7 @@ function user_job_setup()
 	state.Weapons:options('Default','DualSavage','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualRanged','SWSavage','SWWildfire','Low','DualWildMelee','None')
 	state.CompensatorMode:options('Always','300','1000','Never')
 	
-	
+	send_command('lua l autocor')
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
     gear.MAbullet = "Living Bullet" --For MAB WS, do not put single-use bullets here.
@@ -255,7 +255,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Aqua Belt",
+    waist="Fotia Belt",
     left_ear="Moonshade Earring",
     right_ear="Ishvara Earring",
     left_ring="Ephramad's Ring",
@@ -269,7 +269,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Aqua Belt",
+    waist="Fotia Belt",
     left_ear="Moonshade Earring",
     right_ear="Ishvara Earring",
     left_ring="Ephramad's Ring",
@@ -353,7 +353,7 @@ function init_gear_sets()
     legs="Mummu Kecks +2",
     feet="Mummu Gamash. +2",
     neck="Fotia Gorget",
-    waist="Shadow Belt",
+    waist="Fotia Belt",
     left_ear="Moonshade Earring",
     right_ear="Odr Earring",
     left_ring="Ephramad's Ring",
@@ -519,7 +519,7 @@ function init_gear_sets()
 	sets.DayIdle = {}
 	sets.NightIdle = {}
 	
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
     
     -- Resting sets
     sets.resting = {}

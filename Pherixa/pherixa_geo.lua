@@ -250,7 +250,7 @@ function get_sets()
     hands={ name="Vanya Cuffs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Luminary Sash",
     left_ear="Mendi. Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
@@ -267,7 +267,7 @@ function get_sets()
     hands={ name="Vanya Cuffs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     legs={ name="Vanya Slops", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
     feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Luminary Sash",
     left_ear="Mendi. Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
@@ -285,7 +285,7 @@ function get_sets()
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
@@ -302,7 +302,7 @@ function get_sets()
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
@@ -310,6 +310,9 @@ function get_sets()
     right_ring="Defending Ring",
     back="Perimede Cape",
 		})		
+	sets.midcast.Phalanx = set_combine(sets.midcast.Duration, {
+	head={ name="Merlinic Hood", augments={'Potency of "Cure" effect received+3%','STR+10','Phalanx +3','Accuracy+7 Attack+7','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
+	feet={ name="Merlinic Crackows", augments={'"Resist Silence"+4','AGI+5','Phalanx +4','Accuracy+19 Attack+19',}},})
 		
 	sets.midcast.Refresh =  set_combine(sets.midcast.Duration, {
 	head="Amalric Coif +1",})	
@@ -322,7 +325,7 @@ function get_sets()
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
@@ -335,11 +338,11 @@ function get_sets()
     main="Idris",
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Ea Hat +1",
-    body="Geomancy Tunic +3",
-    hands="Azimuth gloves +3",
-    legs="Geomancy Pants +3",
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    head="Azimuth Hood +3",
+    body="Azimuth Coat +3",
+    hands="Azimuth Gloves +3",
+    legs="Azimuth Tights +3",
+    feet="Azimuth Gaiters +3",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Luminary Sash",
     left_ear="Malignance Earring",
@@ -352,8 +355,8 @@ function get_sets()
     main="Daybreak",
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Ea Hat +1",
-    body="Geomancy Tunic +3",
+    head="Azimuth Hood +3",
+    body="Azimuth Coat +3",
     hands="Azimuth gloves +3",
     legs="Geomancy Pants +3",
     feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
@@ -416,8 +419,8 @@ function get_sets()
     waist="Cornelia's Belt",
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
-    left_ring="Stikini Ring +1",
-    right_ring="Kishar Ring",
+    right_ring="Stikini Ring +1",
+    left_ring="Kishar Ring",
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 -- Elemental Magic --
@@ -451,8 +454,8 @@ function get_sets()
     waist="Cornelia's Belt",
     left_ear="Malignance Earring",
     right_ear="Gwati Earring",
-    left_ring="Gelatinous Ring +1",
-    right_ring="Kishar Ring",
+    right_ring="Gelatinous Ring +1",
+    left_ring="Kishar Ring",
     back={ name="Nantosuelta's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
 	sets.midcast.Elemental.MB = set_combine(sets.midcast.Elemental, {})	
@@ -742,7 +745,7 @@ function midcast(spell)
 	    elseif spell.skill == 'Enhancing Magic' then
 		    equip(sets.midcast.Recast)		
 	        if spell.english == 'Phalanx' then
-	    	    equip(sets.midcast.Enhancing)
+	    	    equip(sets.midcast.Phalanx)
 	    	elseif string.find(spell.english, 'Bar') then
 		        equip(sets.midcast.Enhancing)
             elseif spell.english == 'Stoneskin' then

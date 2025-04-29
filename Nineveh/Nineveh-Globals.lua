@@ -44,7 +44,7 @@ state.NotifyBuffs	  		= M(false, 'Notify Buffs') 	 --Set this to true if you wan
 send_command('bind !@^f7 gs c toggle AutoWSMode') --Turns auto-ws mode on and off.
 send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns auto-ws mode on and off.
 send_command('bind f7 gs c cycle Weapons') --Cycle through weapons sets.
-send_command('bind @f8 gs c toggle AutoNukeMode') --Turns auto-nuke mode on and off.
+--send_command('bind @f8 gs c toggle AutoNukeMode') --Turns auto-nuke mode on and off.
 send_command('bind ^f8 gs c toggle AutoStunMode') --Turns auto-stun mode off and on.
 send_command('bind !f8 gs c toggle AutoDefenseMode') --Turns auto-defense mode off and on.
 send_command('bind ^@!f8 gs c toggle AutoTrustMode') --Summons trusts automatically.
@@ -53,7 +53,7 @@ send_command('bind @scrolllock gs c cycle Passive') --Changes offense settings s
 send_command('bind ^f9 gs c cycle OffenseMode') --Changes offense settings such as accuracy.
 send_command('bind f9 gs c cycle HybridMode') --Changes defense settings for melee such as PDT.
 send_command('bind @f9 gs c cycle RangedMode') --Changes ranged offense settings such as accuracy.
-send_command('bind !f9 gs c cycle WeaponskillMode') --Changes weaponskill offense settings such as accuracy.
+send_command('bind @f8 gs c cycle WeaponskillMode') --Changes weaponskill offense settings such as accuracy.
 send_command('bind f12 gs c set DefenseMode Physical') --Turns your physical defense set on.
 send_command('bind ^f10 gs c cycle PhysicalDefenseMode') --Changes your physical defense set.
 send_command('bind !f10 gs c toggle Kiting') --Keeps your kiting gear on..

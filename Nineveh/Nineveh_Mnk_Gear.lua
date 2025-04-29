@@ -44,7 +44,7 @@ function init_gear_sets()
 	sets.precast.JA['Chakra'] = {
 		head="Dampening Tam",
 		body="Malignance Tabard",hands="Hesychast's Gloves +1",
-		legs="Hes. Hose +1",feet="Anch. Gaiters +1"}
+		legs="Hes. Hose +1",feet="Anch. Gaiters +3"}
 
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {}
@@ -52,23 +52,26 @@ function init_gear_sets()
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
 
-	sets.precast.Step = {ammo="Falcon Eye",
-		head="Malignance Chapeau",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Hesychast's Gloves +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Segomo's Mantle",waist="Olseni Belt",legs="Hiza. Hizayoroi +2",feet="Malignance Boots"}
+	sets.precast.Step = {}
 		
-	sets.precast.Flourish1 = {ammo="Falcon Eye",
-		head="Malignance Chapeau",neck="Moonbeam Nodowa",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Hesychast's Gloves +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Segomo's Mantle",waist="Olseni Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
+	sets.precast.Flourish1 = {}
 
 
 	-- Fast cast sets for spells
 	
-	sets.precast.FC = {ammo="Impatiens",
-	head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-	body="Dread Jupon",hands="Leyline Gloves",ring2="Lebeche Ring",ring2="Kishar Ring",
-	legs="Rawhide Trousers"}
+	sets.precast.FC = {    ammo="Staunch Tathlum +1",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Taeon Tabard", augments={'Evasion+25','"Fast Cast"+4','Phalanx +3',}},
+    hands={ name="Taeon Gloves", augments={'Evasion+15','"Fast Cast"+5','Phalanx +3',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Taeon Boots", augments={'Evasion+20','"Fast Cast"+5','Phalanx +3',}},
+    neck="Orunmila's Torque",
+    waist="Plat. Mog. Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Assuage Earring",
+    left_ring="Naji's Loop",
+    right_ring="Fortified Ring",
+    back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",body="Passion Jacket"})
 
@@ -87,7 +90,7 @@ function init_gear_sets()
     right_ear="Sherida Earring",
     left_ring="Gere Ring",
     right_ring="Niqmaddu Ring",
-    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	sets.precast.WSAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Mpaca's Cap",
     body="Mpaca's Doublet",
@@ -124,7 +127,7 @@ function init_gear_sets()
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {})
 	sets.precast.WS["Ascetic's Fury"]  = set_combine(sets.precast.WS, {})
 	sets.precast.WS["Victory Smite"]   = set_combine(sets.precast.WS, {})
-	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {left_ear="Mache Earring +1",back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},})
+	sets.precast.WS['Shijin Spiral']   = set_combine(sets.precast.WS, {left_ring="Ephramad's Ring",left_ear="Mache Earring +1",back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},})
 	sets.precast.WS['Dragon Kick']     = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS, {})
 	sets.precast.WS['Spinning Attack'] = set_combine(sets.precast.WS, {})
@@ -326,13 +329,13 @@ function init_gear_sets()
 	sets.engaged.Acc.HF = set_combine(sets.engaged.Acc, {})
 	sets.engaged.FullAcc.HF = set_combine(sets.engaged.FullAcc, {})
 
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",right_ring="Purity Ring",})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 	sets.buff.Impetus = {}--body="Bhikku Cyclas +1"}
 	sets.buff.Footwork = {feet="Shukuyu Sune-Ate"}
 	sets.buff.Boost = {} --waist="Ask Sash"
 	
-	sets.FootworkWS = {feet="Anch. Gaiters +2"}
+	sets.FootworkWS = {feet="Anch. Gaiters +3"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
     sets.Knockback = {}

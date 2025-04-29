@@ -3,7 +3,7 @@ function user_job_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','Refresh','DT')
-	state.Weapons:options('None','CarnSW','NaeglingSW','DualCarn','DualNaegling','DualTauret','DualNaeglingAcc')
+	state.Weapons:options('None','CarnSW','NaeglingSW','DualCarn','DualTwash','DualPrime','DualNaegling','DualTauret','DualNaeglingAcc')
 			send_command('bind f11 gs c toggle AutoSambaMode')	
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Daurdabla'
@@ -28,10 +28,12 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.CarnSW = {main="Carnwenhan",sub="Genmei Shield"}
 	sets.weapons.NaeglingSW = {main="Naegling",sub="Genmei Shield"}
-	sets.weapons.DualCarn = {main="Carnwenhan",sub="Crepuscular Knife"}
+	sets.weapons.DualCarn = {main="Carnwenhan",sub="Mpu Gandring"}
+	sets.weapons.DualTwash = {main="Twashtar",sub="Fusetto +2"}
+	sets.weapons.DualPrime = {main="Mpu Gandring",sub="Fusetto +2"}
 	sets.weapons.DualNaegling = {main="Naegling",sub="Fusetto +2"}
 	sets.weapons.DualTauret = {main="Tauret",sub="Crepuscular Knife"}
-	sets.weapons.DualNaeglingAcc = {main="Malevolence",sub="Crepuscular Knife"}
+	sets.weapons.DualNaeglingAcc = {main="Naegling",sub="Mpu Gandring"}
 
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -114,7 +116,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
    	 legs="Nyame Flanchard",
   feet="Nyame Sollerets",
-    neck="Caro Necklace",
+    neck={ name="Bard's Charm +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear="Ishvara Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -135,7 +137,7 @@ function init_gear_sets()
     right_ear="Regal Earring", 
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
-    back={ name="Intarabus's Cape", augments={'CHR+20','Accuracy+20 Attack+20','CHR+10','Weapon skill damage +10%','Damage taken-5%',}},
+    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 		sets.precast.WS["Savage Blade"] = {
     range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
@@ -151,6 +153,34 @@ function init_gear_sets()
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
     back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+	sets.precast.WS["Ruthless Stroke"] = {
+	    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Bard's Charm +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+		sets.precast.WS["Rudra's Storm"] = {
+	    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Bard's Charm +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Ishvara Earring",
+    right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Epaminondas's Ring",
+    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Ishvara Earring"}
@@ -347,7 +377,7 @@ function init_gear_sets()
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Carnwenhan",
-    range="Gjallarhorn",
+    range="Loughnashade",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
@@ -368,15 +398,15 @@ function init_gear_sets()
 	sets.midcast.SongDebuff = {  main="Carnwenhan",
     sub={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     range="Gjallarhorn",
-    head="C. Palug Crown",
-    body="Inyanga Jubbah +2",
-    hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
-    legs={ name="Chironic Hose", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','Haste+1','MND+10','Mag. Acc.+13',}},
+    head="Fili Calot +3",
+    body="Fili Hongreline +3",
+    hands="Fili Manchettes +3",
+    legs="Fili Rhingrave +3",
     feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Regal Earring",
-    right_ear="Crep. Earring",
+    right_ear="Fili Earring +2",
     left_ring="Metamor. Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Intarabus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
@@ -389,26 +419,26 @@ function init_gear_sets()
 	sets.midcast.SongDebuff.Resistant = { main="Carnwenhan",
     sub={ name="Kali", augments={'Mag. Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
     range="Gjallarhorn",
-    head="C. Palug Crown",
-    body="Inyanga Jubbah +2",
-    hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
-    legs={ name="Chironic Hose", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','Haste+1','MND+10','Mag. Acc.+13',}},
+    head="Fili Calot +3",
+    body="Fili Hongreline +3",
+    hands="Fili Manchettes +3",
+    legs="Fili Rhingrave +3",
     feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Regal Earring",
-    right_ear="Crep. Earring",
+    right_ear="Fili Earring +2",
     left_ring="Metamor. Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Intarabus's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {   
-    range="Daurdabla",
+    range="Loughnashade",
     head="C. Palug Crown",
     body="Inyanga Jubbah +2",
     hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
-    legs={ name="Chironic Hose", augments={'Damage taken-1%','INT+9','"Fast Cast"+7','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+    legs="Fili Rhingrave +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Voltsurge Torque",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
@@ -523,7 +553,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring",
@@ -540,7 +570,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring",
@@ -555,7 +585,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck="Loricate Torque +1",
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Odnowa Earring",
@@ -567,6 +597,7 @@ function init_gear_sets()
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {}
 	sets.TPEat = {}
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",})
 
 	-- Engaged sets
 
@@ -577,7 +608,7 @@ function init_gear_sets()
 	
 	sets.engaged = {    main="Naegling", sub="Genmei Shield",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-    head="Nyame Helm",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Nyame Mail",
     hands="Nyame Gauntlets",
 	legs="NYame Flanchard",
@@ -591,7 +622,7 @@ function init_gear_sets()
     back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	sets.engaged.Acc = {main="Naegling", sub="Genmei Shield",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-    head="Aya. Zucchetto +2",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Nyame Mail",
     hands="Bunzi's Gloves",
 	legs="NYame Flanchard",
@@ -605,7 +636,7 @@ function init_gear_sets()
     back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 	sets.engaged.DW = {main="Naegling", sub="Fusetto +2",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-    head="Aya. Zucchetto +2",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Nyame Mail",
     hands="Bunzi's Gloves",
 	legs="NYame Flanchard",
@@ -619,7 +650,7 @@ function init_gear_sets()
     back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 sets.engaged.DW.AM = {main="Naegling", sub="Fusetto +2",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-    head="Aya. Zucchetto +2",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Nyame Mail",
     hands="Bunzi's Gloves",
 	legs="NYame Flanchard",
@@ -633,7 +664,7 @@ sets.engaged.DW.AM = {main="Naegling", sub="Fusetto +2",
      back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 	sets.engaged.DW.Acc = {main="Naegling", sub="Crepuscular Knife",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-    head="Aya. Zucchetto +2",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Nyame Mail",
     hands="Bunzi's Gloves",
 	legs="NYame Flanchard",

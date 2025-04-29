@@ -193,7 +193,7 @@ function init_gear_sets()
 	main="Bolelabunga",
 	sub="Ammurapi shield",
 	head="Arbatel Bonnet +1",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
 	ear2="Genmei Earring",
 	body="Telchine Chasuble",
@@ -213,7 +213,7 @@ function init_gear_sets()
 	head="Telchine Cap",
 	ear1="Andoaa Earring",
 	ear2="Mimir Earring",
-	neck="Loricate Torque +1",
+	neck="Elite Royal Collar",
 	left_ring="Defending Ring",
 	right_ring="Stikini Ring +1",
 	body="Telchine Chasuble",
@@ -395,8 +395,8 @@ function init_gear_sets()
     waist="Orpheus's Sash",
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
-   left_ring="Shiva Ring +1",
-    right_ring="Jhakri Ring",
+	left_ring="Freke Ring",
+    right_ring="Metamor. Ring +1",
     back="Bookworm's Cape",
 	}
 

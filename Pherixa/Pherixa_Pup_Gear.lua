@@ -220,18 +220,18 @@ function init_gear_sets()
     -- Idle sets
 
     sets.idle = {
-        head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Rawhide Mask",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Hiza. Haramaki +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Fucho-no-Obi",legs=gear.herculean_dt_legs,feet="Hippo. Socks +1"}
 		
 	sets.idle.Refresh = {
-        head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head="Rawhide Mask",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Vrikodara Jupon",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Fucho-no-Obi",legs="Rawhide Trousers",feet="Hippo. Socks +1"}
 		
     -- Set for idle while pet is out (eg: pet regen gear)
     sets.idle.Pet = {
-        head="Rawhide Mask",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+        head="Rawhide Mask",neck="Elite Royal Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
         body="Taeon Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Hippo. Socks +1"}
 
@@ -253,17 +253,17 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {
-        head="Blistering Sallet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Blistering Sallet +1",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Genmei Earring",
         body="Vrikodara Jupon",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet="Malignance Boots"}
 
     sets.defense.MDT = {
-        head="Blistering Sallet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Blistering Sallet +1",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Genmei Earring",
         body="Vrikodara Jupon",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet="Malignance Boots"}
 		
     sets.defense.MEVA = {
-        head="Blistering Sallet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        head="Blistering Sallet +1",neck="Elite Royal Collar",ear1="Etiolation Earring",ear2="Genmei Earring",
         body="Vrikodara Jupon",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet="Malignance Boots"}
 

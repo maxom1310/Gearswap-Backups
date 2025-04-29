@@ -6,7 +6,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','DualWeapons','MeleeWeapons')
+	state.Weapons:options('None','DualWeapons','MeleeWeapons','Misery')
 
 
 		-- Additional local binds
@@ -24,6 +24,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.MeleeWeapons = {}
 	sets.weapons.DualWeapons = {}
+	sets.weapons.Misery = {main="Asclepius",sub="Genmei Shield"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -41,8 +42,8 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Malignance Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
-    right_ring="Kishar Ring",
+    right_ring="Defending Ring",
+    left_ring="Kishar Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})
@@ -59,7 +60,7 @@ function init_gear_sets()
 
 	sets.precast.FC.CureSolace = sets.precast.FC.Cure
 
-	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
+	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Crepuscular Cloak"})
 	
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
 
@@ -86,7 +87,7 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Epaminondas's Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
@@ -100,7 +101,7 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Epaminondas's Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
@@ -136,7 +137,7 @@ function init_gear_sets()
     hands={ name="Fanatic Gloves", augments={'MP+45','Healing magic skill +9','"Conserve MP"+6','"Fast Cast"+5',}},
     legs="Vanya Slops",
     feet={ name="Medium's Sabots", augments={'MP+50','MND+8','"Conserve MP"+6','"Cure" potency +3%',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Austerity Belt",
     left_ear="Gwati Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -149,14 +150,14 @@ function init_gear_sets()
 	-- Gear for Magic Burst mode.
     sets.MagicBurst = {}
 	
-    sets.midcast.FastRecast = {    ammo="Hasty Pinion +1",
-    head="Bunzi's Hat",
-    body="Inyanga Jubbah +2",
+    sets.midcast.FastRecast = {      ammo="Incantor Stone",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
+    body="Zendik Robe",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
     feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
-    waist="Kasiri Belt",
+    waist="Cornelia's Belt",
     left_ear="Etiolation Earring",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
@@ -165,165 +166,243 @@ function init_gear_sets()
 		
     -- Cure sets
 
-	sets.midcast['Full Cure'] = sets.midcast.FastRecast
+	sets.midcast['Full Cure'] = {    main={ name="Asclepius", augments={'Path: C',}},
+    sub="Genmei Shield",
+    ammo="Incantor Stone",
+    head="Ebers Cap +3",
+    body="Ebers Bliaut +3",
+    hands="Ebers Mitts +3",
+    legs="Ebers Pant. +3",
+    feet={ name="Medium's Sabots", augments={'MP+50','MND+8','"Conserve MP"+6','"Cure" potency +3%',}},
+    neck={ name="Clr. Torque +2", augments={'Path: A',}},
+    waist="Cornelia's Belt",
+    left_ear="Glorious Earring",
+    right_ear="Nourish. Earring +1",
+    left_ring="Kishar Ring",
+    right_ring="Naji's Loop",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	
+	sets.midcast['Arise'] = {    main={ name="Asclepius", augments={'Path: C',}},
+    sub="Genmei Shield",
+    ammo="Incantor Stone",
+    head="Ebers Cap +3",
+    body="Zendik Robe",
+    hands="Ebers Mitts +3",
+    legs="Ebers Pant. +3",
+    feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
+    neck={ name="Clr. Torque +2", augments={'Path: A',}},
+    waist="Cornelia's Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Malignance Earring",
+    left_ring="Kishar Ring",
+    right_ring="Naji's Loop",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	
+		sets.midcast['Raise III'] = {    main={ name="Asclepius", augments={'Path: C',}},
+    sub="Genmei Shield",
+    ammo="Incantor Stone",
+    head="Ebers Cap +3",
+    body="Zendik Robe",
+    hands="Ebers Mitts +3",
+    legs="Ebers Pant. +3",
+    feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
+    neck={ name="Clr. Torque +2", augments={'Path: A',}},
+    waist="Cornelia's Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Malignance Earring",
+    left_ring="Kishar Ring",
+    right_ring="Naji's Loop",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+			sets.midcast['Raise II'] = {    main={ name="Asclepius", augments={'Path: C',}},
+    sub="Genmei Shield",
+    ammo="Incantor Stone",
+    head="Ebers Cap +3",
+    body="Zendik Robe",
+    hands="Ebers Mitts +3",
+    legs="Ebers Pant. +3",
+    feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
+    neck={ name="Clr. Torque +2", augments={'Path: A',}},
+    waist="Cornelia's Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Malignance Earring",
+    left_ring="Kishar Ring",
+    right_ring="Naji's Loop",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+			sets.midcast['Raise'] = {    main={ name="Asclepius", augments={'Path: C',}},
+    sub="Genmei Shield",
+    ammo="Incantor Stone",
+    head="Ebers Cap +3",
+    body="Zendik Robe",
+    hands="Ebers Mitts +3",
+    legs="Ebers Pant. +3",
+    feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
+    neck={ name="Clr. Torque +2", augments={'Path: A',}},
+    waist="Cornelia's Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Malignance Earring",
+    left_ring="Kishar Ring",
+    right_ring="Naji's Loop",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	
+	
 	
 	sets.midcast.Cure = {      main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+    right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
 	sets.midcast.CureSolace = {    main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+    right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.LightWeatherCure = {    main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.LightWeatherCureSolace = {       main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
 	sets.midcast.LightDayCureSolace = {     main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.LightDayCure = {     main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.Curaga = {     main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
 	sets.midcast.LightWeatherCuraga = {      main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ear="Glorious Earring",
+    right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
 	sets.midcast.LightDayCuraga = {    main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring="Stikini Ring +1",
+    left_ear="Glorious Earring",
+    right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.Cure.DT = {    main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring="Stikini Ring +1",
+    left_ear="Glorious Earring",
+     right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -331,16 +410,16 @@ function init_gear_sets()
 	sets.midcast.MeleeCure = {    main="Daybreak",
     sub="Genmei Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Ebers Cap +3",
     body="Ebers Bliaut +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Ebers Duckbills +3",
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
     waist="Austerity Belt",
-    left_ear="Nourish. Earring",
-    right_ear="Nourish. Earring +1",
-    left_ring="Stikini Ring +1",
+    left_ear="Glorious Earring",
+    right_ear="Ebers Earring +1", 
+    left_ring="Defending Ring",
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -381,7 +460,7 @@ function init_gear_sets()
     legs="Th. Pant. +3",
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     neck="Debilis Medallion",
-    waist="Embla Sash",
+    waist="Cornelia's Belt",
     left_ear="Meili Earring",
     right_ear="Ebers Earring +1",
     left_ring="Haoma's Ring",
@@ -391,13 +470,13 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = {    main={ name="Yagrush", augments={'DMG:+4',}},
     sub="Genmei Shield",
     ammo="Hasty Pinion +1",
-    head="Bunzi's Hat",
+    head={ name="Bunzi's Hat", augments={'Path: A',}},
     body="Inyanga Jubbah +2",
     hands={ name="Fanatic Gloves", augments={'MP+45','Healing magic skill +9','"Conserve MP"+6','"Fast Cast"+5',}},
     legs="Ebers Pant. +3",
     feet={ name="Chironic Slippers", augments={'Mag. Acc.+26','"Fast Cast"+7','"Mag.Atk.Bns."+10',}},
     neck={ name="Clr. Torque +2", augments={'Path: A',}},
-    waist="Austerity Belt",
+    waist="Cornelia's Belt",
     left_ear="Etiolation Earring",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
@@ -412,14 +491,14 @@ function init_gear_sets()
     ammo="Staunch Tathlum +1",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
     body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+25','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Mimir Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back="Perimede Cape",}
 
@@ -427,7 +506,7 @@ function init_gear_sets()
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills +3"})
 
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",head="Chironic Hat",sub="Ammurapi Shield",hands="Regal Cuffs",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {body="Piety Bliaut +3", hands="Ebers Mitts +3",legs="Th. Pant. +3",})
 	
@@ -444,22 +523,23 @@ function init_gear_sets()
     hands="Ebers Mitts +3",
     legs={ name="Piety Pantaln. +1", augments={'Enhances "Afflatus Misery" effect',}},
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Twilight Cloak",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
+		body="Crepuscular Cloak",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		legs="Chironic Hose",}
 		
 	sets.midcast['Elemental Magic'] = {    main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
+	head=empty,
     body={ name="Cohort Cloak +1", augments={'Path: A',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Chironic Hose", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Resist Silence"+8','MND+11','Mag. Acc.+12','"Mag.Atk.Bns."+14',}},
@@ -469,12 +549,13 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast['Elemental Magic'].Resistant = {    main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
+	head=empty,
     body={ name="Cohort Cloak +1", augments={'Path: A',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Chironic Hose", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','"Resist Silence"+8','MND+11','Mag. Acc.+12','"Mag.Atk.Bns."+14',}},
@@ -484,7 +565,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast['Luminohelix'] = {
@@ -500,7 +581,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	
@@ -516,7 +597,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
 	sets.midcast.Holy = {main="Daybreak",
@@ -531,7 +612,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast['Dark Magic'] = {    main={ name="Bunzi's Rod", augments={'Path: A',}},
@@ -546,7 +627,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
     sets.midcast.Drain = {    main={ name="Rubicundity", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+10','Dark magic skill +10','"Conserve MP"+7',}},
@@ -562,7 +643,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Ebers Earring +1",
     left_ring="Evanescence Ring",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
     sets.midcast.Drain.Resistant = {    main={ name="Rubicundity", augments={'Mag. Acc.+10','"Mag.Atk.Bns."+10','Dark magic skill +10','"Conserve MP"+7',}},
@@ -578,7 +659,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Ebers Earring +1",
     left_ring="Evanescence Ring",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
     sets.midcast.Aspir = sets.midcast.Drain
@@ -597,7 +678,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast.Stun.Resistant = {    main={ name="Bunzi's Rod", augments={'Path: A',}},
@@ -613,7 +694,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
     left_ring="Kishar Ring",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
 	sets.midcast.Dispel = {    main="Daybreak",
@@ -628,8 +709,8 @@ function init_gear_sets()
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Regal Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Stikini Ring +1",
-    right_ring="Kishar Ring",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
+    left_ring="Kishar Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
@@ -646,8 +727,8 @@ function init_gear_sets()
     waist="Luminary Sash",
     left_ear="Regal Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Stikini Ring +1",
-    right_ring="Kishar Ring",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
+    left_ring="Kishar Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",
@@ -662,8 +743,8 @@ function init_gear_sets()
     waist="Luminary Sash",
     left_ear="Regal Earring",
     right_ear="Ebers Earring +1",
-    left_ring="Stikini Ring +1",
-    right_ring="Kishar Ring",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
+    left_ring="Kishar Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -692,11 +773,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -709,11 +790,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -725,11 +806,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -741,11 +822,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -757,11 +838,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -775,11 +856,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -791,11 +872,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -807,11 +888,11 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Shneddick Ring",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
@@ -830,11 +911,11 @@ function init_gear_sets()
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -844,11 +925,11 @@ function init_gear_sets()
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -858,11 +939,11 @@ function init_gear_sets()
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -872,11 +953,11 @@ function init_gear_sets()
     hands="Ebers Mitts +3",
     legs="Ebers Pant. +3",
     feet="Ebers Duckbills +3",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Chirich Ring +1",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -891,11 +972,11 @@ function init_gear_sets()
     hands="Volte Gloves",
     legs="Volte Brais",
     feet="Volte Gaiters",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Mimir Earring",
     right_ear="Meili Earring",
-    left_ring="Stikini Ring +1",
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     right_ring="Defending Ring",
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
@@ -914,6 +995,23 @@ function init_gear_sets()
     left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     right_ring="Naji's Loop",
     back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	
+	sets.Phalanx_Received = {    main="Daybreak",
+    sub="Genmei Shield",
+    ammo="Staunch Tathlum +1",
+    head={ name="Chironic Hat", augments={'"Fast Cast"+5','Pet: CHR+8','Phalanx +2','Accuracy+12 Attack+12',}},
+    body={ name="Chironic Doublet", augments={'Attack+29','Pet: "Regen"+1','Phalanx +3',}},
+    hands={ name="Chironic Gloves", augments={'Pet: Mag. Acc.+3','STR+3','Phalanx +4',}},
+    legs={ name="Chironic Hose", augments={'"Fast Cast"+3','CHR+5','Phalanx +5','Accuracy+5 Attack+5',}},
+    feet={ name="Chironic Slippers", augments={'INT+8','Rng.Atk.+4','Phalanx +5','Accuracy+7 Attack+7',}},
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Regal Earring",
+    right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    right_ring="Defending Ring",
+    back={ name="Alaunus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
+	
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {main="Lorg Mor"}

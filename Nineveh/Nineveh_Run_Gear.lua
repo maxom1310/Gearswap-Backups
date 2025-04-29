@@ -8,7 +8,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT_HP','BDT_HP','MDT','BDT')
 	state.ResistDefenseMode:options('MEVA_HP','MEVA','Death','Charm','DTCharm')
 	state.IdleMode:options('Normal','Tank','KiteTank','Sphere')
-	state.Weapons:options('None','Epeo','Lionheart','DualWeapons')
+	state.Weapons:options('None','Prime','Lionheart','Axe','DualWeapons')
 	
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
@@ -305,6 +305,20 @@ function init_gear_sets()
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc,{})
     sets.precast.WS['Resolution'].HighAcc = set_combine(sets.precast.WS.HighAcc,{})
 	sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc,{})
+	
+	sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{    ammo="Coiste Bodhar",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    right_ear="Sherida Earring",
+    left_ear="Telos Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Ephramad's Ring",
+    back={ name="Ogma's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},})
 
     sets.precast.WS['Dimidiation'] = set_combine(sets.precast.WS,{    ammo="Knobkierrie",
     head="Nyame Helm",
@@ -383,7 +397,7 @@ function init_gear_sets()
     hands={ name="Taeon Gloves", augments={'Evasion+15','"Fast Cast"+5','Phalanx +3',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Herculean Boots", augments={'VIT+3','Rng.Acc.+14','Phalanx +4',}},
-    neck="Enhancing Torque",
+    neck="Melic Torque",
     waist="Plat. Mog. Belt",
     left_ear="Mimir Earring",
     right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
@@ -455,7 +469,7 @@ function init_gear_sets()
     hands={ name="Taeon Gloves", augments={'Evasion+15','"Fast Cast"+5','Phalanx +3',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Herculean Boots", augments={'VIT+3','Rng.Acc.+14','Phalanx +4',}},
-    neck="Enhancing Torque",
+    neck="Melic Torque",
     waist="Plat. Mog. Belt",
     left_ear="Mimir Earring",
     right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
@@ -551,9 +565,11 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.Epeo = {main="Epeolatry",sub="Utu Grip"}
+	--sets.weapons.Epeo = {main="Epeolatry",sub="Utu Grip"}
+	sets.weapons.Prime = {main="Helheim",sub="Utu Grip"}
 	sets.weapons.Lionheart = {main="Lionheart",sub="Utu Grip"}
-	sets.weapons.DualWeapons = {main="Firangi",sub="Reikiko"}
+	sets.weapons.Axe = {main="Blurred Axe +1",sub="Regis"}
+	sets.weapons.DualWeapons = {main="Dolichenus",sub="Blurred Axe +1"}
 	
 	-- Defense Sets
 	
@@ -923,7 +939,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Anu Torque",
-    waist="Ioskeha Belt +1",
+    waist="Sailfi belt +1",
     left_ear="Telos Earring",
     right_ear="Sherida Earring",
     left_ring="Moonlight Ring",
@@ -937,7 +953,7 @@ function init_gear_sets()
 	--------------------------------------
 	-- Custom buff sets
 	--------------------------------------
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",right_ring="Purity Ring",})
 	sets.buff.Sleep = {}--head="Frenzy Sallet"}
 	sets.buff.Battuta = {}--hands="Turms Mittens +1"}
 	sets.buff.Embolden = {back="Evasionist's Cape"}

@@ -68,8 +68,8 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto"}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
     sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
 	sets.precast.JA['Jump'] = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Kasuga Kabuto +3",
@@ -108,7 +108,6 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-    main="Dojikiri Yasutsuna",
     sub="Utu Grip",
     ammo="Knobkierrie",
     head="Mpaca's Cap",
@@ -149,7 +148,7 @@ function init_gear_sets()
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",waist="Fotia Belt"})
 
     sets.precast.WS['Tachi: Ageha'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Knobkierrie",
     head="Kasuga Kabuto +3",
@@ -183,7 +182,7 @@ function init_gear_sets()
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
 
     sets.precast.WS['Tachi: Jinpu'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
@@ -200,7 +199,7 @@ function init_gear_sets()
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	})
 	sets.precast.WS['Tachi: Kagero'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
@@ -217,7 +216,7 @@ function init_gear_sets()
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	})
 		sets.precast.WS['Tachi: Koki'] = set_combine(sets.precast.WS, {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Knobkierrie",
     head="Nyame Helm",
@@ -260,7 +259,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle.Town = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
@@ -268,7 +267,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Flume Belt",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -278,7 +277,7 @@ function init_gear_sets()
 	}
     
     sets.idle.Field = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
@@ -286,7 +285,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Flume Belt",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -295,7 +294,7 @@ function init_gear_sets()
     back="Moonlight Cape",}
 
     sets.idle.Weak = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
@@ -303,7 +302,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    neck="Elite Royal Collar",
     waist="Flume Belt",
     left_ear="Thrud Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -313,7 +312,7 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
@@ -332,7 +331,7 @@ function init_gear_sets()
     sets.defense.Reraise = {
         ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Twilight Mail",
@@ -345,7 +344,7 @@ function init_gear_sets()
 		feet="Nyame Sollerets"}
 
     sets.defense.MDT = {
-    main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+    main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
@@ -454,7 +453,7 @@ function init_gear_sets()
 	}
 	
     sets.engaged.Meva.PDT = {
-      main={ name="Dojikiri Yasutsuna", augments={'Path: A',}},
+      main="Kusanagi",
     sub="Utu Grip",
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
@@ -474,7 +473,7 @@ function init_gear_sets()
     sets.engaged.Reraise = {
 		ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Twilight Mail",
@@ -489,7 +488,7 @@ function init_gear_sets()
     sets.engaged.Meva.Reraise = {
 		ammo="Staunch Tathlum +1",
         head="Twilight Helm",
-		neck="Loricate Torque +1",
+		neck="Elite Royal Collar",
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Twilight Mail",

@@ -19,27 +19,21 @@ function user_job_setup()
 	gear.nuke_jse_back = {name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
 
 	gear.obi_cure_waist = "Hachirin-no-obi"
-	gear.obi_nuke_waist = "Hachirin-no-obi"
+-- 	gear.obi_nuke_waist = "Hachirin-no-obi"
 	gear.obi_cure_back = "Hachirin-no-obi"
 
 	-- Additional local binds
-		send_command('bind !f9 input /equipset 8;wait1;input /echo Club Magic Weapons')
-		send_command('bind @f9 input /equipset 11;wait1;input /echo Magic Sword Weapons')
-		send_command('bind ^f9 input /equipset 9;wait1;input /echo Sword melee Weapons')
-		send_command('bind !^f9 input /equipset 10;wait1;input /echo Club Melee Weapons')
+		send_command('bind !f9 input /equipset 38;wait1;input /echo Club Magic Weapons')
+		send_command('bind @f9 input /equipset 36;wait1;input /echo Magic Sword Weapons')
+		send_command('bind ^f9 input /equipset 14;wait1;input /echo Sword melee Weapons')
+		send_command('bind !^f9 input /equipset 17;wait1;input /echo Club Melee Weapons')
 		send_command('bind !@^f9 input /equipset 12;wait1;input /echo Naegling')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	send_command('bind ^backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Mighty Guard" <me>')
 	send_command('bind !backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Carcharian Verve" <me>')
-	send_command('bind @backspace input /ja "Convergence" <me>')
-	send_command('bind @f10 gs c toggle LearningMode')
-	send_command('bind ^@!` gs c cycle MagicBurstMode')
-	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !@^f7 gs c toggle AutoWSMode')
 	--send_command('bind !r gs c weapons None;gs c update')
-	send_command('bind @q gs c weapons MaccWeapons;gs c update')
-	send_command('bind ^q gs c weapons Almace;gs c update')
-	send_command('bind !q gs c weapons HybridWeapons;gs c update')
+
 
 	select_default_macro_book()
 end
@@ -56,7 +50,7 @@ function init_gear_sets()
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +1"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {legs="Hashishin Tayt +3"}
-	sets.buff.Doom = set_combine(sets.buff.Doom, {})
+	sets.buff.Doom = set_combine(sets.buff.Doom, {neck="Nicander's Necklace",right_ring="Purity Ring",})
 
 	sets.HPDown = {    ammo="Staunch Tathlum +1",
     head="Pixie Hairpin +1",
@@ -101,17 +95,18 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {	     ammo="Crepuscular Pebble",
+	sets.precast.FC = {	 
+    ammo="Sapience Orb",
     head={ name="Amalric Coif +1", augments={'INT+12','Mag. Acc.+25','Enmity-6',}},
     body={ name="Taeon Tabard", augments={'Evasion+25','"Fast Cast"+4','Phalanx +3',}},
-    hands={ name="Taeon Gloves", augments={'Evasion+15','"Fast Cast"+5','Phalanx +3',}},
-    legs="Aya. Cosciales +2",
-    feet={ name="Taeon Boots", augments={'Evasion+20','"Fast Cast"+5','Phalanx +3',}},
+    hands="Hashi. Bazu. +3",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Orunmila's Torque",
-    waist="Cornelia's Belt",
-    left_ear="Mendi. Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
-    left_ring="Naji's Loop",
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
     right_ring="Kishar Ring",
     back={ name="Rosmerta's Cape", augments={'"Fast Cast"+10',}},
 	}  
@@ -135,7 +130,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
@@ -151,7 +146,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
@@ -167,7 +162,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
@@ -183,7 +178,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
@@ -199,7 +194,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 
@@ -222,7 +217,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {left_ring="Sroda Ring",})
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {})
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].DT = set_combine(sets.precast.WS.DT, {})
@@ -251,8 +246,8 @@ function init_gear_sets()
  --waist="Olseni Belt",
     left_ear="Mendi. Earring",
        right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-   right_ring="Cornelia's ring",
+    left_ring="Epaminondas's Ring",
+   right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
   back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 					 
@@ -268,8 +263,8 @@ function init_gear_sets()
     waist="Orpheus's Sash",
     left_ear="Regal Earring",
        right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Cornelia's ring",
+    left_ring="Epaminondas's Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 					 
@@ -284,7 +279,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
     left_ring="Epaminondas's Ring",
-	right_ring="Cornelia's ring",
+	right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	 })
 
@@ -311,61 +306,61 @@ function init_gear_sets()
 
 	-- Physical Spells --
 
-	sets.midcast['Blue Magic'].Physical = {   ammo="Crepuscular Pebble",
-   head="Hashishin Kavuk +3",
-    body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-       legs="Hashishin Tayt +3",
-   feet="Hashi. Basmak +3",
-    neck="Mirage Stole +2",
-    waist="Olseni Belt",
-    left_ear="Mendi. Earring",
-    right_ear="Tortoise Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Rajas Ring",
-    back="Rosmerta's Cape",}
-
-	sets.midcast['Blue Magic'].Physical.Resistant = {  ammo="Crepuscular Pebble",
+	sets.midcast['Blue Magic'].Physical = {      ammo="Aurgelmir Orb +1",
     head="Hashishin Kavuk +3",
-   body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-       legs="Hashishin Tayt +3",
-    feet="Hashi. Basmak +3",
-     neck="Mirage Stole +2",
-    waist="Olseni Belt",
-    left_ear="Mendi. Earring",
-    right_ear="Tortoise Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Rajas Ring",
-    back="Rosmerta's Cape",}
-
-	sets.midcast['Blue Magic'].Physical.Fodder = {    ammo="Crepuscular Pebble",
-  head="Hashishin Kavuk +3",
-   body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-     legs="Hashishin Tayt +3",
-   feet="Hashi. Basmak +3",
-   neck="Mirage Stole +2",
-    waist="Olseni Belt",
-    left_ear="Mendi. Earring",
-    right_ear="Tortoise Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Rajas Ring",
-    back="Rosmerta's Cape",}
-
-	sets.midcast['Blue Magic'].PhysicalAcc = {   ammo="Crepuscular Pebble",
-   head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-       legs="Hashishin Tayt +3",
-   feet="Hashi. Basmak +3",
-    neck="Mirage Stole +2",
-    waist="Olseni Belt",
-    left_ear="Mendi. Earring",
-    right_ear="Tortoise Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Rajas Ring",
-    back="Rosmerta's Cape",}
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Odr Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+
+	sets.midcast['Blue Magic'].Physical.Resistant = {     ammo="Crepuscular Pebble",
+    head="Hashishin Kavuk +3",
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Telos Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Sroda Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
+
+	sets.midcast['Blue Magic'].Physical.Fodder = {     ammo="Crepuscular Pebble",
+    head="Hashishin Kavuk +3",
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Telos Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Sroda Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
+
+	sets.midcast['Blue Magic'].PhysicalAcc = {     ammo="Crepuscular Pebble",
+    head="Hashishin Kavuk +3",
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Telos Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Sroda Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})
 	sets.midcast['Blue Magic'].PhysicalAcc.Fodder = sets.midcast['Blue Magic'].Fodder
@@ -404,7 +399,35 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {	    ammo="Pemphredo Tathlum",
+--	sets.midcast['Blue Magic'].Magical = {	    ammo="Pemphredo Tathlum",
+  --  head="Hashishin Kavuk +3",
+  --  body="Hashishin Mintan +3",
+  --  hands="Hashi. Bazu. +3",
+ --   legs="Hashishin Tayt +3",
+  --  feet="Hashi. Basmak +3",
+  --  neck="Sibyl Scarf",
+  --  waist="Orpheus's Sash",
+  --  left_ear="Regal Earring",
+  --  right_ear="Friomisi Earring",
+  --  left_ring="Metamor. Ring +1",
+  --  right_ring="Shiva Ring +1",
+   -- back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+	
+		sets.midcast['Blue Magic'].Magical = {    ammo="Sapience Orb",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Luminary Sash",
+    left_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+					 
+	sets.midcast['Blue Magic'].Magical.Proc = {    ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
     hands="Hashi. Bazu. +3",
@@ -414,39 +437,25 @@ function init_gear_sets()
     waist="Orpheus's Sash",
     left_ear="Regal Earring",
     right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
-    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
-					 
-	sets.midcast['Blue Magic'].Magical.Proc = {   ammo="Pemphredo Tathlum",
-   head="Hashishin Kavuk +3",
-   body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-       legs="Hashishin Tayt +3",
-   feet="Hashi. Basmak +3",
-     neck="Quanpur Necklace",
-   waist="Eschan Stone",
-  left_ear="Hecate's Earring",
-      right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
+    left_ring="Metamor. Ring +1",
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 					 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
 		{})
 
-	sets.midcast['Blue Magic'].Magical.Fodder = {    ammo="Pemphredo Tathlum",
+	sets.midcast['Blue Magic'].Magical.Fodder = {       ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
     hands="Hashi. Bazu. +3",
-      legs="Hashishin Tayt +3",
+    legs="Hashishin Tayt +3",
     feet="Hashi. Basmak +3",
-      neck="Quanpur Necklace",
-   waist="Eschan Stone",
-  left_ear="Hecate's Earring",
-        right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
+    neck="Sibyl Scarf",
+    waist="Orpheus's Sash",
+    left_ear="Regal Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Metamor. Ring +1",
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.midcast['Blue Magic'].MagicalMnd = set_combine(sets.midcast['Blue Magic'].Magical, {ring2="Stikini Ring +1"})
@@ -454,19 +463,35 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {neck="Quanpur Necklace",})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = {    ammo="Pemphredo Tathlum",
-    head="Hashishin Kavuk +3",
-    body="Hashishin Mintan +3",
-    hands="Hashi. Bazu. +3",
-    legs="Hashishin Tayt +3",
-    feet="Hashi. Basmak +3",
+--	sets.midcast['Blue Magic'].MagicAccuracy = {    ammo="Pemphredo Tathlum",
+ --   head="Hashishin Kavuk +3",
+ --   body="Hashishin Mintan +3",
+ --   hands="Hashi. Bazu. +3",
+ --   legs="Hashishin Tayt +3",
+ --   feet="Hashi. Basmak +3",
+  --  neck={ name="Mirage Stole +2", augments={'Path: A',}},
+ --   waist="Luminary Sash",
+ --   left_ear="Crep. Earring",
+ --   right_ear="Hashi. Earring +2",
+ --   left_ring="Stikini Ring +1",
+ --   right_ring="Stikini Ring +1",
+ --   back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+	
+	sets.midcast['Blue Magic'].MagicAccuracy = { 	 
+	 ammo="Sapience Orb",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Luminary Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
-    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},
+	}
 
 	sets.midcast['Enfeebling Magic'] = {    ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
@@ -477,7 +502,7 @@ function init_gear_sets()
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Luminary Sash",
     left_ear="Crep. Earring",
-    right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','"Dbl.Atk."+4',}},
+    right_ear="Hashi. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
@@ -491,7 +516,7 @@ function init_gear_sets()
     neck="Mirage Stole +2",
    waist="Eschan Stone",
     left_ear="Hermetic Earring",
-    right_ear="Aquamrne. Earring",
+    right_ear="Hashi. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
@@ -500,19 +525,18 @@ function init_gear_sets()
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
-	sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{	  ammo="Crepuscular Pebble",
-		 head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-		neck="Enhancing Torque",
-		ear1="Mimir earring",
-		ear2="Andoaa Earring",
-		body="Taeon Tabard",
-		hands="Taeon Gloves",
-		ring1="Stikini ring +1",
-		ring2="Stikini ring +1",
-        back="Fi Follet cape +1",
-		waist="Olympus sash",
-		legs="Taeon Tights",
-		feet="Taeon Boots"})
+	sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{	     ammo="Crepuscular Pebble",
+    head={ name="Herculean Helm", augments={'Crit. hit damage +3%','MND+13','Phalanx +4',}},
+    body={ name="Taeon Tabard", augments={'Evasion+25','"Fast Cast"+4','Phalanx +3',}},
+    hands={ name="Herculean Gloves", augments={'"Cure" spellcasting time -4%','Attack+6','Phalanx +5','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
+    legs={ name="Herculean Trousers", augments={'Pet: Accuracy+8 Pet: Rng. Acc.+8','"Drain" and "Aspir" potency +8','Phalanx +3','Accuracy+18 Attack+18',}},
+    feet={ name="Herculean Boots", augments={'VIT+3','Rng.Acc.+14','Phalanx +4',}},
+    neck="Melic Torque",
+    waist="Olympus Sash",
+    left_ear="Mimir Earring",
+    right_ear="Andoaa Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",})
 
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
 
@@ -530,7 +554,7 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = {	ammo="Pemphredo Tathlum",
 		head="Nyame Helm",
 		body="Emet Harness +1",
-	hands="Hashi. Bazu. +3",
+		hands="Hashi. Bazu. +3",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
 		neck="Elite Royal Collar",
@@ -541,32 +565,32 @@ function init_gear_sets()
 		right_ring="Supershear Ring",
 		   back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}},}
 
-	sets.midcast['Elemental Magic'] = { ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'] = {  ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
-  hands="Hashi. Bazu. +3",
-      legs="Hashishin Tayt +3",
-   feet="Hashi. Basmak +3",
-      neck="Quanpur Necklace",
-    waist="Salire Belt",
-   left_ear="Hecate's Earring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Orpheus's Sash",
+    left_ear="Regal Earring",
     right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
+    left_ring="Metamor. Ring +1",
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
-	sets.midcast['Elemental Magic'].Resistant = { ammo="Pemphredo Tathlum",
+	sets.midcast['Elemental Magic'].Resistant = {  ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
     body="Hashishin Mintan +3",
-   hands="Hashi. Bazu. +3",
-      legs="Hashishin Tayt +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
     feet="Hashi. Basmak +3",
-    neck="Quanpur Necklace",
-    waist="Salire Belt",
-   left_ear="Hecate's Earring",
+    neck="Sibyl Scarf",
+    waist="Orpheus's Sash",
+    left_ear="Regal Earring",
     right_ear="Friomisi Earring",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
+    left_ring="Metamor. Ring +1",
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
@@ -608,7 +632,7 @@ function init_gear_sets()
     neck="Mirage Stole +2",
     waist="Salire Belt",
     left_ear="Hermetic Earring",
-    right_ear="Hashi. Earring +1",
+    right_ear="Hashi. Earring +2",
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
@@ -622,9 +646,9 @@ function init_gear_sets()
     neck="Mirage Stole +2",
     waist="Salire Belt",
     left_ear="Hermetic Earring",
-    right_ear="Hashi. Earring +1",
-    left_ring="Jhakri Ring",
-    right_ring="Ayanmo Ring",
+    right_ear="Hashi. Earring +2",
+    left_ring="Metamor. Ring +1",
+    right_ring="Stikini Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.midcast['Blue Magic'].Stun.Fodder = sets.midcast['Blue Magic'].Stun
@@ -664,19 +688,19 @@ function init_gear_sets()
 	--Overwrite certain spells with these peices even if the day matches, because of resource inconsistancies.
 	sets.NonElementalCure = {waist="Luminary Sash"}
 
-	sets.midcast['Blue Magic'].SkillBasedBuff = {     ammo="Crepuscular Pebble",
-     head="Nyame Helm",
-    body="Nyame Mail",
+	sets.midcast['Blue Magic'].SkillBasedBuff = {    ammo="Crepuscular Pebble",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Hashi. Bazu. +3",
-       legs="Hashishin Tayt +3",
-    feet="Nyame Sollerets",
+    legs="Hashishin Tayt +3",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-    waist="Flume Belt",
-    left_ear="Etiolation Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear="Infused Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
-    back={ name="Cornflower Cape", augments={'MP+20','Accuracy+2','Blue Magic skill +10',}},}
+    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.midcast['Blue Magic'].Buff = {    ammo="Pemphredo Tathlum",
     head="Nyame Helm",
@@ -695,7 +719,91 @@ function init_gear_sets()
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {head="Amalric Coif +1",back="Grapevine Cape",waist="Gishdubar Sash"})
 
 	sets.midcast['Blue Magic']['Carcharian Verve'] = set_combine(sets.midcast['Blue Magic'].Buff, {head="Amalric Coif +1",hands="Hashi. Bazu. +3",waist="Emphatikos Rope",legs="Shedir Seraweels"})
-	--sets.midcast['Blue Magic']['Fantod'] =
+	
+	sets.midcast['Blue Magic']['Fantod'] = {    ammo="Sapience Orb",
+    head={ name="Despair Helm", augments={'STR+15','Enmity+7','"Store TP"+3',}},
+    body="Emet Harness +1",
+    hands="Nilas Gloves",
+    legs="Zoar Subligar +1",
+    feet="Ahosi Leggings",
+    neck="Unmoving Collar +1",
+    waist="Kasiri Belt",
+    left_ear="Trux Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Supershear Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+	
+	sets.midcast['Blue Magic']['Actinic Burst'] = {    ammo="Sapience Orb",
+    head={ name="Despair Helm", augments={'STR+15','Enmity+7','"Store TP"+3',}},
+    body="Emet Harness +1",
+    hands="Nilas Gloves",
+    legs="Zoar Subligar +1",
+    feet="Ahosi Leggings",
+    neck="Unmoving Collar +1",
+    waist="Kasiri Belt",
+    left_ear="Trux Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Supershear Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+	
+	sets.midcast['Blue Magic']['Jettatura'] = {    ammo="Sapience Orb",
+    head={ name="Despair Helm", augments={'STR+15','Enmity+7','"Store TP"+3',}},
+    body="Emet Harness +1",
+    hands="Nilas Gloves",
+    legs="Zoar Subligar +1",
+    feet="Ahosi Leggings",
+    neck="Unmoving Collar +1",
+    waist="Kasiri Belt",
+    left_ear="Trux Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Supershear Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+	
+	sets.midcast['Blue Magic']['Exuviation'] = {    ammo="Sapience Orb",
+    head={ name="Despair Helm", augments={'STR+15','Enmity+7','"Store TP"+3',}},
+    body="Emet Harness +1",
+    hands="Nilas Gloves",
+    legs="Zoar Subligar +1",
+    feet="Ahosi Leggings",
+    neck="Unmoving Collar +1",
+    waist="Kasiri Belt",
+    left_ear="Trux Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Supershear Ring",
+    right_ring="Eihwaz Ring",
+    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+	
+			sets.midcast['Reaving Wind'] = {      ammo="Sapience Orb",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Hashi. Earring +2",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+	
+	sets.midcast['Feather Tickle'] = {      ammo="Sapience Orb",
+    head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Enchntr. Earring +1",
+    right_ear="Hashi. Earring +2",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+	
 
 	-- Sets to return to when not performing an action.
 
@@ -708,94 +816,94 @@ function init_gear_sets()
 	sets.Learning = {hands="Assim. Bazu. +3"}
 
 	-- Resting sets
-	sets.resting = {      ammo="Staunch Tathlum +1",
+	sets.resting = {     ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	-- Idle sets
 	sets.idle = {       ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.idle.Sphere = set_combine(sets.idle, {})
 
-	sets.idle.PDT = {       ammo="Staunch Tathlum +1",
+	sets.idle.PDT = {     ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {right_ring="Shneddick Ring",feet="Hippo. Socks"})
 
 	-- Defense sets
-	sets.defense.PDT = {        ammo="Staunch Tathlum +1",
+	sets.defense.PDT = {     ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
-	sets.defense.MDT = {          ammo="Staunch Tathlum +1",
+	sets.defense.MDT = {     ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
-    sets.defense.MEVA = {        ammo="Staunch Tathlum +1",
+    sets.defense.MEVA = {     ammo="Staunch Tathlum +1",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body="Hashishin Mintan +3",
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear="Infused Earring",
-    right_ear="Assuage Earring",
-    left_ring="Defending Ring",
-    right_ring="Shneddick Ring",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck="Sibyl Scarf",
+    waist="Carrier's Sash",
+    left_ear="Regal Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Shiva Ring +1",
     back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
@@ -828,237 +936,236 @@ function init_gear_sets()
 	-- Engaged sets
 
 	sets.engaged = {   
-	    ammo="Coiste Bodhar",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-       waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.AM = {	    ammo="Coiste Bodhar",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
-   legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
-    right_ring="Epona's Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-
-
-	sets.engaged.Acc = {      ammo="Coiste Bodhar",
+	sets.engaged.AM = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-       waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.Acc.AM = {       ammo="Coiste Bodhar",
+
+	sets.engaged.Acc = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.FullAcc = {     ammo="Coiste Bodhar",
+	sets.engaged.Acc.AM = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.FullAcc.AM = {     ammo="Coiste Bodhar",
+	sets.engaged.FullAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.Fodder = {     ammo="Coiste Bodhar",
+	sets.engaged.FullAcc.AM = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.Fodder.AM = {     ammo="Coiste Bodhar",
+	sets.engaged.Fodder = {      ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.DT = {       ammo="Coiste Bodhar",
+	sets.engaged.Fodder.AM = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Ilabrat Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.DT.AM = {     ammo="Coiste Bodhar",
+	sets.engaged.DT = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
+    right_ring="Epona's Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+
+	sets.engaged.DT.AM = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Telos Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
 	sets.engaged.Acc.DT = {   
-   head="Malignance Chapeau",    
-   ammo="Coiste Bodhar",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 				
-	sets.engaged.Acc.DT.AM = {     ammo="Coiste Bodhar",
+	sets.engaged.Acc.DT.AM = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.FullAcc.DT = {      ammo="Coiste Bodhar",
+	sets.engaged.FullAcc.DT = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.Fodder.DT = {     ammo="Coiste Bodhar",
+	sets.engaged.Fodder.DT = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.engaged.Fodder.DT.AM = {ammo="Coiste Bodhar",
+	sets.engaged.Fodder.DT.AM = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
-      waist="Sailfi Belt +1",
+    waist="Reiki Yotai",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Ilabrat Ring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+    left_ring="Defending Ring",
     right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 
-	sets.Self_Healing = {ring1="Vocane Ring",ring2="Kunaji Ring",}
-	sets.Cure_Received = {ring1="Vocane Ring",ring2="Kunaji Ring",}
+	sets.Self_Healing = {ring2="Kunaji Ring",}
+	sets.Cure_Received = {ring2="Kunaji Ring",}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-	sets.MagicBurst = {ring1="Mujin Band",}
+	sets.MagicBurst = {}
 	sets.recphalanx = 	{
-		ammo="Staunch Tathlum +1",
-		head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-		body="Taeon Tabard",
-		hands="Taeon Gloves",
-        legs="Taeon Tights",
-		feet={ name="Herculean Boots", augments={'Pet: Attack+11 Pet: Rng.Atk.+11','Mag. Acc.+20','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},    
-		neck="Elite Royal Collar",
-    waist="Flume Belt",
-    left_ear="Etiolation Earring",
-    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Vocane Ring",
-    right_ring="Vengeful Ring",
-     back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Fast Cast"+10','Evasion+15',}}, 
+    ammo="Staunch Tathlum +1",
+    head={ name="Herculean Helm", augments={'Crit. hit damage +3%','MND+13','Phalanx +4',}},
+    body={ name="Taeon Tabard", augments={'Evasion+25','"Fast Cast"+4','Phalanx +3',}},
+    hands={ name="Herculean Gloves", augments={'"Cure" spellcasting time -4%','Attack+6','Phalanx +5','Accuracy+10 Attack+10','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
+    legs={ name="Herculean Trousers", augments={'Pet: Accuracy+8 Pet: Rng. Acc.+8','"Drain" and "Aspir" potency +8','Phalanx +3','Accuracy+18 Attack+18',}},
+    feet={ name="Herculean Boots", augments={'VIT+3','Rng.Acc.+14','Phalanx +4',}},
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Regal Earring",
+    right_ear="Etiolation Earring",
+    left_ring="Defending Ring",
+    right_ring="Purity Ring",
+    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},
 		}	
 end
 

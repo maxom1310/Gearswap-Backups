@@ -138,7 +138,7 @@ function init_gear_sets()
     legs={ name="Mpaca's Hose", augments={'Path: A',}},
     feet="Hattori Kyahan +3",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear="Lugra Earring +1",
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
@@ -241,7 +241,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Hattori Kyahan +3",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
-    waist="Light Belt",
+    waist={ name="Kentarch Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Hattori Earring +2",
     left_ring="Regal Ring",
@@ -271,7 +271,7 @@ function init_gear_sets()
     legs={ name="Mpaca's Hose", augments={'Path: A',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
-    waist="Light Belt",
+    waist="Fotia Belt",
     left_ear={ name="Lugra Earring +1", augments={'Path: A',}},
     right_ear="Hattori Earring +2",
     left_ring="Sroda Ring",
@@ -337,8 +337,8 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear="Crep. Earring",
     right_ear="Hattori Earring +2",
-    left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 	
 	sets.midcast['Absorb-TP'] = {    ammo="Pemphredo Tathlum",
@@ -351,8 +351,8 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear="Crep. Earring",
     right_ear="Hattori Earring +2",
-    left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
     back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 
     sets.midcast.NinjutsuBuff = set_combine(sets.midcast.FastRecast, {    ammo="Sapience Orb",
@@ -408,7 +408,7 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet="Hattori Kyahan +3",
     neck="Elite Royal Collar",
-    waist="Kasiri Belt",
+    waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
     left_ring="Gelatinous Ring +1",
@@ -422,7 +422,7 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet="Hattori Kyahan +3",
     neck="Bathy Choker +1",
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Eabani Earring",
     left_ring="Defending Ring",
@@ -436,7 +436,7 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet="Mpaca's Boots",
     neck="Elite Royal Collar",
-    waist="Kasiri Belt",
+     waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
     left_ring="Defending Ring",
@@ -450,7 +450,7 @@ function init_gear_sets()
     legs={ name="Mpaca's Hose", augments={'Path: A',}},
     feet="Mpaca's Boots",
     neck="Elite Royal Collar",
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Defending Ring",
@@ -464,7 +464,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
-    waist="Kasiri Belt",
+      waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
     left_ring="Gelatinous Ring +1",
@@ -501,7 +501,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.SomeAcc = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -515,7 +515,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.Acc = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -529,7 +529,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.FullAcc = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -543,7 +543,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.Fodder = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -557,7 +557,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.Crit = {    ammo="Date Shuriken",
     head={ name="Mpaca's Cap", augments={'Path: A',}},
@@ -571,7 +571,7 @@ function init_gear_sets()
 	right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.DT = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -585,7 +585,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.SomeAcc.DT = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -599,7 +599,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Acc.DT = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -613,7 +613,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.FullAcc.DT = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -627,7 +627,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Fodder.DT = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -641,7 +641,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 	
 	sets.engaged.Tank = {      ammo="Date Shuriken",
     head="Hattori Zukin +3",
@@ -655,7 +655,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.SomeAcc.Tank = {       ammo="Date Shuriken",
     head="Hattori Zukin +3",
@@ -669,7 +669,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Acc.Tank = {     ammo="Date Shuriken",
     head="Hattori Zukin +3",
@@ -683,7 +683,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.FullAcc.Tank = {     ammo="Date Shuriken",
     head="Hattori Zukin +3",
@@ -697,7 +697,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Fodder.Tank = {      ammo="Date Shuriken",
     head="Hattori Zukin +3",
@@ -711,7 +711,7 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Evasion = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -720,12 +720,12 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
+    back="Null Shawl",}
 
 	sets.engaged.SomeAcc.Evasion = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -734,12 +734,12 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Acc.Evasion = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -748,12 +748,12 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
+    back="Null Shawl",}
 
 	sets.engaged.FullAcc.Evasion = {    ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -762,12 +762,12 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
+    back="Null Shawl",}
 
 	sets.engaged.Fodder.Evasion = {     ammo="Date Shuriken",
     head="Malignance Chapeau",
@@ -776,12 +776,12 @@ function init_gear_sets()
     legs="Hattori Hakama +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bathy Choker +1", augments={'Path: A',}},
-    waist="Kasiri Belt",
+   waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Hattori Earring +2",
     left_ring="Hizamaru Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-    back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},}
+    back="Null Shawl",}
 	
     --------------------------------------
     -- Custom buff sets
@@ -800,9 +800,19 @@ function init_gear_sets()
 	sets.DWMax = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.Skillchain = {}
-	sets.Phalanx_Received = {    hands={ name="Herculean Gloves", augments={'Pet: DEX+4','Attack+6','Phalanx +4','Accuracy+4 Attack+4','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
+	sets.Phalanx_Received = {    ammo="Staunch Tathlum +1",
+    head={ name="Herculean Helm", augments={'Pet: Attack+21 Pet: Rng.Atk.+21','Weapon skill damage +2%','Phalanx +4',}},
+    body={ name="Herculean Vest", augments={'Mag. Acc.+21','MND+3','Phalanx +4','Accuracy+15 Attack+15','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
+    hands={ name="Herculean Gloves", augments={'Pet: DEX+4','Attack+6','Phalanx +4','Accuracy+4 Attack+4','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
     legs={ name="Herculean Trousers", augments={'Spell interruption rate down -4%','Pet: STR+3','Phalanx +4',}},
-    feet={ name="Herculean Boots", augments={'Pet: STR+8','Phalanx +3','Accuracy+8 Attack+8',}}}
+    feet={ name="Herculean Boots", augments={'Accuracy+16','AGI+2','Phalanx +5',}},
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Etiolation Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Defending Ring",
+    right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 	-- Weapons sets
 	sets.weapons.Prime = {main="Dokoku",sub="Uzura +2"}
 	sets.weapons.Heishi = {main="Heishi Shorinken",sub="Yagyu Darkblade"}

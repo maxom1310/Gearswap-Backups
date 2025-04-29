@@ -3,7 +3,7 @@ function user_job_setup()
 	state.CastingMode:options('Normal','Resistant','Fodder','Proc','OccultAcumen')
 	state.OffenseMode:options('Normal')
 	state.IdleMode:options('Normal','PDT','DTHippo')
-	state.Weapons:options('None','BurstWeapons','Khatvanga','Marin')
+	state.Weapons:options('None','BurstWeapons','Khatvanga')
 
 	gear.obi_cure_waist = "Hachirin-no-Obi"
 	gear.obi_low_nuke_waist = "Hachirin-no-Obi"
@@ -44,8 +44,7 @@ function init_gear_sets()
     --------------------------------------
 	
 	-- Weapons sets
-	sets.weapons.BurstWeapons = {main="Marin Staff +1",sub="Khonsu"}
-	sets.weapons.Marin = {main="Marin Staff +1",sub="Khonsu"}
+	sets.weapons.BurstWeapons = {main="Opashoro",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Knonsu"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
@@ -98,8 +97,8 @@ function init_gear_sets()
 	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Ammurapi Shield"})
 
 	sets.precast.FC.Death = {
-    main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+    main="Opashoro",
+    sub="Enki Strap",
     ammo="Sapience Orb",
     head="Amalric Coif +1", 
     body={ name="Merlinic Jubbah", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+2',}},
@@ -331,8 +330,8 @@ function init_gear_sets()
     
     sets.midcast.Aspir = sets.midcast.Drain
 	
-	sets.midcast.Aspir.Death = {      main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+	sets.midcast.Aspir.Death = {      main="Opashoro",
+    sub="Enki Strap",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Pixie Hairpin +1",
     body="Wicce Coat +3",
@@ -347,8 +346,8 @@ function init_gear_sets()
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Taranus's Cape", augments={'MP+60','Mag. Acc+20 /Mag. Dmg.+20','MP+20','"Fast Cast"+10','Damage taken-5%',}},}
 	
-	sets.midcast.Death = {     main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+	sets.midcast.Death = {     main="Opashoro",
+    sub="Enki Strap",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Pixie Hairpin +1",
     body="Wicce Coat +3",
@@ -380,8 +379,8 @@ function init_gear_sets()
 	
 	
 		sets.midcast["Comet"].Death = {
-	   main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+	   main="Opashoro",
+    sub="Enki Strap",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Pixie Hairpin +1",
     body="Wicce Coat +3",
@@ -397,8 +396,8 @@ function init_gear_sets()
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 	
 		sets.midcast['Absorb-TP'] = {  
-    main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+    main="Opashoro",
+    sub="Enki Strap",
     ammo="Sapience Orb",
     head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body="Wicce Coat +3",
@@ -415,8 +414,8 @@ function init_gear_sets()
 	}
 	
 	sets.midcast['Absorb-TP'].Death = {  
-	main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+	main="Opashoro",
+    sub="Enki Strap",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body="Wicce Coat +3",
@@ -460,7 +459,7 @@ function init_gear_sets()
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 
-    sets.midcast.BardSong = {main="Daybreak",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
+    sets.midcast.BardSong = {ammo="Ghastly Tathlum +1",
         head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Regal Earring",
         body="Zendik Robe",hands="Regal Cuffs",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Merlinic Shalwar",feet="Medium's Sabots"}
@@ -525,7 +524,7 @@ function init_gear_sets()
 		
 		-- Minimal damage gear, maximum recast gear for procs.
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,ammo="Impatiens",
-        head="Nahtirah Hat",neck="Loricate Torque +1",ear1="Gifted Earring",ear2="Loquac. Earring",
+        head="Nahtirah Hat",neck="Elite Royal Collar",ear1="Gifted Earring",ear2="Loquac. Earring",
         body="Spaekona's Coat +3",hands="Hagondes Cuffs +1",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Assid. Pants +1",feet="Regal Pumps +1"}
 		
@@ -563,7 +562,7 @@ function init_gear_sets()
     -- Normal refresh idle set
     sets.idle = {   
 	main={ name="Marin Staff +1", augments={'Path: A',}},
-    sub="Khonsu",
+    sub="Enki Strap",
     ammo="Crepuscular Pebble",
     head="Wicce Petasos +3",
     body="Wicce Coat +3",
@@ -581,7 +580,7 @@ function init_gear_sets()
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
     sets.idle.PDT = {   
 	main={ name="Marin Staff +1", augments={'Path: A',}},
-    sub="Khonsu",
+    sub="Enki Strap",
     ammo="Crepuscular Pebble",
     head="Wicce Petasos +3",
     body="Wicce Coat +3",
@@ -599,8 +598,8 @@ function init_gear_sets()
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
 
 	sets.idle.Death = {  
-    main={ name="Mpaca's Staff", augments={'Path: A',}},
-    sub="Khonsu",
+    main="Opashoro",
+    sub="Enki Strap",
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Wicce Petasos +3",
     body="Wicce Coat +3",
@@ -617,7 +616,7 @@ function init_gear_sets()
 
     sets.idle.Weak = {  
 	main={ name="Marin Staff +1", augments={'Path: A',}},
-    sub="Khonsu",
+    sub="Enki Strap",
     ammo="Crepuscular Pebble",
     head="Wicce Petasos +3",
     body="Wicce Coat +3",
@@ -720,7 +719,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {main="Marin Staff +1",
-    sub="Khonsu",
+    sub="Enki Strap",
     ammo="Crepuscular Pebble",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},

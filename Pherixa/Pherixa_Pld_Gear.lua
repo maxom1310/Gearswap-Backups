@@ -50,8 +50,8 @@ function init_gear_sets()
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+    feet="Chev. Sabatons +3",
+    neck="Moonlight Necklace",
     waist="Flume Belt +1",
     right_ear="Cryptic Earring",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -64,8 +64,8 @@ function init_gear_sets()
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+    feet="Chev. Sabatons +3",
+    neck="Moonlight Necklace",
     waist="Flume Belt +1",
     right_ear="Cryptic Earring",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -78,8 +78,8 @@ function init_gear_sets()
     body="Rev. Surcoat +3",
     hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+    feet="Chev. Sabatons +3",
+    neck="Moonlight Necklace",
     waist="Flume Belt +1",
     right_ear="Cryptic Earring",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -93,22 +93,32 @@ function init_gear_sets()
     sets.precast.JA['Sentinel'] = set_combine(sets.Enmity,{feet="Cab. Leggings"})
     sets.precast.JA['Rampart'] = set_combine(sets.Enmity,{head="Cab. Coronet"}) --head="Valor Coronet" (Also Vit?)
     sets.precast.JA['Fealty'] = set_combine(sets.Enmity,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +1"})
+    sets.precast.JA['Divine Emblem'] = set_combine(sets.Enmity,{feet="Chev. Sabatons +3"})
     sets.precast.JA['Cover'] = set_combine(sets.Enmity, {body="Cab. Surcoat +1"}) --head="Rev. Coronet +1",
 	
     sets.precast.JA['Invincible'].DT = set_combine(sets.Enmity.DT,{legs="Cab. Breeches +1"})
-    sets.precast.JA['Holy Circle'].DT = set_combine(sets.Enmity.DT,{feet="Rev. Leggings +3"})
-    sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet="Cab. Leggings +1"})
+    sets.precast.JA['Holy Circle'].DT = set_combine(sets.Enmity.DT,{feet="Gallant Leggings"})
+    sets.precast.JA['Sentinel'].DT = set_combine(sets.Enmity.DT,{feet="Cab. Leggings"})
     sets.precast.JA['Rampart'].DT = set_combine(sets.Enmity.DT,{head="Cab. Coronet"}) --head="Valor Coronet" (Also Vit?)
     sets.precast.JA['Fealty'].DT = set_combine(sets.Enmity.DT,{body="Cab. Surcoat +1"})
-    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet="Chev. Sabatons +1"})
+    sets.precast.JA['Divine Emblem'].DT = set_combine(sets.Enmity.DT,{feet="Chev. Sabatons +3"})
     sets.precast.JA['Cover'].DT = set_combine(sets.Enmity.DT, {body="Cab. Surcoat +1"}) --head="Rev. Coronet +1",
 	
     -- add mnd for Chivalry
     sets.precast.JA['Chivalry'] = {
-		head="Sulevia's Mask +2",neck="Phalaina Locket",ear1="Nourish. Earring",ear2="Nourish. Earring +1",
-		body="Rev. Surcoat +3",hands="Cab. Gauntlets +1",ring1="Stikini Ring +1",ring2="Rufescent Ring",
-		back=gear.enmity_jse_back,waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
+    ammo="Crepuscular Pebble",
+    head="Crepuscular Helm",
+    body="Rev. Surcoat +3",
+    hands={ name="Cab. Gauntlets +3", augments={'Enhances "Chivalry" effect',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Moonlight Necklace",
+    waist="Luminary Sash",
+    left_ear="Nourish. Earring",
+    right_ear="Nourish. Earring +1",
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
 
 	sets.precast.JA['Shield Bash'] = set_combine(sets.Enmity, {hands="Cab. Gauntlets +3"})		
     sets.precast.JA['Provoke'] = set_combine(sets.Enmity, {})
@@ -123,7 +133,7 @@ function init_gear_sets()
 	sets.precast.JA['Swordplay'] = set_combine(sets.Enmity, {})
 	sets.precast.JA['Pflug'] = set_combine(sets.Enmity, {})
 	
-	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {hands="Cab. Gauntlets +1"})		
+	sets.precast.JA['Shield Bash'].DT = set_combine(sets.Enmity.DT, {hands="Cab. Gauntlets +3"})		
     sets.precast.JA['Provoke'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Warcry'].DT = set_combine(sets.Enmity.DT, {})
 	sets.precast.JA['Palisade'].DT = set_combine(sets.Enmity.DT, {})
@@ -137,23 +147,14 @@ function init_gear_sets()
 	sets.precast.JA['Pflug'].DT = set_combine(sets.Enmity.DT, {})
 	
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = {
-		head="Carmine Mask +1",
-		body="Rev. Surcoat +3",ring1="Asklepian Ring",ring2="Valseur's Ring",
-		waist="Chaac Belt",legs="Sulev. Cuisses +2"}
+    sets.precast.Waltz = {}
         
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
     
-    sets.precast.Step = {ammo="Aurgelmir Orb +1",
-        head="Founder's Corona",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-        body="Tartarus Platemail",hands="Leyline Gloves",ring1="Ramuh Ring +1",ring2="Patricius Ring",
-        back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Founder's Greaves"}
+    sets.precast.Step = {}
 		
-	sets.precast.JA['Violent Flourish'] = {ammo="Aurgelmir Orb +1",
-        head="Founder's Corona",neck="Erra Pendant",ear1="Gwati Earring",ear2="Digni. Earring",
-        body="Found. Breastplate",hands="Leyline Gloves",ring1="Defending Ring",ring2="Stikini Ring +1",
-        back="Ground. Mantle +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Founder's Greaves"}
+	sets.precast.JA['Violent Flourish'] = {}
 		
 	sets.precast.JA['Animated Flourish'] = set_combine(sets.Enmity, {})
 
@@ -167,10 +168,10 @@ function init_gear_sets()
     right_ear="Chev. Earring +2",
     left_ring={ name="Gelatinous Ring +1",priority=10,},
 	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Phys. dmg. taken-10%',},priority=10,},
-    legs={ name="Odyssean Cuisses", augments={'"Fast Cast"+6','MND+6',}},
-    feet={ name="Odyssean Greaves", augments={'Mag. Acc.+5 "Mag.Atk.Bns."+5','"Fast Cast"+6','CHR+10',}},
+    legs={ name="Odyssean Cuisses", augments={'Pet: "Dbl.Atk."+4 Pet: Crit.hit rate +4','CHR+10','"Fast Cast"+8','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
+    feet="Chev. Sabatons +3",
 	    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    neck="Voltsurge Torque",
+    neck="Orunmila's Torque",
     waist="Carrier's Sash",
   --  left_ear="Etiolation Earring",
 
@@ -184,10 +185,10 @@ function init_gear_sets()
     right_ear="Chev. Earring +2",
     left_ring={ name="Gelatinous Ring +1",priority=10,},
 	back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Phys. dmg. taken-10%',},priority=10,},
-    legs={ name="Odyssean Cuisses", augments={'"Fast Cast"+6','MND+6',}},
-    feet={ name="Odyssean Greaves", augments={'Mag. Acc.+5 "Mag.Atk.Bns."+5','"Fast Cast"+6','CHR+10',}},
+    legs={ name="Odyssean Cuisses", augments={'Pet: "Dbl.Atk."+4 Pet: Crit.hit rate +4','CHR+10','"Fast Cast"+8','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
+    feet="Chev. Sabatons +3",
 	    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    neck="Voltsurge Torque",
+    neck="Orunmila's Torque",
     waist="Carrier's Sash",
  --   left_ear="Etiolation Earring",
    }
@@ -285,16 +286,16 @@ function init_gear_sets()
 	
 	sets.precast.WS['Sanguine Blade'].Acc = sets.precast.WS['Sanguine Blade']
 
-    sets.precast.WS['Atonement'] = {    ammo="Crepuscular Pebble",
+    sets.precast.WS['Atonement'] = {     ammo="Crepuscular Pebble",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Chev. Sabatons +3",
     neck="Moonlight Necklace",
-    waist="Carrier's Sash",
-    left_ear="Cryptic Earring",
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Damage taken-7%','STR+13 VIT+13',}},
     left_ring="Eihwaz Ring",
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -318,7 +319,7 @@ function init_gear_sets()
     body="Rev. Surcoat +3",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Odyssean Greaves", augments={'Mag. Acc.+5 "Mag.Atk.Bns."+5','"Fast Cast"+6','CHR+10',}},
+    feet="Chev. Sabatons +3",
     neck="Voltsurge Torque",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -333,7 +334,7 @@ function init_gear_sets()
     body="Rev. Surcoat +3",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Odyssean Greaves", augments={'Mag. Acc.+5 "Mag.Atk.Bns."+5','"Fast Cast"+6','CHR+10',}},
+    feet="Chev. Sabatons +3",
     neck="Voltsurge Torque",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -485,7 +486,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Carrier's Sash",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -499,10 +500,25 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Carrier's Sash",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
+	
+	sets.midcast['Erase'] = {     ammo="Sapience Orb",
+    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    body="Rev. Surcoat +3",
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Odyssean Cuisses", augments={'Pet: "Dbl.Atk."+4 Pet: Crit.hit rate +4','CHR+10','"Fast Cast"+8','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
+    feet="Chev. Sabatons +3",
+    neck="Orunmila's Torque",
+    waist="Cornelia's Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Chev. Earring +2",
+    right_ring="Kishar Ring",
+    left_ring="Naji's Loop",
+    back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','HP+20','"Fast Cast"+10','Phys. dmg. taken-10%',}},
+	}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
 
@@ -520,7 +536,7 @@ function init_gear_sets()
     neck="Melic Torque",
     waist="Asklepian Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Damage taken-7%','STR+11 VIT+11',}},
+    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Damage taken-7%','STR+13 VIT+13',}},
     left_ring="Defending Ring",
     right_ring="Stikini Ring +1",
     back={ name="Weard Mantle", augments={'VIT+1','DEX+1','Enmity+2','Phalanx +5',}},})
@@ -541,7 +557,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Stikini Ring +1",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -557,7 +573,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -571,7 +587,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -585,7 +601,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -599,7 +615,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -613,7 +629,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -627,7 +643,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -641,7 +657,7 @@ function init_gear_sets()
 	neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -655,7 +671,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -677,7 +693,7 @@ function init_gear_sets()
     sets.MP = {}
 	sets.passive.AbsorbMP = {waist="Flume Belt +1"}
     sets.MP_Knockback = {}
-    sets.Twilight = {head="Twilight Helm", body="Twilight Mail"}
+    sets.Twilight = {head="Crepuscular Helm", body="Crepuscular Mail"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
@@ -701,7 +717,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -715,7 +731,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -729,7 +745,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -743,7 +759,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -757,7 +773,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -771,7 +787,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -785,7 +801,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -799,7 +815,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -813,7 +829,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -827,7 +843,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -841,7 +857,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -857,7 +873,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -871,7 +887,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -885,7 +901,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -899,7 +915,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}		
@@ -917,7 +933,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -931,7 +947,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -947,7 +963,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist="Carrier's Sash",
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Defending Ring",
     right_ring="Vengeful Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -961,7 +977,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -975,7 +991,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -989,7 +1005,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -1003,7 +1019,7 @@ function init_gear_sets()
     neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','Chance of successful block +5',}},}
@@ -1045,7 +1061,7 @@ function init_gear_sets()
     neck="Moonlight Necklace",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Chev Earring +1",
+    right_ear="Chev. Earring +2",
     left_ring="Moonlight Ring",
     right_ring="Defending Ring",
     back={ name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Mag. Evasion+15',}},}
@@ -1057,7 +1073,7 @@ function init_gear_sets()
 	-- Custom buff sets
 	--------------------------------------
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {neck="Vim Torque"}
+	sets.buff.Sleep = {neck="Vim Torque +1"}
     sets.buff.Cover = {body="Cab. Surcoat +1"}
 	sets.Phalanx_Received = 	{
 	main="Sakpata's Sword",
@@ -1071,7 +1087,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Asklepian Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Damage taken-7%','STR+11 VIT+11',}},
+    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Damage taken-7%','STR+13 VIT+13',}},
     left_ring="Defending Ring",
     right_ring="Shneddick Ring",
     back={ name="Weard Mantle", augments={'VIT+1','DEX+1','Enmity+2','Phalanx +5',}},
