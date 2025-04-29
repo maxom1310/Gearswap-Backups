@@ -80,7 +80,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     waist="Eschan Stone",
     left_ear="Telos Earring",
     right_ear="Cryptic Earring",
-    left_ring="Mummu Ring",
+    left_ring="Shneddick Ring",
     right_ring="Defending Ring",
     back="Camulus's Mantle",
 		}
@@ -300,7 +300,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
     right_ear="Ishvara Earring",
-    left_ring="Karieyh Ring",
+    left_ring="Epaminondas's ring",
     right_ring="Cornelia's Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 		} --23 (no wsd, but kept for the acc, look to replace with herc when augmented)
