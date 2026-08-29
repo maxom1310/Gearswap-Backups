@@ -44,7 +44,7 @@ function get_sets()
     head={ name="Merlinic Hood", augments={'"Fast Cast"+6','Mag. Acc.+7',}},
     body={ name="Merlinic Jubbah", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+2',}},
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+1','"Mag.Atk.Bns."+6',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
       feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Embla Sash",
@@ -61,7 +61,7 @@ function get_sets()
     head={ name="Merlinic Hood", augments={'"Fast Cast"+6','Mag. Acc.+7',}},  --14
     body={ name="Merlinic Jubbah", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+2',}}, --12
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+1','"Mag.Atk.Bns."+6',}}, --7
-    legs="Geomancy Pants +3",  --13
+    legs="Geomancy Pants +4",  --13
       feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}}, --9
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Embla Sash", --5
@@ -79,7 +79,7 @@ function get_sets()
     head={ name="Merlinic Hood", augments={'"Fast Cast"+6','Mag. Acc.+7',}},
     body={ name="Merlinic Jubbah", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+2',}},
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+1','"Mag.Atk.Bns."+6',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
       feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Embla Sash",
@@ -98,7 +98,7 @@ function get_sets()
 		head=empty,
     body="Crepuscular Cloak",
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+1','"Mag.Atk.Bns."+6',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -113,7 +113,7 @@ function get_sets()
     sets.JA['Bolster'] = {body="Bagua Tunic +1"}
 	sets.JA['Full Circle'] = {head="Azimuth Hood +3", hands="Bagua Mitaines +1"}
     sets.JA['Life Cycle'] = {body="Geomancy Tunic +3", back="Nantosuelta's Cape"}
-	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
+	sets.JA['Radial Arcana'] = {feet="Bagua Sandals +4"}
 -- WS sets --
 	sets.WS = {}
     sets.WS['Realmrazer'] = {}
@@ -173,7 +173,24 @@ function get_sets()
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Nantosuelta's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Damage taken-5%',}},}
-		sets.WS['Judgment'] = {
+	
+	sets.WS['Dagda'] = {
+    ammo="Oshasha's Treatise",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Rep. Plat. Medal",
+    waist="Cornelia's Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
+    left_ring="Ephramad's Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Nantosuelta's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Damage taken-5%',}},}
+
+
+	sets.WS['Judgment'] = {
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
@@ -229,7 +246,7 @@ function get_sets()
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet="Azimuth Gaiters +3",
     neck="Voltsurge Torque",
     waist="Cornelia's Belt",
@@ -312,6 +329,8 @@ function get_sets()
 		})		
 	sets.midcast.Phalanx = set_combine(sets.midcast.Duration, {
 	head={ name="Merlinic Hood", augments={'Potency of "Cure" effect received+3%','STR+10','Phalanx +3','Accuracy+7 Attack+7','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
+	hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+18','INT+7','Phalanx +4',}},
+	legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+25','Mag. Acc.+8 "Mag.Atk.Bns."+8','Phalanx +4','Accuracy+7 Attack+7',}},
 	feet={ name="Merlinic Crackows", augments={'"Resist Silence"+4','AGI+5','Phalanx +4','Accuracy+19 Attack+19',}},})
 		
 	sets.midcast.Refresh =  set_combine(sets.midcast.Duration, {
@@ -358,8 +377,8 @@ function get_sets()
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
     hands="Azimuth gloves +3",
-    legs="Geomancy Pants +3",
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    legs="Geomancy Pants +4",
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Luminary Sash",
     left_ear="Malignance Earring",
@@ -377,9 +396,9 @@ function get_sets()
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Bagua Galero +1", augments={'Enhances "Primeval Zeal" effect',}},
     body="Geomancy Tunic +3",
-    hands="Geo. Mitaines +3",
+    hands="Geo. Mitaines +4",
     legs="Azimuth Tights +3",
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck="Erra Pendant",
     waist="Luminary Sash",
     left_ear="Malignance Earring",
@@ -395,8 +414,8 @@ function get_sets()
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Amalric Coif +1",
      body={ name="Merlinic Jubbah", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','"Drain" and "Aspir" potency +8','AGI+2','Mag. Acc.+15',}},
-    hands="Geo. Mitaines +3",
-    legs="Geomancy Pants +3",
+    hands="Geo. Mitaines +4",
+    legs="Geomancy Pants +4",
       feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Cetl Belt",
@@ -448,7 +467,7 @@ function get_sets()
     head={ name="Merlinic Hood", augments={'"Fast Cast"+6','Mag. Acc.+7',}},
     body={ name="Merlinic Jubbah", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+2',}},
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+7','Mag. Acc.+1','"Mag.Atk.Bns."+6',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'Mag. Acc.+30','"Fast Cast"+6','CHR+6',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Cornelia's Belt",
@@ -469,13 +488,13 @@ function get_sets()
 	    ear1="Malignance Earring",
 	    right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
 	    body="Crepuscular Cloak",
-	    hands="Geo. Mitaines +3",
+	    hands="Geo. Mitaines +4",
 	    ring1="Metamor. Ring +1",
 		ring2="Freke Ring",
 		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	    waist="Eschan Stone",
-	    legs="Geomancy Pants +3",
-		feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+	    legs="Geomancy Pants +4",
+		feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
 		}		
 -- Geomancy Magic --
     sets.midcast.Geomancy = set_combine(sets.midcast.ConserveMP, {
@@ -505,7 +524,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -522,7 +541,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -538,7 +557,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -556,7 +575,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -574,7 +593,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -590,7 +609,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -606,7 +625,7 @@ function get_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -801,9 +820,9 @@ function midcast(spell)
             equip(sets.midcast.Geomancy)
             if string.find(spell.english, 'Indi-') then
 			    if buffactive['Entrust'] then
-                    equip(sets.midcast.Geomancy, {main="Solstice",legs="Bagua Pants +3",feet="Azimuth Gaiters +3",})          
+                    equip(sets.midcast.Geomancy, {main="Solstice",legs="Bagua Pants +4",feet="Azimuth Gaiters +3",})          
 				else 
-				equip(sets.midcast.Geomancy, {legs="Bagua Pants +3",})
+				equip(sets.midcast.Geomancy, {legs="Bagua Pants +4",})
 				end
 			end	
 	    end

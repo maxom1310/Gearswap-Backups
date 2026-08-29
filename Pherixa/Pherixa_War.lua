@@ -9,7 +9,7 @@ function job_setup()
 end
 
 function user_setup()
-    state.OffenseMode:options('Normal', 'DT')
+    state.OffenseMode:options('Normal', 'DT','SubtleBlow')
 		send_command('bind ^f9 input /equipset 25;wait1;input /echo Naegling;wait1;aws use savage blade')
 		send_command('bind !f9 input /equipset 26;wait1;input /echo Chango;wait1;aws use Upheaval')
 		send_command('bind ^@!f9 input /equipset 27;wait1;input /echo Gsword;wait1;aws use Fimbulvetr')	
@@ -23,7 +23,7 @@ end
 
 function init_gear_sets()
 	sets.precast.JA.Warcry = {
-        head="Agoge Mask +3",
+        head="Agoge Mask +4",
     }
     sets.precast.JA["Mighty Strikes"] = {
     ammo="Crepuscular Pebble",
@@ -42,11 +42,11 @@ function init_gear_sets()
     }
     sets.precast.JA.Berserk = {
         back="Cichol's Mantle",
-		body="Pumm. Lorica +3",
-		feet="Agoge calligae +3",
+		body="Pumm. Lorica +4",
+		feet="Agoge Calligae +4",
     }
 		    sets.precast.JA.Tomahawk = {
-		feet="Agoge calligae +3",
+		feet="Agoge Calligae +4",
         ammo="Thr. Tomahawk",
     }
 	sets.precast.JA["Blood Rage"] = {
@@ -97,6 +97,8 @@ function init_gear_sets()
     left_ring="Niqmaddu Ring",
     right_ring="Moonlight Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},})
+	
+	sets.engaged.SubtleBlow = set_combine(sets.engaged, {body="Dagon Breastplate"})
     sets.idle = {
 	    ammo="Crepuscular Pebble",
     head="Sakpata's Helm",
@@ -114,7 +116,7 @@ function init_gear_sets()
 	}
     sets.precast.WS = {
     ammo="Knobkierrie",
-    head="Agoge Mask +3",
+    head="Agoge Mask +4",
     body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -129,7 +131,7 @@ function init_gear_sets()
 }
     sets.precast.WS["Disaster"] = {
     ammo="Knobkierrie",
-    head="Agoge Mask +3",
+    head="Agoge Mask +4",
     body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -174,64 +176,64 @@ function init_gear_sets()
     right_ring="Ephramad's Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
 }
-	sets.precast.WS["Armor Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+	sets.precast.WS["Armor Break"] = {     ammo="Pemphredo Tathlum",
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
-    neck="Moonlight Necklace",
-    waist="Eschan Stone",
-    left_ear="Crep. Earring",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Crit.hit rate+5',}},
-    left_ring="Crepuscular Ring",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    left_ring="Murky Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",}
 	
-		sets.precast.WS["Full Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+		sets.precast.WS["Full Break"] = {      ammo="Pemphredo Tathlum",
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
-    neck="Moonlight Necklace",
-    waist="Eschan Stone",
-    left_ear="Crep. Earring",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Crit.hit rate+5',}},
-    left_ring="Crepuscular Ring",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    left_ring="Murky Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",}
 	
-		sets.precast.WS["Weapon Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+		sets.precast.WS["Weapon Break"] = {     ammo="Pemphredo Tathlum",
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
-    neck="Moonlight Necklace",
-    waist="Eschan Stone",
-    left_ear="Crep. Earring",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Crit.hit rate+5',}},
-    left_ring="Crepuscular Ring",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-		sets.precast.WS["Shield Break"] = {    ammo="Pemphredo Tathlum",
-    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    left_ring="Murky Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",}
+		sets.precast.WS["Shield Break"] = {     ammo="Pemphredo Tathlum",
+    head="Boii Mask +3",
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Boii Calligae +3",
-    neck="Moonlight Necklace",
-    waist="Eschan Stone",
-    left_ear="Crep. Earring",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Crit.hit rate+5',}},
-    left_ring="Crepuscular Ring",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    left_ring="Murky Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",}
 	
 	sets.precast.WS.Upheaval = {
       ammo="Knobkierrie",
-    head="Agoge Mask +3",
+    head="Agoge Mask +4",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",

@@ -51,15 +51,15 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Iskur Gorget",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
     right_ear="Telos Earring",
     left_ring={name="Chirich Ring +1",bag="Wardrobe 3"},
-    right_ring={name="Chirich Ring +1",bag="Wardrobe 4"},
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    right_ring="Murky Ring",
+    back="Null Shawl",}
 	sets.precast = {}
 	sets.precast.Normal = {}
 	sets.precast.Acc = {}
@@ -100,16 +100,16 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 
 	sets.engaged.TPsavage = {
     main="Naegling",
-    sub="Blurred Knife +1",
+    sub="Gleti's Knife",
     range={ name="Anarchy +2", augments={'Delay:+60','TP Bonus +1000',}},
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Iskur Gorget",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
     right_ear="Telos Earring",
     left_ring={name="Chirich Ring +1",bag="Wardrobe 3"},
     right_ring={name="Chirich Ring +1",bag="Wardrobe 4"},
@@ -304,7 +304,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     neck="Rep. Plat. Medal",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Chas. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Crit.hit rate+7','STR+11 AGI+11',}},
+    right_ear="Chas. Earring +2",
     left_ring="Epaminondas's ring",
     right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -326,7 +326,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear={ name="Chas. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Crit.hit rate+7','STR+11 AGI+11',}},
+    right_ear="Chas. Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -418,7 +418,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	--	neck="Magoraga Beads",})
 		
 	sets.precast.CorsairRoll = set_combine(sets.aftercast.Idle, {
-	--	main="Lanun Knife",
+		main="Rostam",
 		head="Lanun Tricorne",
 		neck="Regal Necklace",
 		hands="Chasseur's Gants +3",
