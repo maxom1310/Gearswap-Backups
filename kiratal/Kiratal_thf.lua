@@ -225,7 +225,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Herculean Trousers", augments={'VIT+4','Pet: Attack+16 Pet: Rng.Atk.+16','"Treasure Hunter"+2','Accuracy+1 Attack+1','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
     feet={ name="Herculean Boots", augments={'Spell interruption rate down -3%','"Subtle Blow"+1','"Treasure Hunter"+2',}},
-    neck="Sanctity Necklace",
+    neck="Sibyl Scarf",
     waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -307,7 +307,7 @@ function init_gear_sets()
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
     right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    back="Null Shawl",
 		}
 
     sets.idle.Town = {
@@ -325,7 +325,7 @@ function init_gear_sets()
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
     right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+    back="Null Shawl",
 		}
 
     sets.idle.Weak = {
@@ -343,7 +343,7 @@ function init_gear_sets()
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Shneddick Ring",
     right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+	back="Null Shawl",
 		}
 
 
@@ -424,7 +424,7 @@ function init_gear_sets()
     right_ear="Skulk. Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
+   back="Null Shawl",
 		}
     sets.engaged.Acc = {
 			main="Tauret",
@@ -439,7 +439,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {
@@ -455,7 +455,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
 
     -- Mod set for trivial mobs (Thaumas)
@@ -472,7 +472,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
 
     sets.engaged.Evasion = {
@@ -488,7 +488,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
     sets.engaged.Acc.Evasion = {
 			main="Tauret",
@@ -503,7 +503,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
 
     sets.engaged.PDT = {
@@ -521,7 +521,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
     sets.engaged.Acc.PDT = {
 			main="Tauret",
@@ -538,7 +538,7 @@ function init_gear_sets()
 		right_ear="Etiolation Earring",
 		left_ring="Gelatinous Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Toutatis's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},
+		back="Null Shawl",
 		}
 
 end

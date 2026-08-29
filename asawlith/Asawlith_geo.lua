@@ -207,7 +207,7 @@ function get_sets()
     waist="Luminary Sash",
     left_ear="Malignance Earring",
 	right_ear="Azimuth Earring +2",
-    left_ring="Vertigo Ring",
+    left_ring="Metamor. Ring +1",
     right_ring="Globidonta Ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +9','Indi. eff. dur. +18','Pet: Damage taken -2%','Damage taken-1%',}},
 	}	
@@ -248,7 +248,7 @@ function get_sets()
     left_ear="Malignance Earring",
 	right_ear="Azimuth Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Vertigo Ring",
+    right_ring="Shiva Ring +1",
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	} 
 	    sets.midcast['Absorb-TP'] = {
@@ -302,7 +302,7 @@ function get_sets()
     left_ear="Genmei Earring",
     right_ear="Azimuth Earring +2",
     left_ring="Defending Ring",
-    right_ring="Vertigo Ring",
+    right_ring="Murky Ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +9','Indi. eff. dur. +18','Pet: Damage taken -2%','Damage taken-1%',}},})
 ---- Aftercast ----
     sets.aftercast = {}

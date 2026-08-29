@@ -3,13 +3,14 @@ function user_job_setup()
     state.OffenseMode:options('Normal','Amin', 'SomeAcc','Acc','FullAcc','Fodder')
     state.HybridMode:options('Normal','Amin','DTLite','PDT','MDT')
     state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc')
-	state.IdleMode:options('Normal', 'Sphere')
+	state.IdleMode:options('Normal','Amin', 'Sphere')
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','Prime','Terp','Tauret','Aeneas','TP')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AutoContradanceMode = M(false, 'Auto Contradance Mode')
+	state.AutoPrestoMode = M(false, 'Auto Presto Mode')
     -- Additional local binds
     send_command('bind @` gs c step')
 	send_command('bind ^!@` gs c toggle usealtstep')
@@ -51,7 +52,7 @@ function init_gear_sets()
     
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['No Foot Rise'] = {} --body="Horos Casaque +1"
+    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque +1"}
 
     sets.precast.JA['Trance'] = {head="Horos Tiara +1"}
     
@@ -67,7 +68,7 @@ function init_gear_sets()
     waist="Chaac Belt",
     left_ear="Sjofn Earring",
     right_ear="Odnowa Earring +1",
-    left_ring="Defending Ring",
+    left_ring="murky ring",
     right_ring="Metamor. Ring +1",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 		
@@ -78,21 +79,37 @@ function init_gear_sets()
     
     sets.precast.Samba = {back="Senuna's Mantle", head="Maxixi Tiara +1"}
 
-    sets.precast.Jig = {legs="Horos Tights +2"} 
+    sets.precast.Jig = {legs="Horos Tights +4"} 
 
-    sets.precast.Step = {    ammo="C. Palug Stone",
+    sets.precast.Step = {     ammo="C. Palug Stone",
     head="Maculele Tiara +3",
-    body="Malignance Tabard",
-    hands="Macu. Bangles +3",
+    body="Macu. Casaque +3",
+    hands="Maxixi Bangles +4",
     legs="Maculele Tights +3",
-    feet="Horos T. Shoes +3",
-    neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-    waist={ name="Kentarch Belt +1", augments={'Path: A',}},
-    left_ear="Odr Earring",
-    right_ear="Macu. Earring +1", 
+    feet="Horos Toe Sh. +4",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
+    right_ear="Odr Earring",
     left_ring="Ephramad's Ring",
     right_ring="Regal Ring",
-    back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
+	
+	sets.precast.Step['Feather Step'] = {
+	     ammo="C. Palug Stone",
+    head="Maculele Tiara +3",
+    body="Macu. Casaque +3",
+    hands="Maxixi Bangles +4",
+    legs="Maculele Tights +3",
+    feet="Macu. Toe Sh. +3",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
+    right_ear="Odr Earring",
+    left_ring="Ephramad's Ring",
+    right_ring="Regal Ring",
+    back="Null Shawl",}
+
 		
     sets.Enmity = {    ammo="Yamarang",
     head={ name="Nyame Helm", augments={'Path: B',}},
@@ -104,7 +121,7 @@ function init_gear_sets()
     waist="Chaac Belt",
     left_ear="Friomisi Earring",
     right_ear="Odnowa Earring +1",
-    left_ring="Defending Ring",
+    left_ring="murky ring",
     right_ring="Ilabrat Ring",
     back="Agema Cape",}
 		
@@ -137,7 +154,7 @@ function init_gear_sets()
     body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+17','"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+6','Mag. Acc.+10',}},
     neck="Orunmila's Torque",
     waist="Engraved Belt",
     left_ear="Enchntr. Earring +1",
@@ -338,7 +355,7 @@ function init_gear_sets()
     
     sets.midcast.FastRecast = {
         head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-        body="Dread Jupon",hands="Leyline Gloves",ring1="Defending Ring",ring2="Prolix Ring",
+        body="Dread Jupon",hands="Leyline Gloves",ring1="murky ring",ring2="Prolix Ring",
         back="Moonlight Cape",waist="Flume Belt +1",legs="Rawhide Trousers",feet="Malignance Boots"}
         
     -- Specific spells
@@ -346,12 +363,12 @@ function init_gear_sets()
 
 	sets.midcast["Absorb-TP"] = {    ammo="Yamarang",
     head="Maculele Tiara +3",
-    body="Malignance Tabard",
+    body="Macu. Casaque +3",
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs="Maculele Tights +3",
     feet="Macu. Toe Sh. +3",
     neck="Orunmila's Torque",
-    waist="Eschan Stone",
+    waist="Null Belt",
     left_ear="Enchntr. Earring +1",
     right_ear={ name="Macu. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','"Store TP"+5',}},
     left_ring="Stikini Ring +1",
@@ -378,12 +395,36 @@ function init_gear_sets()
     waist="Null Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="murky ring",
     right_ring="Shneddick Ring",
     back="Null Shawl",}
 		
-    sets.idle.Sphere = set_combine(sets.idle, {})
-    
+    sets.idle.Sphere = set_combine(sets.idle, {    ammo="Staunch Tathlum +1",
+    head="Turms Cap +1",
+    body={ name="Nyame Mail", augments={'Path: B',}},
+     hands="Regal GLoves",
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Elite Royal Collar",
+    waist="Null Belt",
+    left_ear="Etiolation Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},	
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
+    right_ring="Roller's Ring",
+    back="Null Shawl",})
+     sets.idle.Amin = set_combine(sets.idle, {     ammo="Aurgelmir Orb +1",
+    head="Turms Cap +1",
+    body={ name="Gleti's Cuirass", augments={'Path: A',}},
+    hands="Regal GLoves",
+    legs="Dashing Subligar",
+    feet={ name="Gleti's Boots", augments={'Path: A',}},
+    neck={ name="Etoile Gorget +2", augments={'Path: A',}},
+    waist="Gishdubar Sash",
+    left_ear="Telos Earring",
+    right_ear="Dedition Earring",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
+    right_ring="Roller's Ring",
+    back="Repulse Mantle",})
     -- Defense sets
 
     sets.defense.PDT = {     ammo="Yamarang",
@@ -476,7 +517,7 @@ function init_gear_sets()
     waist="Gishdubar Sash",
     left_ear="Telos Earring",
     right_ear="Dedition Earring",
-    left_ring="Chirich Ring +1",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
     right_ring="Roller's Ring",
     back="Repulse Mantle",
 	}
@@ -638,8 +679,8 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Moonlight Ring",
-    right_ring="Defending Ring",
+    right_ring="Moonlight Ring",
+    left_ring="murky ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},}
 end
 

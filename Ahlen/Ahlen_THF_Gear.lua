@@ -9,7 +9,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Prime','Mandau','Aeneas','Aeolian','Savage','Maxtp','ProcWeapons','Evisceration','Throwing','SwordThrowing')
+	state.Weapons:options('Prime','Mandau','Aeneas','Aeolian','Savage','Maxtp','ProcWeapons','Evisceration','Throwing','SwordThrowing','None')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'}
 	state.AmbushMode = M(false, 'Ambush Mode')
@@ -58,6 +58,7 @@ function init_gear_sets()
 	sets.weapons.Evisceration = {main="Tauret",sub="Gleti's Knife"}
 	sets.weapons.Throwing = {main="Mandau",sub="Gleti's Knife",range="Raider's Bmrng.",ammo=empty}
 	sets.weapons.SwordThrowing = {main="Naegling",sub="Fusetto +2",range="Raider's Bmrng.",ammo=empty}
+	sets.weapons.None = {}
 	
     -- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="C. Palug Stone",
@@ -103,7 +104,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Enchntr. Earring +1",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Valseur's Ring",
     back="Moonlight Cape",}
 
@@ -244,7 +245,7 @@ function init_gear_sets()
     waist="Reiki Yotai",
     left_ear="Sherida Earring",
     right_ear="Dedition Earring",
-    left_ring="Chirich Ring +1",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
     right_ring="Moonlight Ring",
     back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
 
@@ -293,7 +294,7 @@ function init_gear_sets()
     waist="Cornelia's Belt",
     left_ear="Enchntr. Earring +1",
     right_ear="Loquac. Earring",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Prolix Ring",
     back="Moonlight Cape",}
 
@@ -333,13 +334,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    neck="Asn. Gorget +2",
+    waist="Engraved Belt",
+    left_ear="Alabaster earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Murky Ring",
+    back="Null Shawl",}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -357,13 +358,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    neck="Asn. Gorget +2",
+    waist="Engraved Belt",
+    left_ear="Alabaster earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Murky Ring",
+    back="Null Shawl",}
 
     sets.defense.MDT = {    ammo="Aurgelmir Orb +1",
     head="Turms Cap +1",
@@ -371,13 +372,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    neck="Warder's Charm",
+    waist="Engraved Belt",
+    left_ear="Alabaster earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Murky Ring",
+    back="Null Shawl",}
 		
 	sets.defense.MEVA = {    ammo="Aurgelmir Orb +1",
     head="Turms Cap +1",
@@ -385,13 +386,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    neck="Warder's Charm",
+    waist="Engraved Belt",
+    left_ear="Alabaster earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Murky Ring",
+    back="Null Shawl",}
 
 
     --------------------------------------
@@ -407,11 +408,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
     right_ring="Moonlight Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 		
     sets.engaged.SomeAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -421,11 +422,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
     right_ring="Moonlight Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
     
 	sets.engaged.Acc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -435,11 +436,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
     right_ring="Moonlight Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 		
     sets.engaged.FullAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -449,11 +450,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
     right_ring="Moonlight Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.engaged.Fodder = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -463,11 +464,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Epona's",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 
     sets.engaged.DT = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -477,11 +478,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 
     sets.engaged.SomeAcc.DT = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -491,11 +492,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 		
     sets.engaged.Acc.DT = {   ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -505,11 +506,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 
     sets.engaged.FullAcc.DT = {   ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -519,11 +520,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 		
     sets.engaged.Fodder.DT = {   ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
@@ -533,11 +534,11 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck="Asn. Gorget +2",
     waist="Reiki Yotai",
-    left_ear="Sherida Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Skulk. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Store TP"+6','DEX+7 AGI+7',}},
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},}
+    right_ring="Moonlight Ring",
+    back="Null Shawl",}
 end
 
 -- Select default macro book on initial load or subjob change.
@@ -554,26 +555,6 @@ function select_default_macro_book()
     end
 end
 
-function user_job_lockstyle()
-	if player.equipment.main == nil or player.equipment.main == 'empty' then
-		windower.chat.input('/lockstyleset 060')
-	elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Sword/Nothing.
-				windower.chat.input('/lockstyleset 060')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-			windower.chat.input('/lockstyleset 060')
-		else
-			windower.chat.input('/lockstyleset 060') --Catchall just in case something's weird.
-		end
-	elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Dagger/Nothing.
-			windower.chat.input('/lockstyleset 060')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-			windower.chat.input('/lockstyleset 060')
-		else
-			windower.chat.input('/lockstyleset 060') --Catchall just in case something's weird.
-		end
-	end
-end
+
 
 autows_list = {['Aeneas']="Rudra's Storm",['Aeolian']='Aeolian Edge',['Savage']='Savage Blade',['Throwing']="Rudra's Storm",['SwordThrowing']='Savage Blade',['Evisceration']='Evisceration',['ProcWeapons']='Wasp Sting',['Bow']='Empyreal Arrow'}

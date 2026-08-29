@@ -304,7 +304,7 @@ function get_sets()
     waist="Sailfi Belt +1",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
-    left_ring="Shukuyu Ring",
+    left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
      back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
@@ -322,7 +322,7 @@ function get_sets()
     waist="Sailfi Belt +1",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
-    left_ring="Shukuyu Ring",
+    left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
@@ -434,7 +434,7 @@ function get_sets()
 	waist="Eschan Stone",
     left_ear="Odr Earring",
     right_ear="Telos Earring",
-    left_ring="Shukuyu Ring",
+    left_ring="Ephramad's Ring",
     right_ring="Ilabrat Ring",
     back="Cornflower cape",
 }
@@ -451,7 +451,7 @@ function get_sets()
     left_ear="Odr Earring",
     right_ear="Telos Earring",
      right_ring="Ilabrat Ring",
-   left_ring="Shukuyu Ring",
+   left_ring="Ephramad's Ring",
     back="Cornflower cape",
 }
                                                        
@@ -769,7 +769,7 @@ function get_sets()
         sets.Utility.Phalanx = {
 		ammo="Staunch Tathlum +1",
 		 head={ name="Herculean Helm", augments={'Pet: Phys. dmg. taken -1%','Blood Pact Dmg.+2','Phalanx +4','Accuracy+15 Attack+15',}},
-		neck="Melic Torque",
+		neck="Incanter's Torque",
 		ear1="Mimir earring",
 		ear2="Andoaa Earring",
 		body="Taeon Tabard",

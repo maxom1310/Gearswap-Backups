@@ -204,7 +204,7 @@ function init_gear_sets()
     waist="Luminary Sash",
     left_ear="Etiolation Earring",
     right_ear="Enchanter Earring +1",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Inyanga Ring",
    back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 		
@@ -220,7 +220,7 @@ function init_gear_sets()
     waist="Luminary Sash",
     left_ear="Etiolation Earring",
     right_ear="Enchanter Earring +1",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Inyanga Ring",
    back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 
@@ -318,12 +318,12 @@ function init_gear_sets()
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
 		
 	sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+		head="C. Palug Crown",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Crematio Earring",
 		body="Chironic Doublet",hands="Volte Gloves",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back="Toro Cape",waist="Sekhmet Corset",legs="Gyve Trousers",feet=gear.chironic_nuke_feet}
 		
 	sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Ghastly Tathlum +1",
-		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+		head="C. Palug Crown",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Crematio Earring",
 		body="Chironic Doublet",hands="Volte Gloves",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back="Toro Cape",waist="Yamabuki-no-Obi",legs="Gyve Trousers",feet=gear.chironic_nuke_feet}
 		
@@ -350,7 +350,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     left_ring="Moonlight Ring",
     right_ring="Vengeful Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
@@ -366,7 +366,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     left_ring="Moonlight Ring",
     right_ring="Vengeful Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
@@ -382,8 +382,8 @@ function init_gear_sets()
    	neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
-    left_ring="Defending Ring",
+    right_ear="Alabaster Earring",
+    left_ring="Murky Ring",
     right_ring="Inyanga Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 
@@ -398,7 +398,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     left_ring="Moonlight Ring",
     right_ring="Vengeful Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
@@ -416,7 +416,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     left_ring="Moonlight Ring",
     right_ring="Vengeful Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
@@ -432,7 +432,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     left_ring="Moonlight Ring",
     right_ring="Vengeful Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}

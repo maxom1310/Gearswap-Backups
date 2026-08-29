@@ -34,12 +34,12 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1",back="Nantosuelta's Cape"}
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
-	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +4"}
+	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
-	sets.buff.Entrust = {legs="Bagua Pants",feet="Azimuth Gaiters +3",
+	sets.buff.Entrust = {legs="Bagua Pants +1",feet="Azimuth Gaiters +3",
 	back="Lifestream Cape",}
 	
 	-- Relic hat for Blaze of Glory HP increase.
@@ -52,7 +52,7 @@ function init_gear_sets()
     head={ name="Merlinic Hood", augments={'Attack+21','"Fast Cast"+7',}},
     body="Zendik Robe",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -83,7 +83,7 @@ function init_gear_sets()
 	head=empty,
     body="Twilight Cloak",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -177,7 +177,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
-	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back={ name="Lifestream Cape", augments={'Geomancy Skill +1','Indi. eff. dur. +20','Pet: Damage taken -1%',}},legs="Bagua Pants",feet="Azimuth Gaiters +3"})
+	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back={ name="Lifestream Cape", augments={'Geomancy Skill +1','Indi. eff. dur. +20','Pet: Damage taken -1%',}},legs="Bagua Pants +1",feet="Azimuth Gaiters +3"})
 		
     sets.midcast.Cure = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
@@ -185,12 +185,12 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-    neck={ name="Bagua Charm +2", augments={'Path: A',}},
+    neck="Incanter's Torque",
     waist="Hachirin-no-Obi",
     left_ear="Mendi. Earring",
     right_ear="Meili Earring",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 		
     sets.midcast.LightWeatherCure = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
@@ -199,12 +199,12 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-    neck={ name="Bagua Charm +2", augments={'Path: A',}},
+    neck="Incanter's Torque",
     waist="Hachirin-no-Obi",
     left_ear="Mendi. Earring",
     right_ear="Meili Earring",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 		
 		--Cureset for if it's not light weather but is light day.
@@ -214,12 +214,12 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
     legs={ name="Agwu's Slops", augments={'Path: A',}},
     feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-    neck={ name="Bagua Charm +2", augments={'Path: A',}},
+    neck="Incanter's Torque",
     waist="Hachirin-no-Obi",
     left_ear="Mendi. Earring",
     right_ear="Meili Earring",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 
     sets.midcast.Curaga = set_combine(sets.midcast.Cure, {})
@@ -398,7 +398,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Malignance Earring",
     right_ear="Azimuth Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
 	sets.midcast.Stun.Resistant = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
@@ -412,24 +412,25 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Malignance Earring",
     right_ear="Azimuth Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 		
-	sets.midcast.Impact = { main="Prime Maul",
+	sets.midcast.Impact = {
+	head=empty,
+    main="Prime Maul",
     sub="Genmei Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-	head=empty,
     body="Twilight Cloak",
     hands="Regal Cuffs",
-    legs="Geomancy Pants +3",
-    feet="Geo. Sandals +3",
+    legs="Geo. Pants +4",
+    feet="Geo. Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
-    waist="Luminary Sash",
+    waist="Null Belt",
     left_ear="Crep. Earring",
     right_ear="Digni. Earring",
-    left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
-    back={ name="Aurist's Cape +1", augments={'Path: A',}},}
+    left_ring={name="Stikini Ring +1",bag="Wardrobe 4"},
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
+    back="Null Shawl",}
 		
 	sets.midcast.Dispel = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
@@ -442,7 +443,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Malignance Earring",
     right_ear="Azimuth Earring +2",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Aurist's Cape +1", augments={'Path: A',}},}
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",})
@@ -499,7 +500,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear="Azimuth Earring +2",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {})
@@ -524,8 +525,8 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
-   -- body="Zendik Robe",
-	body="Azimuth Coat +3",
+    body="Zendik Robe",
+	--body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -534,7 +535,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 
 	-- Idle sets
@@ -543,7 +544,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
-   -- body="Zendik Robe",
+  --  body="Zendik Robe",
 	body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -553,7 +554,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 		
@@ -561,17 +562,17 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
-   -- body="Zendik Robe",
+  --  body="Zendik Robe",
 	body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+     feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 
 	-- .Pet sets are for when Luopan is present.
@@ -579,17 +580,17 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
-   -- body="Zendik Robe",
+  --  body="Zendik Robe",
 	body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 
@@ -601,13 +602,13 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 	body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+     feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 
@@ -630,7 +631,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 
 	-- Defense sets
@@ -648,7 +649,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 
 	sets.defense.MDT = {       main="Idris",
@@ -664,7 +665,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 		
     sets.defense.MEVA = {     main="Idris",
@@ -680,7 +681,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+17','Damage taken-6%','INT+9 MND+9',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring={name="Stikini Ring +1",bag="Wardrobe 3"},
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},}
 		
 	sets.defense.PetPDT = sets.idle.PDT.Pet

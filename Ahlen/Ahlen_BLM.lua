@@ -139,7 +139,7 @@ main="Bunzi's Rod",
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Digni. Earring",
-    left_ring="Shukuyu Ring",
+    left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 		}
@@ -156,7 +156,7 @@ main="Bunzi's Rod",
     waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Digni. Earring",
-    left_ring="Shukuyu Ring",
+    left_ring="Ephramad's Ring",
     right_ring="Epaminondas's Ring",
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 		}
@@ -168,7 +168,7 @@ main="Bunzi's Rod",
     hands="Nyame Gauntlets",
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    neck="Sanctity Necklace",
+    neck="Orunmila's Torque",
     waist="Luminary Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -184,7 +184,7 @@ main="Bunzi's Rod",
     hands="Nyame Gauntlets",
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    neck="Sanctity Necklace",
+    neck="Orunmila's Torque",
     waist="Luminary Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -250,12 +250,12 @@ main="Bunzi's Rod",
 	
 	sets.midcast['Enhancing Magic'] = {
     ammo="Staunch Tathlum +1",
-    head={ name="Telchine Cap", augments={'DEF+19','Spell interruption rate down -10%','Enh. Mag. eff. dur. +8',}},
-    body={ name="Telchine Chas.", augments={'Spell interruption rate down -9%','Enh. Mag. eff. dur. +8',}},
-    hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
+    head={ name="Telchine Cap", augments={'DEF+19','Spell interruption rate down -10%','Enh. Mag. eff. dur. +10',}},
+    head={ name="Telchine Cap", augments={'DEF+19','Spell interruption rate down -10%','Enh. Mag. eff. dur. +10',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+23','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Spell interruption rate down -7%','Enh. Mag. eff. dur. +8',}},
     feet={ name="Telchine Pigaches", augments={'DEF+18','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
-    neck="Melic Torque",
+    neck="Incanter's Torque",
     waist="Embla Sash",
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
@@ -267,8 +267,8 @@ main="Bunzi's Rod",
 	{    
 	ammo="Staunch Tathlum +1",
     head="Amalric Coif +1",
-    body={ name="Telchine Chas.", augments={'Spell interruption rate down -9%','Enh. Mag. eff. dur. +8',}},
-    hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
+    head={ name="Telchine Cap", augments={'DEF+19','Spell interruption rate down -10%','Enh. Mag. eff. dur. +10',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+23','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Spell interruption rate down -7%','Enh. Mag. eff. dur. +8',}},
     feet={ name="Telchine Pigaches", augments={'DEF+18','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
     neck="Enhancing Torque",
@@ -290,7 +290,7 @@ main="Bunzi's Rod",
     main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
+    head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body="Spaekona's Coat +2",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Agwu's Slops", augments={'Path: A',}},
@@ -325,7 +325,7 @@ main="Bunzi's Rod",
 	 sets.midcast['Enfeebling Magic'].Death = {ammo="Pemphredo tathlum",
         head="amalric coif +1",neck="Orunmila's Torque",ear1="Dignitary's Earring",ear2="Loquacious earring",
         body="Amalric Doublet",hands="Amalric Gages +1",ring1="Fenrir Ring +1",ring2="Prolix Ring",
-        back="Taranus's cape",waist="Eschan stone",legs="Psycloth lappas",feet="Amalric nails +1"}
+        back="Taranus's cape",waist="Null Belt",legs="Psycloth lappas",feet="Amalric nails +1"}
         
     sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
 
@@ -369,7 +369,7 @@ main="Bunzi's Rod",
 	main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-	head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
+	head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body={ name="Merlinic Jubbah", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst dmg.+11%','"Mag.Atk.Bns."+14',}},
 	hands="Nyame Gauntlets",
      legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','CHR+2','Mag. Acc.+12','"Mag.Atk.Bns."+15',}},
@@ -505,13 +505,13 @@ sets.resting = {
 	head="Nyame Helm",
 	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
-	ear2="Genmei Earring",
+	ear2="Alabaster Earring",
 	body="Amalric Doublet +1",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",
 	}
@@ -529,9 +529,9 @@ sets.resting = {
 	body="Amalric Doublet +1",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
@@ -564,9 +564,9 @@ sets.resting = {
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
 	
@@ -581,9 +581,9 @@ sets.resting = {
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
 	
@@ -598,9 +598,9 @@ sets.resting = {
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
     
@@ -616,9 +616,9 @@ sets.resting = {
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet="Nyame Sollerets",}
         
@@ -656,13 +656,13 @@ sets.resting = {
 	head="Nyame Helm",
 	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
-	ear2="Genmei Earring",
+	ear2="Alabaster Earring",
 	body="Nyame Mail",
 	hands="Nyame Gauntlets",
 	left_ring="Vocane Ring",
-	right_ring="Defending Ring",
+	right_ring="Murky Ring",
 	back="Taranus's cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Assiduity Pants +1",
 	feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Phys. dmg. taken -4%','CHR+3','Mag. Acc.+4',}}}
 end
@@ -689,7 +689,7 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
         equip(sets.magic_burst)
     end
 	 if spell.skill == 'Elemental Magic' and state.Spaekona.value and spell.english ~= 'Impact' then
-        equip({body="Spaekona's Coat +2"})
+        equip({body="Spaekona's Coat +4"})
     end
 
 end

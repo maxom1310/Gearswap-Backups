@@ -70,9 +70,9 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +4",hands="Sakonji Kote +4", back="Smertrios's Mantle"}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +4"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +4"}
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {}
@@ -120,7 +120,7 @@ function init_gear_sets()
 
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",waist="Fotia Belt"})
 	
-	 sets.precast.WS['Tachi: Muemei'] = {
+	 sets.precast.WS['Tachi: Mumei'] = {
     ammo="Knobkierrie",
     head="Mpaca's Cap",
     body="Nyame Mail",
@@ -139,30 +139,30 @@ function init_gear_sets()
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Kasuga Kabuto +3",
     body="Kasuga Domaru +3",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Kasuga Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Fotia Gorget",
     waist="Flume Belt +1",
     left_ear="Dedition Earring",
     right_ear="Kasuga Earring +2",
-    left_ring="Chirich Ring +1",
-    right_ring="Chirich Ring +1",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 			 sets.precast.WS['Flat Blade'] = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Kasuga Kabuto +3",
     body="Kasuga Domaru +3",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Kasuga Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Fotia Gorget",
     waist="Flume Belt +1",
     left_ear="Dedition Earring",
     right_ear="Kasuga Earring +2",
-    left_ring="Chirich Ring +1",
-    right_ring="Chirich Ring +1",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 6"},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
@@ -170,16 +170,16 @@ function init_gear_sets()
     ammo="Pemphredo Tathlum",
     head="Kasuga Kabuto +3",
     body="Kasuga Domaru +3",
-    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    hands="Wakido Kote +4",
     legs="Kasuga Haidate +3",
-    feet="Flam. Gambieras +2",
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-    waist="Eschan Stone",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Kasuga Earring +2",
-    left_ring="Stikini Ring +1",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},})
+    feet="Mpaca's Boots",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Kasuga Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Weapon skill damage +4%','STR+11 DEX+11',}},
+    left_ring="Murky Ring",
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",})
 	
 	sets.precast.WS['Impulse Drive'] = set_combine(sets.precast.WS, {  
     ammo="Knobkierrie",
@@ -257,7 +257,7 @@ function init_gear_sets()
     right_ear="Loquac. Earring",
     left_ring="Rahab Ring",
     right_ring="Prolix Ring",
-    back="Moonlight Cape",}
+    back="Null Shawl",}
 
     
     -- Sets to return to when not performing an action.
@@ -269,95 +269,95 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
     sets.idle.Town = {
     ammo="Staunch Tathlum +1",
-    head="Nyame Helm",
+    head="Null Masque",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt +1",
-    left_ear="Thrud Earring",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Moonlight Cape",
+    back="Null Shawl",
 	}
     
     sets.idle.Field = {
     ammo="Staunch Tathlum +1",
-    head="Nyame Helm",
+    head="Null Masque",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt +1",
-    left_ear="Thrud Earring",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Moonlight Cape",}
+    back="Null Shawl",}
 
     sets.idle.Weak = {
     ammo="Staunch Tathlum +1",
-    head="Nyame Helm",
+    head="Null Masque",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt +1",
-    left_ear="Thrud Earring",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Moonlight Cape",}
+    back="Null Shawl",}
     
     -- Defense sets
     sets.defense.PDT = {
     ammo="Staunch Tathlum +1",
-    head="Ken. Jinpachi +1",
-    body="Mpaca's Doublet",
-    hands="Wakido Kote +3",
-    legs="Mpaca's Hose",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-    waist="Flume Belt +1",
-    left_ear="Cessance Earring",
-    right_ear="Telos Earring",
-    left_ring="Defending Ring",
+    neck="Elite Royal Collar",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.defense.Reraise = {
-        ammo="Staunch Tathlum +1",
-        head="Twilight Helm",
-		neck="Elite Royal Collar",
-		ear1="Genmei Earring",
-		ear2="Zennaroi Earring",
-        body="Crepuscular Mail",
-		hands="Kurys Gloves",
-		ring1="Defending Ring",
-		right_ring="Shneddick Ring",
-        back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist="Flume Belt +1",
-		legs="Nyame Flanchard",
-		feet="Nyame Sollerets"}
+    ammo="Staunch Tathlum +1",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
     sets.defense.MDT = {
     ammo="Staunch Tathlum +1",
-    head="Ken. Jinpachi +1",
-    body="Mpaca's Doublet",
-    hands="Wakido Kote +3",
-    legs="Mpaca's Hose",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
     feet="Nyame Sollerets",
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
-    waist="Flume Belt +1",
-    left_ear="Cessance Earring",
-    right_ear="Telos Earring",
-    left_ring="Defending Ring",
+    neck="Elite Royal Collar",
+    waist="Null belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 
     sets.Kiting = {right_ring="Shneddick Ring",}--feet="Danzo Sune-ate"}
 
@@ -379,13 +379,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Kasuga Haidate +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+     neck="Moonlight Nodowa",
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+    back="Null Shawl",
 	}
 		
     sets.engaged.Meva = {
@@ -395,13 +395,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Kasuga Haidate +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+     neck="Moonlight Nodowa",
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+    back="Null Shawl",
 	}
 	sets.engaged.Hybrid = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
@@ -410,13 +410,13 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Kasuga Haidate +3",
     feet={ name="Mpaca's Boots", augments={'Path: A',}},
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+     neck="Moonlight Nodowa",
     waist="Ioskeha Belt +1",
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+    back="Null Shawl",
 	}
 		
 	
@@ -426,20 +426,20 @@ function init_gear_sets()
     body="Kasuga Domaru +3",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="Kasuga Haidate +3",
-    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+    neck="Moonlight Nodowa",
     waist="Ioskeha Belt +1",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+   back="Null Shawl",}
 	
 	sets.engaged.Subtle = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Ken. Jinpachi +1",
     body="Dagon Breast.",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs={ name="Mpaca's Hose", augments={'Path: A',}},
     feet="Ken. Sune-Ate +1",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -447,8 +447,8 @@ function init_gear_sets()
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+    back="Null Shawl",
 	}
 	
     sets.engaged.Meva.PDT = {
@@ -463,39 +463,39 @@ function init_gear_sets()
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Kasuga Earring +2",
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
+    back="Null Shawl",
   }
 		
     sets.engaged.Reraise = {
-		ammo="Staunch Tathlum +1",
-        head="Twilight Helm",
-		neck="Elite Royal Collar",
-		ear1="Genmei Earring",
-		ear2="Zennaroi Earring",
-        body="Crepuscular Mail",
-		hands="Wakido Kote +3",
-		ring1="Defending Ring",
-		right_ring="Shneddick Ring",
-		back="Moonlight Cape",
-		waist="Flume Belt +1",
-		legs="Valorous Hose",
-		feet="Amm Greaves"}
+    ammo="Staunch Tathlum +1",
+    head="Crepuscular Helm",
+    body="Crepuscular Mail",
+    hands="Nyame Gauntlets",
+    legs="Kasuga Haidate +3",
+    feet="Nyame Sollerets",
+    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Kasuga Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Weapon skill damage +4%','STR+11 DEX+11',}},
+    left_ring="Murky Ring",
+    right_ring="Niqmaddu Ring",
+    back="Null Shawl",}
 		
     sets.engaged.Meva.Reraise = {
-		ammo="Staunch Tathlum +1",
-        head="Twilight Helm",
-		neck="Elite Royal Collar",
-		ear1="Genmei Earring",
-		ear2="Zennaroi Earring",
-        body="Crepuscular Mail",
-		hands="Kurys Gloves",
-		ring1="Defending Ring",
-		right_ring="Shneddick Ring",
-    back="Moonlight Cape",
-		waist="Flume Belt +1",
-		legs="Valorous Hose",
-		feet="Amm Greaves"}
+    ammo="Staunch Tathlum +1",
+    head="Crepuscular Helm",
+    body="Crepuscular Mail",
+    hands="Nyame Gauntlets",
+    legs="Kasuga Haidate +3",
+    feet="Nyame Sollerets",
+    neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Kasuga Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','Weapon skill damage +4%','STR+11 DEX+11',}},
+    left_ring="Murky Ring",
+    right_ring="Niqmaddu Ring",
+    back="Null Shawl",}
         
 
 

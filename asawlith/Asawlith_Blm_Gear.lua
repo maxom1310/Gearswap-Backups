@@ -474,7 +474,7 @@ function init_gear_sets()
     neck={ name="Src. Stole +2", augments={'Path: A',}},
     waist="Hachirin-no-Obi",
     left_ear="Malignance Earring",
-    right_ear="Wicce. Earring +2",
+    right_ear="Wicce Earring +2",
     left_ring="Freke Ring",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}

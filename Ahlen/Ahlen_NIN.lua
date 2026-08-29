@@ -37,6 +37,11 @@ function user_setup()
     
     select_movement_feet()
     select_default_macro_book()
+	
+		send_command('bind ^f9 input /equipset 61;wait1;input /echo Aeonic')
+		send_command('bind @f9 input /equipset 62;wait1;input /echo Savage')
+		send_command('bind !f9 input /equipset 63;wait1;input /echo TP bonus')
+		send_command('bind !^f9 input /equipset 64;wait1;input /echo Great Katana')
 end
 
 function job_setup()
@@ -55,14 +60,14 @@ function init_gear_sets()
     sets.precast.JA['Sange'] = {legs="Kendatsuba samue +1"}
 	
 	sets.precast.JA['Lunge'] = {ammo="Pemphredo tathlum",
-        head="Mochizuki hatsuburi +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Mochizuki hatsuburi +1",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Nyame Mail",hands="Hattori Tekko +1",ring1="Fenrir ring +1",ring2="Shiva ring +1",
-        back="Toro Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Hachiya Kyahan +3"}
+        back="Toro Cape",waist="Orpheus Sash",legs="Nyame Flanchard",feet="Hachiya Kyahan +3"}
 		
 	sets.precast.JA['Swipe'] = {ammo="Pemphredo tathlum",
-        head="Mochizuki hatsuburi +1",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
+        head="Mochizuki hatsuburi +1",neck="Sibyl Scarf",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Nyame Mail",hands="Hattori Tekko +1",ring1="Fenrir ring +1",ring2="Shiva ring +1",
-        back="Toro Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Hachiya Kyahan +3"}	
+        back="Toro Cape",waist="Orpheus Sash",legs="Nyame Flanchard",feet="Hachiya Kyahan +3"}	
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Sonia's Plectrum",
@@ -85,14 +90,12 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="Sapience Orb",
     head={ name="Herculean Helm", augments={'"Fast Cast"+6','STR+7','Mag. Acc.+4',}},
     body="Taeon Tabard",
     hands="Leyline Gloves",
     legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
-   feet={ name="Herculean Boots", augments={'Mag. Acc.+17','"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+   feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+6','Mag. Acc.+10',}},
     neck="Orunmila's Torque",
     waist="Audumbla Sash",
     left_ear="Loquac. Earring",
@@ -108,8 +111,6 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="C. Palug Stone",
     head="Malignance Chapeau",
     body="Malignance Tabard",
@@ -127,8 +128,6 @@ function init_gear_sets()
 		
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.-
 	sets.precast.WS['Blade: Shun'] = {
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="C. Palug Stone",
     head="Ken. Jinpachi +1",
     body="Malignance Tabard",
@@ -180,10 +179,24 @@ function init_gear_sets()
 	sets.precast.WS['Blade: Jin'] = sets.precast.WS['Blade: Hi']
     sets.precast.WS['Vorpal blade'] = sets.precast.WS['Blade: Hi']	
 	sets.precast.WS['Tachi: Jinpu'] = sets.precast.WS['Blade: Chi']	
+	
+	sets.precast.WS['Tachi: Ageha'] = {
+	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head={ name="Mpaca's Cap", augments={'Path: A',}},
+    body={ name="Mpaca's Doublet", augments={'Path: A',}},
+    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    feet="Hattori Kyahan +3",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Hattori Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Store TP"+7','DEX+13 AGI+13',}},
+    left_ring="Stikini Ring +1",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back="Null Shawl",
+	}
 		
 	sets.precast.WS['Blade: Ten'] = {
-    main={ name="Heishi Shorinken", augments={'Path: A',}},
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="Crepuscular Pebble",
     head="Mpaca's Cap",
     body="Nyame Mail",
@@ -215,8 +228,6 @@ function init_gear_sets()
 	}
 	
 	sets.precast.WS['Blade: Metsu'] = {
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="C. Palug Stone",
     head={ name="Herculean Helm", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+7','Attack+8',}},
     body="Malignance Tabard",
@@ -255,14 +266,12 @@ function init_gear_sets()
     --------------------------------------
 
     sets.midcast.FastRecast = {
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="Sapience Orb",
     head={ name="Herculean Helm", augments={'"Fast Cast"+6','STR+7','Mag. Acc.+4',}},
     body="Adhemar Jacket +1",
     hands="Leyline Gloves",
     legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+17','"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+6','Mag. Acc.+10',}},
     neck="Orunmila's Torque",
     waist="Audumbla sash",
     left_ear="Loquac. Earring",
@@ -274,7 +283,7 @@ function init_gear_sets()
         
 	sets.midcast.NinjutsuBuff = sets.midcast.FastRecast	
 	
-    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {feet="Hattori Kyahan +2",})
+    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {feet="Hattori Kyahan +3",})
 
     sets.midcast.ElementalNinjutsu = {
     ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
@@ -299,8 +308,8 @@ function init_gear_sets()
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
-    neck="Sanctity Necklace",
-    waist="Eschan Stone",
+    neck="Null Loop",
+    waist="Null Belt",
     left_ear="Crep. Earring",
     right_ear="Digni. Earring",
     left_ring="Stikini Ring +1",
@@ -350,8 +359,7 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {
-    main={ name="Heishi Shorinken", augments={'Path: A',}},
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
+ 
     ammo="Staunch Tathlum +1",
     head="Nyame Helm",
     body="Nyame Mail",
@@ -359,12 +367,12 @@ function init_gear_sets()
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
-    waist="Flume Belt +1",
+    waist="Null Belt",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ear="Etiolation Earring",
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
-    back="Moonlight Cape",
+    right_ring="Murky Ring",
+    back="Null Shawl",
 	}
 
     sets.Kiting = {left_ring="Shneddick Ring",}
@@ -381,8 +389,6 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {    
 	ammo="Date Shuriken",
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     head="Ken. Jinpachi +1",
     body="Ken. Samue +1",
     hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
@@ -394,46 +400,40 @@ function init_gear_sets()
     right_ear="Hattori Earring +2",
     left_ring="Epona's Ring",
     right_ring="Gere Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    back="Null Shawl",
 	}
 		sets.engaged.Hybrid = {  --32
-    main={ name="Heishi Shorinken", augments={'Path: A',}},
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="Date Shuriken",
     head="Ken. Jinpachi +1",
     body="Ken. Samue +1",
     hands="Malignance Gloves",
-    legs="Mpaca's Hose",
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
     right_ear="Hattori Earring +2",
     left_ring="Gere Ring",
-    right_ring="Defending Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    right_ring="Murky Ring",
+    back="Null Shawl",
 		}	
 		
 	sets.engaged.DT = {  --6+9+5+9+4+3+10+5= 49
-    main="Heishi Shorinken",
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
 	ammo="Date Shuriken", 
     head="Malignance Chapeau",  --6
     body="Malignance Tabard", --9
     hands="Malignance Gloves",  --5 
-    legs="Mpaca's Hose", --9
+    legs="Malignance Tights", --7
     feet="Malignance Boots",  --4
     neck="Ninja Nodowa +2",  
     waist="Windbuffet Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Odnowa Earring +1", --3
+    left_ear="Alabaster Earring",
+    right_ear="Hattori Earring +2",
     left_ring="Gere Ring",  
-    right_ring="Defending Ring", --10
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}}, --5
+    right_ring="Murky Ring", --10
+    back="Null Shawl", --0
 		}	
 	    sets.engaged.Nyame = {
-    main={ name="Heishi Shorinken", augments={'Path: A',}},
-    sub={ name="Kanaria", augments={'"Triple Atk."+3','DEX+15','Accuracy+17','Attack+10','DMG:+8',}},
     ammo="Date Shuriken", 
     head="Nyame Helm",
     body="Nyame Mail",
@@ -444,9 +444,9 @@ function init_gear_sets()
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
     right_ear="Hattori Earring +2",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Gere Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    back="Null Shawl",
 	}	
 	 sets.engaged.DWgear = {
 	    ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
@@ -461,7 +461,7 @@ function init_gear_sets()
     right_ear="Hecate's Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     right_ring="Shiva Ring +1",
-    back={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+    back="Null Shawl",
 		}
 
     sets.buff.Migawari = {}
@@ -562,13 +562,13 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(2, 1)
+        set_macro_page(1, 9)
     elseif player.sub_job == 'THF' then
-        set_macro_page(3, 1)
+        set_macro_page(1, 9)
 	elseif player.sub_job == 'PLD' then
-        set_macro_page(4, 1)	
+        set_macro_page(1, 9)	
     else
-        set_macro_page(4, 1)
+        set_macro_page(1, 9)
     end
 end
 

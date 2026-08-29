@@ -59,9 +59,9 @@ function init_gear_sets()
     sets.precast.JA['Counterstance'] = {}--feet="Melee Gaiters +2"}
     sets.precast.JA['Footwork'] = {feet="Shukuyu Sune-Ate"}
     sets.precast.JA['Formless Strikes'] = {}
-    sets.precast.JA['Mantra'] = {feet="Melee Gaiters +2"}
+    sets.precast.JA['Mantra'] = {feet="Hes. Gaiters +1"}
  
-    sets.precast.JA['Chi Blast'] = {head="Hesychast's Crown +3"}
+    sets.precast.JA['Chi Blast'] = {head="Hesychast's Crown +1"}
  
     sets.precast.JA['Chakra'] = {
     ammo="Crepuscular Pebble",
@@ -73,7 +73,7 @@ function init_gear_sets()
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    right_ear="Genmei Earring",
+    right_ear="Alabaster Earring",
     right_ring="Niqmaddu Ring",
     left_ring="Regal Ring",
     back={ name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','"Dbl.Atk."+10','Damage taken-5%',}},}
@@ -95,7 +95,7 @@ function init_gear_sets()
 		back="Argochampsa Mantle",
 		neck="Baetyl Pendant",
 		hands="Leyline Gloves",
-		waist="Eschan Stone",
+		waist="Orpheus's Sash",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
 		ring1="Shiva Ring +1",
@@ -109,7 +109,7 @@ function init_gear_sets()
 		back="Argochampsa Mantle",
 		neck="Baetyl Pendant",
 		hands="Leyline Gloves",
-		waist="Eschan Stone",
+		waist="Orpheus's Sash",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
 		ring1="Shiva Ring +1",
@@ -126,7 +126,7 @@ function init_gear_sets()
     body={ name="Adhemar Jacket +1", augments={'HP+105','"Fast Cast"+10','Magic dmg. taken -4',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs={ name="Herculean Trousers", augments={'Accuracy+30','"Conserve MP"+3','"Fast Cast"+8','Accuracy+18 Attack+18','Mag. Acc.+4 "Mag.Atk.Bns."+4',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+17','"Fast Cast"+5','"Mag.Atk.Bns."+11',}},
+    feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+6','Mag. Acc.+10',}},
     neck="Orunmila's Torque",
     waist="Moonbow Belt +1",
     left_ear="Enchntr. Earring +1",
@@ -198,16 +198,16 @@ function init_gear_sets()
 }
     -- 1159 Accuracy
 	sets.precast.WS["Howling Fist"] = {
-    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    ammo="Crepuscular Pebble",
     head={ name="Mpaca's Cap", augments={'Path: A',}},
-    body={ name="Mpaca's Doublet", augments={'Path: A',}},
-    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Mpaca's Hose", augments={'Path: A',}},
-    feet={ name="Mpaca's Boots", augments={'Path: A',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
     waist="Moonbow Belt +1",
-    left_ear={ name="Schere Earring", augments={'Path: A',}},
-    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear={ name="Schere Earring", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ring="Ephramad's Ring",
     left_ring="Gere Ring",
     back={ name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -494,7 +494,7 @@ function init_gear_sets()
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
-    neck="Sanctity Necklace",
+    neck="Sibyl Scarf",
     waist="Orpheus's Sash",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Friomisi Earring",
@@ -527,11 +527,11 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Moonlight Cape",
+    back="Null Shawl",
 		}
  
     sets.idle.Town = {
@@ -543,11 +543,11 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back="Moonlight Cape",
+    back="Null Shawl",
 		}
      
     sets.idle.Weak = {
@@ -559,9 +559,9 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 		} --6
@@ -576,9 +576,9 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	} --
@@ -594,9 +594,9 @@ function init_gear_sets()
     feet="Nyame Sollerets",
     neck="Elite Royal Collar",
     waist="Moonbow Belt +1",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",} --5
  
@@ -639,8 +639,8 @@ function init_gear_sets()
     feet="Malignance Boots",
     neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
     waist="Moonbow Belt +1",
-    left_ear="Sherida Earring",
-    right_ear={ name="Schere Earring", augments={'Path: A',}},
+    left_ear="Alabaster Earring",
+    right_ear={ name="Bhikku Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','"Store TP"+7','STR+13 DEX+13',}},
     right_ring="Niqmaddu Ring",
     left_ring="Gere Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -674,8 +674,8 @@ function init_gear_sets()
         neck="Monk's nodowa +2",
         waist="Moonbow belt +1", --6
         left_ear="Sherida earring",
-        right_ear="Telos earring",
-        left_ring="Defending Ring", --10
+        right_ear="Alabaster earring",
+        left_ring="Murky Ring", --10
         right_ring="Niqmaddu Ring",
         back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10', 'Damage taken-5%',}}} --5
     sets.engaged.SomeAcc.PDT = {}
@@ -691,7 +691,7 @@ function init_gear_sets()
         waist="Moonbow belt +1", --6
         left_ear="Sherida earring",
         right_ear="Telos earring",
-        left_ring="Defending Ring", --10
+        left_ring="Murky Ring", --10
         right_ring="Niqmaddu Ring",
         back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10', 'Damage taken-5%',}}} --5
     sets.engaged.Counter = {}

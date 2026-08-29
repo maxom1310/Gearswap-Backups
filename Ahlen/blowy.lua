@@ -456,7 +456,7 @@ sets.precast.WS['Death Blossom'].PDL ={ ammo="Crepuscular Pebble",
     head="Befouled Crown",
     hands={ name="Viti. Gloves +3", augments={'Enhancing Magic duration',}},
     legs="Atrophy Tights +3",
-    neck="Melic Torque",
+    neck="Incanter's Torque",
     waist="Olympus Sash",
     back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +1','Enha.mag. skill +9','Mag. Acc.+1','Enh. Mag. eff. dur. +17',}},
 }

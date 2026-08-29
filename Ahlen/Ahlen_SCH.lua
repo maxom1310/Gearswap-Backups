@@ -146,7 +146,7 @@ function init_gear_sets()
     hands="Nyame Gauntlets",
     legs={ name="Amalric Slops +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    neck="Sanctity Necklace",
+    neck="Orunmila's Torque",
     waist="Luminary Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -165,7 +165,7 @@ function init_gear_sets()
 		ear2="Loquacious Earring", --1
 		body="Pinga Tunic +1",  --12
 		hands="Gendewitha Gages +1", --7
-		left_ring="Defending Ring",  
+		left_ring="Murky Ring",  
 		right_ring="Lebeche ring", --2
 		back="Moonlight Cape", --4
 		waist="Witful Belt",  --3
@@ -182,7 +182,7 @@ function init_gear_sets()
 		ear2="Mendicant's Earring", --5
 		body="Pinga Tunic +1", --15
 		hands="Telchine Gloves", --16
-		left_ring="Defending Ring",
+		left_ring="Murky Ring",
 		right_ring="Vengeful Ring",
 		back="Moonlight Cape",
 		waist="Luminary sash",
@@ -200,14 +200,14 @@ function init_gear_sets()
     ammo="Staunch Tathlum +1",
     head="Arbatel Bonnet +3",
     body={ name="Telchine Chas.", augments={'Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
-    hands={ name="Telchine Gloves", augments={'Mag. Acc.+14','"Cure" potency +6%','Enh. Mag. eff. dur. +10',}},
+    hands={ name="Telchine Gloves", augments={'Mag. Evasion+23','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
     legs={ name="Telchine Braconi", augments={'Spell interruption rate down -7%','Enh. Mag. eff. dur. +10',}},
     feet={ name="Telchine Pigaches", augments={'DEF+18','Spell interruption rate down -9%','Enh. Mag. eff. dur. +10',}},
     neck="Elite Royal Collar",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
-    right_ear="Genmei Earring",
-    left_ring="Defending Ring",
+    right_ear="Alabaster Earring",
+    left_ring="Murky Ring",
     right_ring="Vengeful Ring",
     back={ name="Bookworm's Cape", augments={'INT+5','MND+1','"Regen" potency+10',}},}
 	
@@ -220,7 +220,7 @@ function init_gear_sets()
 	ear1="Andoaa Earring",
 	ear2="Mimir Earring",
 	neck="Elite Royal Collar",
-	left_ring="Defending Ring",
+	left_ring="Murky Ring",
 	right_ring="Stikini Ring +1",
 	body="Telchine Chasuble",
 	back="Moonlight Cape",
@@ -276,20 +276,20 @@ function init_gear_sets()
 
 	-- Custom spell classes
 	sets.midcast.MndEnfeebles = {
-    main="Daybreak",
+    main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
-    body={ name="Chironic Doublet", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Fast Cast"+2','MND+1','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+    head="Arbatel Bonnet +3",
+    body="Arbatel Gown +3",
+    hands="Regal Cuffs",
     legs={ name="Chironic Hose", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Spell interruption rate down -1%','MND+15','Mag. Acc.+14',}},
-    feet="Nyame Sollerets",
-    neck="Erra Pendant",
-    waist="Luminary Sash",
+    feet="Arbatel Loafers +3",
+    neck={ name="Argute Stole +2", augments={'Path: A',}},
+    waist="Obstin. Sash",
     left_ear="Malignance Earring",
-    right_ear="Arbatel Earring +2",
+    right_ear={ name="Arbatel Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+19','Enmity-9','INT+13 MND+13',}},
     left_ring="Stikini Ring +1",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Metamor. Ring +1",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	}
 
@@ -345,7 +345,7 @@ function init_gear_sets()
     main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Merlinic Hood", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','INT+7','Mag. Acc.+7','"Mag.Atk.Bns."+11',}},
+    head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body={ name="Chironic Doublet", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Fast Cast"+2','MND+1','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
     hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
     legs={ name="Chironic Hose", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','INT+8','Mag. Acc.+15','"Mag.Atk.Bns."+1',}},
@@ -401,7 +401,7 @@ function init_gear_sets()
     legs={ name="Chironic Hose", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','INT+8','Mag. Acc.+15','"Mag.Atk.Bns."+1',}},
     feet="Arbatel Loafers +3",
     neck="Erra Pendant",
-    waist="Luminary Sash",
+    waist="Null Belt",
     left_ear="Malignance Earring",
     right_ear="Arbatel Earring +2",
     left_ring="Stikini Ring +1",
@@ -448,7 +448,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	}
@@ -467,7 +467,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	}
@@ -489,7 +489,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	} 
@@ -507,7 +507,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	}
@@ -518,13 +518,13 @@ function init_gear_sets()
 	head="Nyame Helm",
 	neck="Elite Royal Collar",
 	ear1="Etiolation Earring",
-	ear2="Genmei Earring",
+	right_ear="Alabaster Earring",
 	body="Arbatel Gown +3",
 	hands="Nyame Gauntlets",
-	left_ring="Defending Ring",
+	left_ring="Murky Ring",
 	right_ring="Shneddick Ring",
 	back="Moonlight Cape",
-	waist="Eschan Stone",
+	waist="Null Belt",
 	legs="Nyame Flanchard",
 	feet="Nyame Sollerets",
 	}
@@ -554,7 +554,7 @@ function init_gear_sets()
     waist="Embla Sash",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back="Moonlight Cape",
 	}--

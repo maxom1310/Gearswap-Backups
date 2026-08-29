@@ -106,7 +106,7 @@ function init_gear_sets()
 		{
     ammo="Incantor Stone",
     head={ name="Merlinic Hood", augments={'Attack+21','"Fast Cast"+7',}},
-    body="Shango Robe",
+    body="Agwu's Robe",
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
     legs="Volte Brais",
     feet={ name="Amalric Nails +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
@@ -155,7 +155,7 @@ function init_gear_sets()
     sub="Genmei Shield",
     ammo="Incantor Stone",
     head={ name="Merlinic Hood", augments={'Attack+21','"Fast Cast"+7',}},
-    body="Shango Robe",
+    body="Agwu's Robe",
     hands={ name="Merlinic Dastanas", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
     legs="Volte Brais",
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +7',}},

@@ -565,7 +565,7 @@ function midcast(spell,act,arg)
 		elseif string.find(spell.name,'Bar') or spell.name=="Temper" then
 			equip({hands="Runeist mitons +2", legs="Carmine Cuisses +1", 
 			left_ear= "Andoaa Earring", right_ear="Mimir Earring",left_ring="Stikini Ring +1",
-			right_ring="Stikini Ring +1",neck="Melic Torque",waist="Olympus Sash",})
+			right_ring="Stikini Ring +1",neck="Incanter's Torque",waist="Olympus Sash",})
 		end
 		if buffactive.embolden then
 			equip({back="Evasionist's Cape"})

@@ -113,18 +113,18 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	
 	sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
+	sets.precast.JA.Troubadour = {body="Bihu Justaucorps +4"}
 	sets.precast.JA['Soul Voice'] = {    range={ name="Nibiru Harp", augments={'Mag. Evasion+20','Phys. dmg. taken -3','Magic dmg. taken -3',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Ebur Frock", augments={'Path: C',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Bihu Cannions +3", augments={'Enhances "Soul Voice" effect',}},
+    legs={ name="Bihu Cannions +4", augments={'Enhances "Soul Voice" effect',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Defending Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}}}
 
@@ -135,7 +135,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {   range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
    	 legs="Nyame Flanchard",
   feet="Nyame Sollerets",
@@ -149,7 +149,7 @@ function init_gear_sets()
 	
 		sets.precast.WS["Rudra's Storm"] = {   range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
    	legs={ name="Nyame Flanchard", augments={'Path: B',}},
 	feet="Nyame Sollerets",
@@ -164,7 +164,7 @@ function init_gear_sets()
 	sets.precast.WS["Mordant Rime"] = {
    range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
        hands="Nyame Gauntlets",
 	legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Nyame Sollerets",
@@ -194,12 +194,13 @@ function init_gear_sets()
 		sets.precast.WS["Savage Blade"] = {
     range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
   legs={ name="Nyame Flanchard", augments={'Path: B',}},
   feet="Nyame Sollerets",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-    waist="Sailfi Belt +1",
+	--waist="Peiste Belt +1",
+	waist="Sailfi Belt +1",
     left_ear="Ishvara Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Epaminondas's Ring",
@@ -209,7 +210,7 @@ function init_gear_sets()
 			sets.precast.WS["Retribution"] = {
     range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -238,7 +239,7 @@ function init_gear_sets()
 	}
 		sets.precast.WS["Fast Blade"] = {   range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body={ name="Bihu Justaucorps +4", augments={'Enhances "Troubadour" effect',}},
     hands="Nyame Gauntlets",
    	 legs="Nyame Flanchard",
   feet="Nyame Sollerets",
@@ -281,11 +282,11 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+	waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -297,9 +298,9 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -313,7 +314,7 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
     neck="Mnbw. Whistle +1",
     left_ear="Regal Earring",
@@ -329,9 +330,9 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -345,11 +346,11 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring="Metamor. Ring +1",
@@ -361,11 +362,11 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+	waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -377,11 +378,11 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -393,11 +394,11 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -415,9 +416,9 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Etiolation Earring",
     right_ear="Enchanter's Earring +1",
     left_ring="Defending Ring",
@@ -467,9 +468,9 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Etiolation Earring",
     right_ear="Enchanter's Earring +1",
     left_ring="Defending Ring",
@@ -486,9 +487,9 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Fili Rhingrave +3",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Null belt",
     left_ear="Regal Earring",
     right_ear={ name="Fili Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -521,7 +522,7 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Fili Rhingrave +3",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -609,7 +610,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Shneddick Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 	
@@ -624,7 +625,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Shneddick Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 		
@@ -654,7 +655,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Shneddick Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 	
@@ -671,7 +672,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Shneddick Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 
@@ -686,13 +687,13 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Etiolation Earring",
     right_ear="Genmei Earring",
-    left_ring="Moonlight Ring",
+    left_ring={ name="Moonlight Ring", bag="Wardrobe" },
     right_ring="Shneddick Ring",
     back={ name="Intarabus's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity-10','Damage taken-5%',}},}
 
 	sets.Kiting = {right_ring="Shneddick Ring",}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
-	sets.buff.Sleep = {range="Prime Horn"}
+	sets.buff.Sleep = {}
 	sets.latent_refresh_grip = {}
 	sets.TPEat = {}
 
@@ -707,118 +708,77 @@ function init_gear_sets()
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
     head="Bunzi's Hat",
     body="Nyame Mail",
-    hands="Bunzi's Gloves",
-	legs="NYame Flanchard",
-    feet="Nyame Sollerets",
+    hands="Revelation Gaunt.",
+    legs="Revelation Brais",
+    feet="Revelation Sab.",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Telos Earring",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
-    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 	sets.engaged.Acc = {main="Naegling", sub="Genmei Shield",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
     head="Bunzi's Hat",
     body="Nyame Mail",
-    hands="Bunzi's Gloves",
-	legs="NYame Flanchard",
-    feet="Nyame Sollerets",
+    hands="Revelation Gaunt.",
+    legs="Revelation Brais",
+    feet="Revelation Sab.",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Telos Earring",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
-    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 	sets.engaged.DW = {main="Naegling", sub="Fusetto +2",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-   head="Bunzi's Hat",
+    head="Bunzi's Hat",
     body="Nyame Mail",
-    hands="Bunzi's Gloves",
-	legs="NYame Flanchard",
-    feet="Nyame Sollerets",
+    hands="Revelation Gaunt.",
+    legs="Revelation Brais",
+    feet="Revelation Sab.",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
     right_ear="Eabani Earring",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
-    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",
+    }
 sets.engaged.DW.AM = {main="Naegling", sub="Fusetto +2",
+main="Naegling", sub="Fusetto +2",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-     head="Bunzi's Hat",
+    head="Bunzi's Hat",
     body="Nyame Mail",
-    hands="Bunzi's Gloves",
-	legs="NYame Flanchard",
-    feet="Nyame Sollerets",
+    hands="Revelation Gaunt.",
+    legs="Revelation Brais",
+    feet="Revelation Sab.",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
     right_ear="Eabani Earring",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
-     back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 	sets.engaged.DW.Acc = {main="Naegling", sub="Crepuscular Knife",
     range={ name="Linos", augments={'Accuracy+18','"Dbl.Atk."+3','Quadruple Attack +3',}},
-     head="Bunzi's Hat",
+    head="Bunzi's Hat",
     body="Nyame Mail",
-    hands="Bunzi's Gloves",
-	legs="NYame Flanchard",
-    feet="Nyame Sollerets",
+    hands="Revelation Gaunt.",
+    legs="Revelation Brais",
+    feet="Revelation Sab.",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
-     waist="Sailfi Belt +1",
-    left_ear="Telos Earring",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
     right_ear="Eabani Earring",
     left_ring="Moonlight Ring",
     right_ring="Moonlight Ring",
-    back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(9, 1)
-end
-function user_job_lockstyle()
-if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-		if player.equipment.main == nil or player.equipment.main == 'empty' then
-			windower.chat.input('/lockstyleset 002')
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Sword/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Dagger/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 11 then --Club in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Club/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Club/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Club/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		end
-	elseif player.sub_job == 'WHM' or state.Buff['Light Arts'] or state.Buff['Addendum: White'] then
-		windower.chat.input('/lockstyleset 002')
-	elseif player.sub_job == 'BLM' or state.Buff['Dark Arts'] or state.Buff['Addendum: Black'] then
-		windower.chat.input('/lockstyleset 002')
-	else
-		windower.chat.input('/lockstyleset 002')
-	end
 end

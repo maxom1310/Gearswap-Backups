@@ -111,7 +111,7 @@ function init_gear_sets()
 		waist="Fotia Belt",
 		left_ear="Ishvara Earring",
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Shukuyu Ring",
+		left_ring="Ephramad's Ring",
 		right_ring="Epaminondas's Ring",
 		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
 	}
@@ -145,7 +145,7 @@ function init_gear_sets()
     hands="Jhakri Cuffs +2",
     legs="Amalic Slops +1",
     feet="Leth. Houseaux +3",
-    neck="Sanctity Necklace",
+    neck="Sibyl Scarf",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
     right_ear="Regal Earring",
@@ -192,7 +192,7 @@ function init_gear_sets()
     hands="Jhakri Cuffs +2",
     legs="Amalric Slops +1",
     feet="Leth. Houseaux +3",
-    neck="Sanctity Necklace",
+    neck="Sibyl Scarf",
     waist="Orpheus's Sash",
     left_ear="Malignance Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -275,7 +275,7 @@ function init_gear_sets()
     hands={ name="Viti. Gloves +3", augments={'Enhancing Magic duration',}},
     legs="Carmine Cuisses +1",
     feet="Leth. Houseaux +3",
-    neck="Melic Torque",
+    neck="Incanter's Torque",
     waist="Olympus Sash",
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
@@ -290,7 +290,7 @@ function init_gear_sets()
     hands={ name="Viti. Gloves +3", augments={'Enhancing Magic duration',}},
     legs="Carmine Cuisses +1",
     feet="Leth. Houseaux +3",
-    neck="Melic Torque",
+    neck="Incanter's Torque",
     waist="Olympus Sash",
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
@@ -311,7 +311,7 @@ function init_gear_sets()
     left_ear="Mimir Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +9','Enha.mag. skill +10','Mag. Acc.+4','Enh. Mag. eff. dur. +18',}},
 	}
 	
@@ -361,7 +361,7 @@ function init_gear_sets()
     left_ear="Loquac. Earring",
     right_ear="Malignance Earring",
     left_ring="Lebeche Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +9','Enha.mag. skill +10','Mag. Acc.+4','Enh. Mag. eff. dur. +18',}},
 	
 	}
@@ -561,7 +561,7 @@ function init_gear_sets()
     left_ear="Andoaa Earring",
     right_ear="Mimir Earring",
     left_ring="Stikini Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +9','Enha.mag. skill +10','Mag. Acc.+4','Enh. Mag. eff. dur. +18',}},
 	}
 
@@ -582,7 +582,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Stikini Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
     
@@ -599,7 +599,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
   
@@ -615,7 +615,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
 
@@ -631,7 +631,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
 
@@ -647,7 +647,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
     
@@ -664,7 +664,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
 
@@ -680,7 +680,7 @@ function init_gear_sets()
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Vocane Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back="Sucellos's Cape",
 	}
 
@@ -708,7 +708,7 @@ function init_gear_sets()
     left_ear="Telos Earring",
     right_ear="Sherida Earring",
     left_ring="Ilabrat Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},
 		}
 		
@@ -724,7 +724,7 @@ function init_gear_sets()
     left_ear="Telos Earring",
     right_ear="Sherida Earring",
     left_ring="Ilabrat Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Damage taken-5%',}},}
 	
 	sets.engaged.ZeroTP = {
@@ -741,7 +741,7 @@ function init_gear_sets()
     left_ear="Regal Earring",
     right_ear="Digni. Earring",
     left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +9','Enha.mag. skill +10','Mag. Acc.+4','Enh. Mag. eff. dur. +18',}},
 		}
 		
