@@ -106,7 +106,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	
 	sets.precast.JA.Nightingale = {feet="Bihu Slippers +1"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
+	sets.precast.JA.Troubadour = {body="Bihu Just. +4"}
 	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +1"}
 
 	-- Waltz set (chr and vit)
@@ -116,7 +116,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {   range={ name="Linos", augments={'Accuracy+15 Attack+15','Weapon skill damage +3%','STR+8',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body="Bihu Just. +4",
     hands="Nyame Gauntlets",
    	 legs="Nyame Flanchard",
   feet="Nyame Sollerets",
@@ -131,7 +131,7 @@ function init_gear_sets()
 	sets.precast.WS["Mordant Rime"] = {
     range={ name="Linos", augments={'Accuracy+19','Weapon skill damage +3%','CHR+8',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body="Bihu Just. +4",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -161,7 +161,7 @@ function init_gear_sets()
 		sets.precast.WS["Savage Blade"] = {
     range={ name="Linos", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','STR+8',}},
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body="Bihu Just. +4",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -176,7 +176,7 @@ function init_gear_sets()
 			sets.precast.WS["Rudra's Storm"] = {
     range={ name="Linos", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','STR+7',}},
     head="Nyame Helm",
-    body={ name="Bihu Jstcorps. +3", augments={'Enhances "Troubadour" effect',}},
+    body="Bihu Just. +4",
     hands="Nyame Gauntlets",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -204,8 +204,8 @@ function init_gear_sets()
     head="Nyame Helm",
     body="Nyame Mail",
     hands="Nyame Gauntlets",
-    legs="Nyame Flanchard",
-    feet="Nyame Sollerets",
+    legs="Fili Rhingrave +3",
+    feet="Fili Cothurnes +3",
     neck={ name="Bard's Charm +2", augments={'Path: A',}},
     waist="Witful Belt",
     left_ear="Domin. Earring +1",
@@ -249,19 +249,20 @@ function init_gear_sets()
     right_ring="Inyanga Ring",
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},}
 
-	sets.midcast['Horde Lullaby'] = {  main="Carnwenhan",
-   sub="Genmei Shield",
-    range="Blurred harp +1",
-     head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
+	sets.midcast['Horde Lullaby'] = {    main={ name="Carnwenhan", augments={'Path: A',}},
+    range="Blurred Harp +1",
+    head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
+    feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
+    waist="Witful Belt",
     left_ear="Regal Earring",
-    right_ear="Enchanter Earring +1",
-    left_ring="Metamor. Ring +1",
+    right_ear={ name="Fili Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','MND+9 CHR+9',}},
+    left_ring="Stikini Ring +1",
     right_ring="Inyanga Ring",
-    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},feet={ name="Chironic Slippers", augments={'Attack+4','Mag. Acc.+9','"Treasure Hunter"+1',}},waist="Chaac Belt"}
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast['Horde Lullaby'].Resistant = {  main="Carnwenhan",
    sub="Genmei Shield",
@@ -295,21 +296,20 @@ function init_gear_sets()
     right_ring="Inyanga Ring",
     back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},}
 
-	sets.midcast['Horde Lullaby II'] = {  main="Carnwenhan",
-   sub="Genmei Shield",
-    range="Blurred harp +1",
-      head={ name="Bihu Roundlet +3", augments={'Enhances "Con Anima" effect',}},
+	sets.midcast['Horde Lullaby II'] = {    main={ name="Carnwenhan", augments={'Path: A',}},
+    range="Blurred Harp +1",
+    head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
     feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
-    waist="Luminary Sash",
+    waist="Witful Belt",
     left_ear="Regal Earring",
-    right_ear="Enchanter Earring +1",
-    left_ring="Metamor. Ring +1",
+    right_ear={ name="Fili Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','MND+9 CHR+9',}},
+    left_ring="Stikini Ring +1",
     right_ring="Inyanga Ring",
-    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},}
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Damage taken-5%',}},}
 
 	sets.midcast['Horde Lullaby II'].Resistant = { main="Carnwenhan",
    sub="Genmei Shield",
@@ -729,47 +729,4 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(9, 1)
-end
-function user_job_lockstyle()
-if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-		if player.equipment.main == nil or player.equipment.main == 'empty' then
-			windower.chat.input('/lockstyleset 002')
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Sword/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Dagger/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 11 then --Club in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Club/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Club/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Club/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		end
-	elseif player.sub_job == 'WHM' or state.Buff['Light Arts'] or state.Buff['Addendum: White'] then
-		windower.chat.input('/lockstyleset 002')
-	elseif player.sub_job == 'BLM' or state.Buff['Dark Arts'] or state.Buff['Addendum: Black'] then
-		windower.chat.input('/lockstyleset 002')
-	else
-		windower.chat.input('/lockstyleset 002')
-	end
 end

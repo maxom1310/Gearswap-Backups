@@ -315,7 +315,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear="Alabaster Earring",
     right_ear="Ishvara Earring",
     left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",
@@ -330,15 +330,17 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
     head="Pixie Hairpin +1",
+  -- head="Nyame Helm",
     body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
     feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
     neck={ name="Comm. Charm +2", augments={'Path: A',}},
 	waist="Orpheus's Sash",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-	right_ear="Friomisi Earring",
+    right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+	--left_ear="Friomisi Earring",
 	--right_ear="Chas. Earring +1",
+	left_ear="Alabaster Earring",
     left_ring="Dingir Ring",
     right_ring="Archon Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -555,19 +557,19 @@ function init_gear_sets()
     right_ring="Stikini Ring +1",
     back={ name="Camulus's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
 
-    sets.midcast.RA.Acc = {ammo=gear.RAbullet,
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
+    sets.midcast.RA.Acc = {    ammo="Chrono Bullet",
+    head="Clemen. Somen",
+    body="Clemen. Hara.",
+    hands="Clemency Kote",
     legs="Chas. Culottes +3",
-    feet="Malignance Boots",
-    neck="Iskur Gorget",
-    waist="Reiki Yotai",
-    left_ear="Crep. Earring",
-    right_ear="Telos Earring",
-    left_ring="Ilabrat Ring",
+    feet="Clem. Sune-Ate",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Chas. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Crit.hit rate+4',}},
+    left_ring="Murky Ring",
     right_ring="Crepuscular Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 		
 		sets.midcast.RA.Crit = {ammo=gear.RAbullet,
     head="Meghanada Visor +2",
@@ -621,7 +623,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
     waist="Chuq'aba Belt",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Murky Ring",
 	right_ring="Shneddick Ring",
@@ -635,7 +637,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
     waist="Chuq'aba Belt",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
@@ -649,7 +651,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Elite Royal Collar",
     waist="Chuq'aba Belt",
-    left_ear="Etiolation Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     left_ring="Murky Ring",
     right_ring="Shneddick Ring",
@@ -723,7 +725,7 @@ function init_gear_sets()
 	sets.weapons.Terminus =  {main={ name="Rostam", augments={'Path: B',}},sub="Crepuscular Knife",range="Earp",}
 	sets.weapons.RangedTerminus =  {main={ name="Rostam", augments={'Path: A',}},sub="Nusku Shield",range="Earp",}
 	sets.weapons.DWEvis = {main="Tauret",sub="Crepuscular Knife",range="Earp",}
-	sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
+	sets.weapons.DualLeadenRanged = { main={ name="Rostam", augments={'Path: A',}},sub={ name="Rostam", augments={'Path: B',}},range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualLeadenMelee = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range="Anarchy +2",}
 	sets.weapons.DualRanged = {main={ name="Rostam", augments={'Path: A',}},sub="Gleti's Knife",range="Armageddon",}
@@ -805,33 +807,32 @@ function init_gear_sets()
 
     sets.engaged.DW = {
 	
-    head="Malignance Chapeau",
+    head="Clemen. Somen",
     body="Clemen. Hara.",
-    hands="Malignance Gloves",
+    hands="Clemency Kote",
     legs="Chas. Culottes +3",
-    feet="Malignance Boots",
-    neck="Iskur Gorget",
-    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
-    left_ring="Epona's Ring",
-    right_ring="Murky Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-    
-    sets.engaged.DW.Acc = {
-	
-    head="Malignance Chapeau",
-    body="Clemen. Hara.",
-    hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
+    feet="Clem. Sune-Ate",
     neck="Iskur Gorget",
     waist="Reiki Yotai",
-    left_ear="Dedition Earring",
-    right_ear="Cessance Earring",
-    left_ring="Epona's Ring",
-    right_ring="Murky Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
+    
+    sets.engaged.DW.Acc = {
+    head="Clemen. Somen",
+    body="Clemen. Hara.",
+    hands="Clemency Kote",
+    legs="Chas. Culottes +3",
+    feet="Clem. Sune-Ate",
+    neck="Null Loop",
+    waist="Null Belt",
+    left_ear="Alabaster Earring",
+    right_ear="Telos Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 		
     sets.engaged.DW.DT = {
 	
