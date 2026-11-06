@@ -286,9 +286,9 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -302,9 +302,9 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -318,7 +318,7 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
     neck="Mnbw. Whistle +1",
     left_ear="Regal Earring",
@@ -334,9 +334,9 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -350,9 +350,9 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -366,9 +366,9 @@ function init_gear_sets()
     range="Blurred harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -382,9 +382,9 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -398,9 +398,9 @@ function init_gear_sets()
     range="Blurred Harp +1",
     head="Fili Calot +3",
     body="Fili Hongreline +3",
-    hands="Brioso Cuffs +3",
+    hands="Brioso Cuffs +4",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -420,7 +420,7 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Enchanter's Earring +1",
@@ -472,7 +472,7 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Enchanter's Earring +1",
@@ -491,7 +491,7 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Fili Rhingrave +3",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -525,7 +525,7 @@ function init_gear_sets()
     body="Fili Hongreline +3",
     hands="Fili Manchettes +3",
     legs="Fili Rhingrave +3",
-    feet="Brioso Slippers +3",
+    feet="Brioso Slippers +4",
     neck="Mnbw. Whistle +1",
     waist="Luminary Sash",
     left_ear="Regal Earring",
@@ -793,47 +793,4 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	set_macro_page(9, 1)
-end
-function user_job_lockstyle()
-if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-		if player.equipment.main == nil or player.equipment.main == 'empty' then
-			windower.chat.input('/lockstyleset 002')
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Sword/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Dagger/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 11 then --Club in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Club/Sword.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Club/Dagger.
-				windower.chat.input('/lockstyleset 002')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Club/Club.
-				windower.chat.input('/lockstyleset 002')
-			else
-				windower.chat.input('/lockstyleset 002') --Catchall
-			end
-		end
-	elseif player.sub_job == 'WHM' or state.Buff['Light Arts'] or state.Buff['Addendum: White'] then
-		windower.chat.input('/lockstyleset 002')
-	elseif player.sub_job == 'BLM' or state.Buff['Dark Arts'] or state.Buff['Addendum: Black'] then
-		windower.chat.input('/lockstyleset 002')
-	else
-		windower.chat.input('/lockstyleset 002')
-	end
 end

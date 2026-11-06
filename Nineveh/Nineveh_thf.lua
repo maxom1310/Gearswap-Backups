@@ -320,7 +320,7 @@ function init_gear_sets()
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Skulk. Poulaines +3",
     neck="Elite Royal Collar",
-    waist="Svelt. Gouriz +1",
+    waist="Null Belt",
     left_ear="Assuage Earring",
     right_ear="Infused Earring",
     left_ring="Shneddick Ring",

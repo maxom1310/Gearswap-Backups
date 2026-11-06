@@ -110,7 +110,19 @@ function init_gear_sets()
     sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{feet="Runeist Boots"})
     sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head="Futhark Bandeau +3"})
     sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
-    sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands="Runeist Mitons +2"})
+    sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{    ammo="Brigantia Pebble",
+    head="Sworn Crown",
+    body="Agwu's Robe",
+    hands="Runeist Mitons +2",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
+    neck="Elite Royal Collar",
+    waist="Flume Belt +1",
+    left_ear="Odnowa Earring +1",
+    right_ear="Tuisto Earring",
+    left_ring="Gelatinous Ring +1",
+    right_ring="Regal Ring",
+    back="Null Shawl"})
     sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet="Futhark Boots +1"})
     sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
     sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{hands="Futhark Mitons +1"})
@@ -452,10 +464,10 @@ function init_gear_sets()
 	sets.Self_Refresh = {}
 	sets.Phalanx_Received = {     ammo="Brigantia Pebble",
     head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
-    body={ name="Herculean Vest", augments={'Attack+23','Weapon skill damage +1%','Phalanx +4','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    hands={ name="Herculean Gloves", augments={'"Dbl.Atk."+4','"Blood Pact" ability delay -1','Phalanx +5',}},
-    legs={ name="Herculean Trousers", augments={'CHR+12','Accuracy+2','Phalanx +5',}},
-    feet={ name="Herculean Boots", augments={'Rng.Acc.+15','Magic dmg. taken -3%','Phalanx +5','Accuracy+8 Attack+8',}},
+    body="Sworn Platemail",
+    hands="Sworn Gauntlets",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -474,46 +486,46 @@ function init_gear_sets()
 	sets.resting = {}
 
     sets.idle = {      ammo="Brigantia Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    head="Sworn Crown",
+    body="Sworn Platemail",
+    hands="Sworn Gauntlets",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear="Odnowa Earring +1",
     right_ear="Tuisto Earring",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ring="Gelatinous Ring +1",
     right_ring="Regal Ring",
     back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','DEF+50',}},}
 		
     sets.idle.Sphere = set_combine(sets.idle,{})
 			
-	sets.idle.Tank = {     ammo="Brigantia Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+	sets.idle.Tank = {      ammo="Brigantia Pebble",
+    head="Sworn Crown",
+    body="Sworn Platemail",
+    hands="Sworn Gauntlets",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear="Odnowa Earring +1",
     right_ear="Tuisto Earring",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ring="Gelatinous Ring +1",
     right_ring="Regal Ring",
     back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','DEF+50',}},}
 
-	sets.idle.KiteTank = {      ammo="Brigantia Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+	sets.idle.KiteTank = {       ammo="Brigantia Pebble",
+    head="Sworn Crown",
+    body="Sworn Platemail",
+    hands="Sworn Gauntlets",
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Elite Royal Collar",
     waist="Flume Belt +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ear="Odnowa Earring +1",
     right_ear="Tuisto Earring",
-    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    left_ring="Gelatinous Ring +1",
     right_ring="Regal Ring",
     back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10','DEF+50',}},}
 

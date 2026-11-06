@@ -616,9 +616,9 @@ function init_gear_sets()
 	sets.DWMax = {}
 
 	-- Weapons sets
-	sets.weapons.Default = {main="Naegling",sub="Blurred Knife +1", range="Anarchy +2",}
+	sets.weapons.Default = {main="Naegling",sub="Gelti's Knife", range="Anarchy +2",}
 	sets.weapons.SWSavage = {main="Naegling",sub="Nusku Shield",range="Anarchy +2",}
-	sets.weapons.DualSavage = {main="Naegling",sub="Blurred Knife +1", range="Anarchy +2",}
+	sets.weapons.DualSavage = {main="Naegling",sub="Gelti's Knife", range="Anarchy +2",}
 	sets.weapons.DualLeadenRanged = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualLeadenMelee = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range={ name="Death Penalty", augments={'Path: A',}},}
 	sets.weapons.DualAeolian = {main={ name="Rostam", augments={'Path: B',}},sub="Tauret",range="Anarchy +2",}
@@ -697,11 +697,11 @@ function init_gear_sets()
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Iskur Gorget",
-    waist="Sailfi Belt +1",
-    left_ear="Crep. Earring",
+    waist="Reiki Yotai",
+    left_ear="Alabaster Earring",
     right_ear="Telos Earring",
-    left_ring="Epona's Ring",
-    right_ring="Defending Ring",
+    left_ring={name="Chirich Ring +1",bag="Wardrobe 1"},
+    right_ring={name="Chirich Ring +1",bag="Wardrobe 3"},
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
     
     sets.engaged.DW.Acc = {
@@ -760,34 +760,4 @@ function select_default_macro_book()
     else
         set_macro_page(1, 11)
     end
-end
-
-function user_job_lockstyle()
-	if player.equipment.main == nil or player.equipment.main == 'empty' then
-		windower.chat.input('/lockstyleset 003')
-	elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Sword/Nothing.
-				windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].shield_size then --Sword/Shield
-				windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
-			windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-			windower.chat.input('/lockstyleset 003')
-		else
-			windower.chat.input('/lockstyleset 003') --Catchall just in case something's weird.
-		end
-	elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-		if player.equipment.sub == nil or player.equipment.sub == 'empty' then --Dagger/Nothing.
-			windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].shield_size then --Dagger/Shield
-			windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
-			windower.chat.input('/lockstyleset 003')
-		elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-			windower.chat.input('/lockstyleset 003')
-		else
-			windower.chat.input('/lockstyleset 003') --Catchall just in case something's weird.
-		end
-	end
 end

@@ -10,6 +10,7 @@ function user_job_setup()
 	state.Weapons:options('None','Twashtar','Aeneas','Tauret')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AutoContradanceMode = M(false, 'Auto Contradance Mode')
+	state.AutoPrestoMode = M(false, 'Auto Presto Mode')
 	
 	gear.stp_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.wsd_jse_back = {name="Senuna's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
@@ -61,7 +62,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {    ammo="Yamarang",
     head={ name="Nyame Helm", augments={'Path: B',}},
-    body="Maxixi Casaque +3",
+    body="Maxixi Casaque +4",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -87,7 +88,7 @@ function init_gear_sets()
     body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
-    feet={ name="Horos T. Shoes +3", augments={'Enhances "Closed Position" effect',}},
+    feet={ name="Horos Toe Shoes +4", augments={'Enhances "Closed Position" effect',}},
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Eschan Stone",
     left_ear="Crep. Earring",
@@ -162,7 +163,7 @@ function init_gear_sets()
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Grunfeld Rope",
     left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-    right_ear="Maculele Earring +1",
+    right_ear="Maculele Earring +2",
     left_ring="Epaminondas's Ring",
     right_ring="Ephramad's Ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},}
@@ -194,7 +195,7 @@ function init_gear_sets()
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Odr Earring",
-    right_ear="Maculele Earring +1",
+    right_ear="Maculele Earring +2",
     left_ring="Gere Ring",
     right_ring="Ephramad's Ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
@@ -207,7 +208,7 @@ function init_gear_sets()
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Odr Earring",
-    right_ear="Maculele Earring +1",
+    right_ear="Maculele Earring +2",
     left_ring="Gere Ring",
     right_ring="Ephramad's Ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
@@ -220,7 +221,7 @@ function init_gear_sets()
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Odr Earring",
-    right_ear="Maculele Earring +1",
+    right_ear="Maculele Earring +2",
     left_ring="Gere Ring",
     right_ring="Ephramad's Ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
@@ -233,7 +234,7 @@ function init_gear_sets()
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
     waist="Fotia Belt",
     left_ear="Odr Earring",
-    right_ear="Maculele Earring +1",
+    right_ear="Maculele Earring +2",
     left_ring="Gere Ring",
     right_ring="Ephramad's Ring",
     back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},})
@@ -262,8 +263,8 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Odr Earring",ear2="Maculele Earring +1"}
-	sets.AccMaxTP = {ear1="Odr Earring",ear2="Maculele Earring +1"}
+	sets.MaxTP = {ear1="Odr Earring",ear2="Maculele Earring +2"}
+	sets.AccMaxTP = {ear1="Odr Earring",ear2="Maculele Earring +2"}
 	
     sets.Skillchain = {} --hands="Charis Bangles +2"
     

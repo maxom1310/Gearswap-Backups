@@ -37,7 +37,7 @@ function user_job_setup()
 		send_command('bind @f9 input /equipset 14;wait1;input /echo Savage Blade;wait1;aws use savage blade')
 		send_command('bind !^@f9 input /equipset 16;wait1;input /echo Maxentus;wait1;aws use black halo' )
 		send_command('bind ^f9 input /equipset 15;wait1;input /echo Seraph Blade;wait1;aws use seraph blade')
-		send_command('bind !^f9 input /equipset 16;wait1;input /echo Zero TP ')	
+		send_command('bind !^f9 input /equipset 17;wait1;input /echo Fast Blade II ')	
 	
 	select_default_macro_book()
 end
@@ -140,11 +140,26 @@ function init_gear_sets()
     feet="Leth. Houseaux +3",
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Ishvara Earring",
+    left_ear="Moonshade Earring",
     right_ear="Sherida Earring",
-    left_ring="Epaminondas's ring",
+    left_ring="Sroda ring",
     right_ring="Ephramad's Ring",
     back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
+	  sets.precast.WS['Fast Blade II'] = {    ammo="Crepuscular Pebble",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet="Leth. Houseaux +3",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    right_ear={ name="Leth. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+18','Mag. Acc.+18','"Dbl.Atk."+7','STR+11 DEX+11',}},
+    left_ring="Ilabrat Ring",
+    right_ring="Ephramad's Ring",
+    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	}
 	   
 	   	sets.precast.WS['Black Halo'] = {    ammo="Crepuscular Pebble",
     head={ name="Nyame Helm", augments={'Path: B',}},
@@ -154,7 +169,7 @@ function init_gear_sets()
     feet="Leth. Houseaux +3",
     neck={ name="Dls. Torque +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Ishvara Earring",
+    left_ear="Moonshade Earring",
     right_ear="Sherida Earring",
     left_ring="Epaminondas's ring",
     right_ring="Ephramad's Ring",
@@ -940,49 +955,5 @@ end
 function user_job_buff_change(buff, gain)
 	if buff:startswith('Addendum: ') or buff:endswith(' Arts') then
 		style_lock = true
-	end
-end
-
-function user_job_lockstyle()
-	if player.sub_job == 'NIN' or player.sub_job == 'DNC' then
-		if player.equipment.main == nil or player.equipment.main == 'empty' then
-			windower.chat.input('/lockstyleset 004')
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 3 then --Sword in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Sword/Sword.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Sword/Dagger.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Sword/Club.
-				windower.chat.input('/lockstyleset 004')
-			else
-				windower.chat.input('/lockstyleset 004') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 2 then --Dagger in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Dagger/Sword.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Dagger/Dagger.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Dagger/Club.
-				windower.chat.input('/lockstyleset 004')
-			else
-				windower.chat.input('/lockstyleset 004') --Catchall
-			end
-		elseif res.items[item_name_to_id(player.equipment.main)].skill == 11 then --Club in main hand.
-			if res.items[item_name_to_id(player.equipment.sub)].skill == 3 then --Club/Sword.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 2 then --Club/Dagger.
-				windower.chat.input('/lockstyleset 004')
-			elseif res.items[item_name_to_id(player.equipment.sub)].skill == 11 then --Club/Club.
-				windower.chat.input('/lockstyleset 004')
-			else
-				windower.chat.input('/lockstyleset 004') --Catchall
-			end
-		end
-	elseif player.sub_job == 'WHM' or state.Buff['Light Arts'] or state.Buff['Addendum: White'] then
-		windower.chat.input('/lockstyleset 004')
-	elseif player.sub_job == 'BLM' or state.Buff['Dark Arts'] or state.Buff['Addendum: Black'] then
-		windower.chat.input('/lockstyleset 004')
-	else
-		windower.chat.input('/lockstyleset 004')
 	end
 end

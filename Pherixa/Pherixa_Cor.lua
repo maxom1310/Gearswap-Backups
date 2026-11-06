@@ -620,17 +620,20 @@ function aftercast(spell)
 	else
 		equip(sets.aftercast.Idle)
 	end
+	-- re-check once the action has fully finished
+	send_command('@wait 1; gs c refresh')
 end
 
 function status_change(new,old)
 	if new == 'Idle' then
 		equip(sets.aftercast.Idle)
 	elseif new == 'Resting' then
-		equip(sets.aftercast.Resting)
+		if sets.aftercast.Resting then equip(sets.aftercast.Resting) end
 	elseif new == 'Engaged' then
 		equip(sets.aftercast.TP)
 	end
 end
+
 
 -------------------------------------------
 	-- The 'self command' allows you to toggle inbetween sets, based on the TP and RA Arrays identified in the beginning
@@ -690,5 +693,7 @@ function self_command(command)
 		end
 		send_command('@input /echo '..RA_Array[RA_Index]..' SET')
 	end
-
+			if command == 'refresh' then
+				status_change(player.status, player.status)
+	end
 end

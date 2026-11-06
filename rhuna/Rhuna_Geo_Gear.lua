@@ -34,12 +34,12 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1",back="Nantosuelta's Cape"}
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
-	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +3"}
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +4"}
+	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +4"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
-	sets.buff.Entrust = {legs="Bagua Pants +3",feet="Azimuth Gaiters +3",
+	sets.buff.Entrust = {legs="Bagua Pants +4",feet="Azimuth Gaiters +3",
 	back="Lifestream Cape",}
 	
 	-- Relic hat for Blaze of Glory HP increase.
@@ -52,7 +52,7 @@ function init_gear_sets()
     head={ name="Amalric Coif +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     body={ name="Merlinic Jubbah", augments={'Mag. Acc.+18','"Fast Cast"+6','MND+6','"Mag.Atk.Bns."+14',}},
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+12','CHR+2','"Fast Cast"+7',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -83,7 +83,7 @@ function init_gear_sets()
 	head=empty,
     body="Crepuscular Cloak",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+12','CHR+2','"Fast Cast"+7',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -215,7 +215,7 @@ function init_gear_sets()
     head="Azimuth Hood +3",
     body={ name="Agwu's Robe", augments={'Path: A',}},
     hands="Azimuth Gloves +3",
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+12','CHR+2','"Fast Cast"+7',}},
     neck="Voltsurge Torque",
     waist="Cornelia's Belt",
@@ -242,7 +242,7 @@ function init_gear_sets()
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
-	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back="Lifestream Cape",legs="Bagua Pants +3",feet="Azimuth Gaiters +3"})
+	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back="Lifestream Cape",legs="Bagua Pants +4",feet="Azimuth Gaiters +3"})
 		
     sets.midcast.Cure = {      range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
@@ -643,7 +643,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -660,7 +660,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -683,7 +683,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -701,7 +701,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -717,7 +717,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -733,7 +733,7 @@ function init_gear_sets()
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Bagua Sandals +3", augments={'Enhances "Radial Arcana" effect',}},
+    feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -785,9 +785,9 @@ function init_gear_sets()
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Cornelia's Belt",
     left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    right_ear="Alabaster Earring",
     left_ring="Chirich Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky Ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5',}},
 }
 		

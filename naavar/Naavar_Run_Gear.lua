@@ -390,7 +390,7 @@ function init_gear_sets()
     body={ name="Herculean Vest", augments={'DEX+3','Pet: Mag. Acc.+11','Phalanx +4',}},
     hands={ name="Taeon Gloves", augments={'Accuracy+19','Spell interruption rate down -10%','Phalanx +3',}},
     legs={ name="Taeon Tights", augments={'Accuracy+20','Spell interruption rate down -7%','Phalanx +3',}},
-    feet={ name="Herculean Boots", augments={'Pet: "Store TP"+2','Pet: DEX+6','Phalanx +2','Accuracy+16 Attack+16','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
+    feet={ name="Herculean Boots", augments={'"Store TP"+1','Weapon Skill Acc.+1','Phalanx +4',}},
     neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Tuisto Earring",
@@ -463,7 +463,7 @@ function init_gear_sets()
     body={ name="Herculean Vest", augments={'DEX+3','Pet: Mag. Acc.+11','Phalanx +4',}},
     hands={ name="Taeon Gloves", augments={'Accuracy+19','Spell interruption rate down -10%','Phalanx +3',}},
     legs={ name="Taeon Tights", augments={'Accuracy+20','Spell interruption rate down -7%','Phalanx +3',}},
-    feet={ name="Herculean Boots", augments={'Pet: "Store TP"+2','Pet: DEX+6','Phalanx +2','Accuracy+16 Attack+16','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
+    feet={ name="Herculean Boots", augments={'"Store TP"+1','Weapon Skill Acc.+1','Phalanx +4',}},
     neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
     left_ear="Tuisto Earring",
@@ -968,12 +968,4 @@ function check_trust()
 		end
 	end
 	return false
-end
-
-function user_job_lockstyle()
-	if state.Weapons.value == 'Lionheart' then
-		windower.chat.input('/lockstyleset 017')
-	else
-		windower.chat.input('/lockstyleset 017')
-	end
 end

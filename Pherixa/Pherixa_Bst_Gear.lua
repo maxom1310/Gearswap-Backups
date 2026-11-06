@@ -18,7 +18,7 @@ function user_job_setup()
 
 	-- Set up Jug Pet cycling and keybind Ctrl+F7
 	-- INPUT PREFERRED JUG PETS HERE
-	state.JugMode = M{['description']='Jug Mode', 'TPDrain','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
+	state.JugMode = M{['description']='Jug Mode', 'GenerousArthur','TPDrain','ScissorlegXerin','BlackbeardRandy','AttentiveIbuki','DroopyDortwin','WarlikePatrick','AcuexFamiliar'}
 	send_command('bind ^f7 gs c cycle JugMode')
 
 	-- Set up Monster Correlation Modes and keybind Alt+F7
@@ -135,30 +135,85 @@ function init_gear_sets()
 
 		-- WEAPONSKILLS
 		-- Default weaponskill sets.
-	sets.precast.WS = {ammo="Voluspa Tathlum",
-		head="Meghanada Visor +2",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Bleating Mantle",waist="Fotia Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+	sets.precast.WS = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
-	sets.precast.WS.SomeAcc = {ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Buremte Gloves",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Letalis Mantle",waist="Fotia Belt",legs="Meg. Chausses +2",feet="Amm Greaves"}
+	sets.precast.WS.SomeAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
-	sets.precast.WS.Acc = {ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Leyline Gloves",ring1="Regal Ring",ring2="Ilabrat Ring",
-		back="Letalis Mantle",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Nukumi Ocreae +1"}
+	sets.precast.WS.Acc = { main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
-	sets.precast.WS.FullAcc = {ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Leyline Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Ground. Mantle +1",waist="Olseni Belt",legs="Flamma Dirs +2",feet="Nukumi Ocreae +1"}
+	sets.precast.WS.FullAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
-	sets.precast.WS.Fodder = {ammo="Paeapua",
-		head="Gavialis Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Buremte Gloves",ring1="Regal Ring",ring2="Epona's Ring",
-		back="Buquwik Cape",waist="Fotia Belt",legs="Meg. Chausses +2",feet="Nukumi Ocreae +1"}
+	sets.precast.WS.Fodder = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
 	-- Specific weaponskill sets.
 	sets.precast.WS['Ruinator'] = set_combine(sets.precast.WS, {})
@@ -170,41 +225,92 @@ function init_gear_sets()
 	sets.precast.WS['Onslaught'].WSMidAcc = set_combine(sets.precast.WSMidAcc, {})
 	sets.precast.WS['Onslaught'].WSHighAcc = set_combine(sets.precast.WSHighAcc, {})
 
-	sets.precast.WS['Primal Rend'] = {ammo="Ghastly Tathlum +1",
-		head="Jumalik Helm",neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
-		body="Jumalik Mail",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
-		back="Toro Cape",waist="Fotia Belt",legs="Tali'ah Sera. +2",feet="Tot. Gaiters +1"}
+	sets.precast.WS['Primal Rend'] = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    ammo="Oshasha's Treatise",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Rep. Plat. Medal",
+    waist="Sailfi Belt +1",
+    left_ear="Moonshade Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Ephramad's Ring",
+    right_ring="Sroda Ring",
+    back="Null Shawl",}
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {})
 
 		-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}
-	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
+	sets.MaxTP = {ear1="Alabaster Earring",}
+	sets.AccMaxTP = {}
 
 				-- PET SIC & READY MOVES
-	sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,ammo="Voluspa Tathlum",
-		head="Totemic Helm +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body="Taeon Tabard",hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_physical_pet_legs,feet="Totemic Gaiters +1"}
+	sets.midcast.Pet.WS = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Adad Amulet",
+    waist="Incarnation Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="C. Palug Ring",
+    back="Null Shawl",}
 
-	sets.midcast.Pet.SomeAcc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub=gear.PHYKumbha2,hands="Regimen Mittens"})
-	sets.midcast.Pet.Acc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub="Hunahpu",head="Totemic Helm +1",hands="Regimen Mittens"})
-	sets.midcast.Pet.FullAcc = set_combine(sets.midcast.Pet.WS, {main="Kerehcatl",sub="Hunahpu",head="Totemic Helm +1",hands="Regimen Mittens"})
+	sets.midcast.Pet.SomeAcc = set_combine(sets.midcast.Pet.WS, {})
+	sets.midcast.Pet.Acc = set_combine(sets.midcast.Pet.WS, {})
+	sets.midcast.Pet.FullAcc = set_combine(sets.midcast.Pet.WS, {})
 				
-	sets.midcast.Pet.MagicReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body=gear.valorous_pet_body,hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
+	sets.midcast.Pet.MagicReady = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Adad Amulet",
+    waist="Incarnation Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="C. Palug Ring",
+    back="Null Shawl",}
 		
-	sets.midcast.Pet.DebuffReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body=gear.valorous_pet_body,hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
+	sets.midcast.Pet.DebuffReady = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Adad Amulet",
+    waist="Incarnation Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="C. Palug Ring",
+    back="Null Shawl",}
 		
-	sets.midcast.Pet.PhysicalDebuffReady = {main=gear.MABKumbha,sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head=gear.valorous_pet_head,neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-		body=gear.valorous_pet_body,hands="Nukumi Manoplas +1",ring1="Varar Ring +1",ring2="Varar Ring +1",
-		back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
+	sets.midcast.Pet.PhysicalDebuffReady = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Adad Amulet",
+    waist="Incarnation Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="C. Palug Ring",
+    back="Null Shawl",}
 
 	sets.midcast.Pet.ReadyRecast = {legs="Desultor Tassets"}
 	sets.midcast.Pet.ReadyRecastDW = {sub="Charmer's Merlin",legs="Desultor Tassets"}
@@ -215,152 +321,402 @@ function init_gear_sets()
 	-- RESTING
 	sets.resting = {}
 
-	sets.idle = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Staunch Tathlum +1",
-		head="Jumalik Helm",neck="Elite Royal Collar",ear1="Sanare Earring",ear2="Genmei Earring",
-		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Solemnity Cape",waist="Flume Belt +1",legs="Tali'ah Sera. +2",feet="Skd. Jambeaux +1"}
+	sets.idle = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.idle.Refresh = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Staunch Tathlum +1",
-		head="Jumalik Helm",neck="Elite Royal Collar",ear1="Sanare Earring",ear2="Genmei Earring",
-		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Solemnity Cape",waist="Flume Belt +1",legs="Tali'ah Sera. +2",feet="Skd. Jambeaux +1"}
+	sets.idle.Refresh = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 		
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
-	sets.idle.Pet = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head="Anwig Salade",neck="Elite Royal Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+	sets.idle.Pet = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.idle.Pet.Engaged = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+	sets.idle.Pet.Engaged = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.idle.Pet.Engaged.DW = {main="Izizoeksi",sub=gear.PDTMABKumbha,ammo="Voluspa Tathlum",
-		head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Artio's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+	sets.idle.Pet.Engaged.DW = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
 	-- DEFENSE SETS
-	sets.defense.PDT = {ammo="Staunch Tathlum +1",
-		head="Genmei Kabuto",neck="Elite Royal Collar",ear1="Sanare Earring",ear2="Handler's Earring +1",
-		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Tali'ah Sera. +2",feet="Nukumi Ocreae +1"}
+	sets.defense.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.defense.PetPDT = {ammo="Voluspa Tathlum",
-		head="Anwig Salade",neck="Elite Royal Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Pastoralist's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+	sets.defense.PetPDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.defense.PetMDT = {ammo="Voluspa Tathlum",
-		head="Anwig Salade",neck="Elite Royal Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-		body="Tot. Jackcoat +3",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="C. Palug Ring",
-		back="Pastoralist's Mantle",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Ankusa Gaiters +3"}
+	sets.defense.PetMDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
 	sets.defense.PetMEVA = sets.defense.PetMDT
 
 	sets.defense.PKiller = set_combine(sets.defense.PDT, {body="Nukumi Gausape +1"})
 	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
-	sets.defense.MDT = {ammo="Staunch Tathlum +1",
-		head="Genmei Kabuto",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Etiolation Earring",
-		body="Jumalik Mail",hands="Macabre Gaunt. +1",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Engulfer Cape +1",waist="Engraved Belt",legs="Tali'ah Sera. +2",feet="Nukumi Ocreae +1"}
+	sets.defense.MDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.defense.MEVA = {
-		head="Gavialis Helm",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Etiolation Earring",
-		body="Jumalik Mail",hands="Leyline Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
-		back="Toro Cape",waist="Engraved Belt",legs="Flamma Dirs +2",feet="Valorous Greaves"}
+	sets.defense.MEVA = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Nyame Helm",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Gleti's Breeches",
+    feet="Nyame Sollerets",
+    neck="Elite Royal Collar",
+    waist="Carrier's Sash",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Nukumi Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Pet: "Dbl. Atk."+8','STR+7 CHR+7',}},
+    left_ring="Murky Ring",
+    right_ring="Shneddick Ring",
+    back="Null Shawl",}
 
-	sets.defense.MKiller = set_combine(sets.defense.MDT, {body="Nukumi Gausape +1"})
+	sets.defense.MKiller = set_combine(sets.defense.MDT, {})
 
 	sets.Kiting = {feet="Skd. Jambeaux +1"}
 	sets.DayIdle = {}
 	sets.NightIdle = {}
 
 	-- MELEE (SINGLE-WIELD) SETS
-	sets.engaged = {main="Izizoeksi",ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Ground. Mantle +1",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+	sets.engaged = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.SomeAcc = {ammo="Falcon Eye",
-		head="Malignance Chapeau",neck="Shulmanu Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.SomeAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.Acc = {ammo="Falcon Eye",
-		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Brutal Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
+	sets.engaged.Acc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.FullAcc = {ammo="Falcon Eye",
-		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Ground. Mantle +1",waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
+	sets.engaged.FullAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Asperity Necklace",ear1="Trux Earring",ear2="Brutal Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+	sets.engaged.Fodder = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
 	-- MELEE (SINGLE-WIELD) HYBRID SETS
-	sets.engaged.PDT = {ammo="Staunch Tathlum +1",
-		head="Genmei Kabuto",neck="Elite Royal Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.SomeAcc.PDT = {ammo="Falcon Eye",
-		head="Genmei Kabuto",neck="Elite Royal Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.SomeAcc.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.Acc.PDT = {ammo="Falcon Eye",
-		head=gear.valorous_wsd_head,neck="Elite Royal Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.Acc.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.FullAcc.PDT = {ammo="Falcon Eye",
-		head=gear.valorous_wsd_head,neck="Elite Royal Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.FullAcc.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.Fodder.PDT = {ammo="Staunch Tathlum +1",
-		head=gear.valorous_wsd_head,neck="Elite Royal Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-		body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.Fodder.PDT = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
 	-- MELEE (DUAL-WIELD) SETS FOR DNC AND NIN SUBJOB
-	sets.engaged.DW = {main="Izizoeksi",sub="Hunahpu",ammo="Aurgelmir Orb +1",
-		head="Gavialis Helm",neck="Combatant's Torque",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Tartarus Platemail",hands="Meg. Gloves +2",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Ground. Mantle +1",waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+	sets.engaged.DW = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.DW.SomeAcc = {ammo="Falcon Eye",
-		head=gear.valorous_wsd_head,neck="Shulmanu Collar",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Meg. Cuirie +2",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.DW.SomeAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.DW.Acc = {ammo="Falcon Eye",
-		head="Meghanada Visor +2",neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Brutal Earring",
-		body="Malignance Tabard",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Letalis Mantle",waist="Grunfeld Rope",legs="Flamma Dirs +2",feet="Valorous Greaves"}
+	sets.engaged.DW.Acc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.DW.FullAcc = {ammo="Falcon Eye",
-		head=gear.valorous_wsd_head,neck="Combatant's Torque",ear1="Mache Earring +1",ear2="Telos Earring",
-		body="Malignance Tabard",hands="Leyline Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Ground. Mantle +1",waist="Olseni Belt",legs="Flamma Dirs +2",feet="Valorous Greaves"}
+	sets.engaged.DW.FullAcc = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
-	sets.engaged.DW.Fodder = {ammo="Aurgelmir Orb +1",
-		head=gear.valorous_wsd_head,neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
-		back="Bleating Mantle",waist="Shetal Stone",legs="Meg. Chausses +2",feet="Valorous Greaves"}
+	sets.engaged.DW.Fodder = {    main="Ikenga's Axe",
+    sub="Archduke's Shield",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck="Anu Torque",
+    waist="Sailfi Belt +1",
+    left_ear="Alabaster Earring",
+    right_ear="Sherida Earring",
+    left_ring="Murky Ring",
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
 
 	-- MELEE (DUAL-WIELD) HYBRID SETS
-	sets.engaged.DW.PDT = set_combine(sets.engaged.PDT, {ear1="Dudgeon Earring",ear2="Heartseeker Earring",})
-	sets.engaged.DW.SomeAcc.PDT = set_combine(sets.engaged.SomeAcc.PDT, {ear1="Dudgeon Earring",ear2="Heartseeker Earring",})
-	sets.engaged.DW.Acc.PDT = set_combine(sets.engaged.Acc.PDT, {ear1="Dudgeon Earring",ear2="Heartseeker Earring",})
+	sets.engaged.DW.PDT = set_combine(sets.engaged.PDT, {})
+	sets.engaged.DW.SomeAcc.PDT = set_combine(sets.engaged.SomeAcc.PDT, {})
+	sets.engaged.DW.Acc.PDT = set_combine(sets.engaged.Acc.PDT, {})
 	sets.engaged.DW.FullAcc.PDT = set_combine(sets.engaged.FullAcc.PDT, {})
 
 	-- GEARSETS FOR MASTER ENGAGED (SINGLE-WIELD) & PET ENGAGED
@@ -391,7 +747,7 @@ function init_gear_sets()
 	sets.engaged.DW.PetTank.FullAcc = set_combine(sets.engaged.DW.FullAcc, {})
 	sets.engaged.DW.PetTank.Fodder = set_combine(sets.engaged.DW.Fodder, {})
 
-	sets.buff['Killer Instinct'] = {body="Nukumi Gausape +1"}
+	sets.buff['Killer Instinct'] = {}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})

@@ -307,7 +307,7 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {})
 	
     sets.midcast['Elemental Magic'] = {      main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -324,7 +324,7 @@ function init_gear_sets()
 }
 
     sets.midcast['Elemental Magic'].Resistant = {      main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -356,7 +356,7 @@ function init_gear_sets()
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 		
     sets.midcast['Elemental Magic'].Fodder = {        main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -372,7 +372,7 @@ function init_gear_sets()
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 		
     sets.midcast['Elemental Magic'].HighTierNuke = {     main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -389,7 +389,7 @@ function init_gear_sets()
 }
 		
     sets.midcast['Elemental Magic'].HighTierNuke.Resistant = {      main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -405,7 +405,7 @@ function init_gear_sets()
     back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = {      main={ name="Idris", augments={'Path: A',}},
-    sub="Genmei Shield",
+    sub="Culminus",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
     body="Azimuth Coat +3",
@@ -548,6 +548,33 @@ function init_gear_sets()
 	
 	sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast['Bio II'] = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
+	sets.midcast['Sleepga'] = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +3",
+    body="Volte Jupon",
+    hands="Azimuth Gloves +3",
+    legs="Volte Hose",
+    feet="Azimuth Gaiters +3",
+    neck={ name="Bagua Charm +2", augments={'Path: A',}},
+    waist="Chaac Belt",
+    left_ear="Malignance Earring",
+    right_ear={ name="Azimuth Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+14','Damage taken-5%',}},
+    left_ring="Naji's Loop",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Pet: Damage taken -5%',}},}
+	
+	sets.midcast['Sleepga II'] = {     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +3",
+    body="Volte Jupon",
+    hands="Azimuth Gloves +3",
+    legs="Volte Hose",
+    feet="Azimuth Gaiters +3",
+    neck={ name="Bagua Charm +2", augments={'Path: A',}},
+    waist="Chaac Belt",
+    left_ear="Malignance Earring",
+    right_ear={ name="Azimuth Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+14','Damage taken-5%',}},
+    left_ring="Naji's Loop",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Pet: Damage taken -5%',}},}
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 		

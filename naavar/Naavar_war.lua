@@ -22,7 +22,7 @@ end
 
 function init_gear_sets()
 	sets.precast.JA.Warcry = {
-        head="Agoge Mask +3",
+        head="Agoge Mask +4",
     }
     sets.precast.JA["Mighty Strikes"] = {
         hands="Agoge Mufflers",
@@ -82,7 +82,7 @@ function init_gear_sets()
     legs="Sakpata's Cuisses",
     feet="Sakpata's Leggings",
     neck={ name="War. Beads +2", augments={'Path: A',}},
-    waist="Ioskeha Belt",
+    waist="Carrier's Sash",
     left_ear="Schere Earring",
     right_ear="Boii Earring +1",
     left_ring="Moonlight Ring",
@@ -91,13 +91,13 @@ function init_gear_sets()
 	}
       sets.idle.Nyame = {
     ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Nyame Helm",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Engraved Belt",
+    waist="Carrier's Sash",
     left_ear="Schere Earring",
 	right_ear="Boii Earring +1",
     left_ring="Vengeful Ring",
@@ -106,7 +106,7 @@ function init_gear_sets()
 	}
   sets.precast.WS = {
     ammo="Knobkierrie",
-    head="Agoge Mask +3",
+    head="Agoge Mask +4",
     body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -116,12 +116,12 @@ function init_gear_sets()
     left_ear="Moonshade Earring",
     right_ear="Thrud Earring",
 	 left_ring="Ephramad's Ring",
-    right_ring="Beithir Ring",
+    right_ring="Sroda Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 	sets.precast.WS.Upheaval = {
     ammo="Knobkierrie",
-    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+    head={ name="Agoge Mask +4", augments={'Enhances "Savagery" effect',}},
     body="Nyame Mail",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
@@ -136,9 +136,9 @@ function init_gear_sets()
 	}
 	  sets.precast.WS["King's Justice"] = {
     ammo="Knobkierrie",
-       head="Agoge Mask +3",
-    body="Sakpata's Plate",
-    hands="Sakpata's Gauntlets",
+       head="Agoge Mask +4",
+	body="Nyame Mail",
+    hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
     feet="Nyame Sollerets",
     neck="War. Beads +2",
@@ -151,7 +151,7 @@ function init_gear_sets()
 }
 	sets.precast.WS["Ukko's Fury"] = {
 	    ammo="Yetshila +1",
-    head="Sakpata's Helm",
+      head="Agoge Mask +4",
     body="Nyame Mail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 	legs="Boii Cuisses +3",
@@ -167,7 +167,7 @@ function init_gear_sets()
 	}
 		sets.precast.WS["Raging Rush"] = {
 	    ammo="Yetshila +1",
-    head="Sakpata's Helm",
+      head="Agoge Mask +4",
     body={ name="Sakpata's Plate", augments={'Path: A',}},
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 	legs="Boii Cuisses +3",
@@ -183,7 +183,7 @@ function init_gear_sets()
 	}
 	sets.precast.WS["Cloudsplitter"] = {
     ammo="Knobkierrie",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Nyame Helm",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -198,7 +198,7 @@ function init_gear_sets()
 }
 	sets.precast.WS["Red Lotus Blade"] = {
     ammo="Knobkierrie",
-    head={ name="Nyame Helm", augments={'Path: B',}},
+    head="Nyame Helm",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -235,7 +235,7 @@ function init_gear_sets()
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear={ name="Schere Earring", augments={'Path: A',}},
+    left_ear="Schere Earring",
     right_ear="Moonshade Earring",
      left_ring="Ephramad's Ring",
     right_ring="Sroda Ring",

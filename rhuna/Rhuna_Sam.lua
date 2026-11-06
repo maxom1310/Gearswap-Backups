@@ -68,13 +68,13 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +3", back="Smertrios's Mantle"}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +3"}
+    sets.precast.JA.Meditate = {head="Wakido Kabuto +4",hands="Sakonji Kote +4", back="Smertrios's Mantle"}
+    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +4"}
+    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +4"}
 	sets.precast.JA['Jump'] = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Kasuga Kabuto +3",
     body="Kasuga Domaru +3",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Kasuga Haidate +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -87,7 +87,7 @@ function init_gear_sets()
 	sets.precast.JA['High Jump'] = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Kasuga Kabuto +3",
     body="Kasuga Domaru +3",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Kasuga Haidate +3",
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -317,7 +317,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
     body="Mpaca's Doublet",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Mpaca's Hose",
     feet="Nyame Sollerets",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -349,7 +349,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
     body="Mpaca's Doublet",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Mpaca's Hose",
     feet="Nyame Sollerets",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -438,17 +438,17 @@ function init_gear_sets()
 	
 	sets.engaged.Subtle = {
     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    head="Ken. Jinpachi +1",
-    body="Dagon Breast.",
-    hands="Wakido Kote +3",
-    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    head="Kasuga Kabuto +3",
+    body="Kasuga Domaru +3",
+    hands="Ken. Tekko +1",
+    legs="Kasuga Haidate +3",
     feet="Ken. Sune-Ate +1",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear={ name="Schere Earring", augments={'Path: A',}},
     right_ear="Digni. Earring",
-    right_ring="Niqmaddu Ring",
-    left_ring="Defending Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Chirich Ring +1",
     back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	
@@ -458,7 +458,7 @@ function init_gear_sets()
     ammo="Staunch Tathlum +1",
     head="Ken. Jinpachi +1",
     body="Ken. Samue +1",
-    hands="Wakido Kote +3",
+    hands="Wakido Kote +4",
     legs="Ken. Hakama +1",
     feet="Ken. Sune-Ate +1",
     neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
@@ -477,7 +477,7 @@ function init_gear_sets()
 		ear1="Genmei Earring",
 		ear2="Zennaroi Earring",
         body="Twilight Mail",
-		hands="Wakido Kote +3",
+		hands="Wakido Kote +4",
 		ring1="Defending Ring",
 		ring2="Vocane Ring",
     back="Moonlight Cape",

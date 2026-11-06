@@ -400,32 +400,32 @@ function init_gear_sets()
 	-- Magical Spells --
 
 --	sets.midcast['Blue Magic'].Magical = {	    ammo="Pemphredo Tathlum",
-  --  head="Hashishin Kavuk +3",
-  --  body="Hashishin Mintan +3",
-  --  hands="Hashi. Bazu. +3",
- --   legs="Hashishin Tayt +3",
-  --  feet="Hashi. Basmak +3",
-  --  neck="Sibyl Scarf",
-  --  waist="Orpheus's Sash",
-  --  left_ear="Regal Earring",
-  --  right_ear="Friomisi Earring",
-  --  left_ring="Metamor. Ring +1",
-  --  right_ring="Shiva Ring +1",
-   -- back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
+ --   head="Hashishin Kavuk +3",
+ --  body="Hashishin Mintan +3",
+--   hands="Hashi. Bazu. +3",
+--   legs="Hashishin Tayt +3",
+ --   feet="Hashi. Basmak +3",
+ --  neck="Sibyl Scarf",
+ --   waist="Orpheus's Sash",
+ --  left_ear="Regal Earring",
+--   right_ear="Friomisi Earring",
+--   left_ring="Metamor. Ring +1",
+ --  right_ring="Shiva Ring +1",
+ --  back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','Haste+10','Phys. dmg. taken-10%',}},}
 	
 		sets.midcast['Blue Magic'].Magical = {    ammo="Sapience Orb",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
+   head="Malignance Chapeau",
+   body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Luminary Sash",
-    left_ear="Crep. Earring",
-    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
+   left_ear="Crep. Earring",
+   right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
-    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},}
+  right_ring="Stikini Ring +1",
+    back="Null Shawl",}
 					 
 	sets.midcast['Blue Magic'].Magical.Proc = {    ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
@@ -490,7 +490,7 @@ function init_gear_sets()
     right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','"Dbl.Atk."+6','STR+7 INT+7',}},
     left_ring="Stikini Ring +1",
     right_ring="Stikini Ring +1",
-    back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}},
+    back="Null Shawl",
 	}
 
 	sets.midcast['Enfeebling Magic'] = {    ammo="Pemphredo Tathlum",
@@ -1224,7 +1224,4 @@ function check_trust()
 		end
 	end
 	return false
-end
-function user_job_lockstyle()
-		windower.chat.input('/lockstyleset 003')
 end

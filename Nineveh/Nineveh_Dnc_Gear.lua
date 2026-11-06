@@ -10,6 +10,7 @@ function user_job_setup()
 	state.Weapons:options('None','Prime','Twash','Tauret','Karam')
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWEarrings','DWMax'}
 	state.AutoContradanceMode = M(false, 'Auto Contradance Mode')
+	state.AutoPrestoMode = M(false, 'Auto Presto Mode')
 	
 
 	
@@ -42,7 +43,7 @@ function init_gear_sets()
     
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['No Foot Rise'] = {} --body="Horos Casaque +1"
+    sets.precast.JA['No Foot Rise'] = {body="Horos Casaque +1"}
 
     sets.precast.JA['Trance'] = {head="Horos Tiara +1"}
 	
@@ -104,7 +105,7 @@ function init_gear_sets()
     sets.precast.Step = {     ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Maculele Tiara +3",
     body="Malignance Tabard",
-    hands="Maxixi Bangles +3",
+    hands="Maxixi Bangles +4",
     legs="Malignance Tights",
     feet={ name="Horos T. Shoes +3", augments={'Enhances "Closed Position" effect',}},
     neck={ name="Etoile Gorget +2", augments={'Path: A',}},
@@ -192,13 +193,13 @@ function init_gear_sets()
 	sets.precast.WS.Proc = {}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {head="Maculele Tiara +3"})
+    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {hands="Maxixi Bangles +4",head="Maculele Tiara +3"})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.precast.WS["Rudra's Storm"].Fodder = set_combine(sets.precast.WS["Rudra's Storm"], {})
 	
-	    sets.precast.WS["Ruthless Stroke"] = set_combine(sets.precast.WS, {hands="Maxixi Bangles +3",})
+	    sets.precast.WS["Ruthless Stroke"] = set_combine(sets.precast.WS, {hands="Maxixi Bangles +4",})
     sets.precast.WS["Ruthless Stroke"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS["Ruthless Stroke"].Acc = set_combine(sets.precast.WS.Acc, {})
 	sets.precast.WS["Ruthless Stroke"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})

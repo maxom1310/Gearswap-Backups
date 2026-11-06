@@ -272,7 +272,7 @@ function get_sets()
     left_ear="Mendi. Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Gelatinous Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
     sets.midcast.Cure.WeaponLock = {
@@ -289,7 +289,7 @@ function get_sets()
     left_ear="Mendi. Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Gelatinous Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
 -- Enhancing Magic --
@@ -307,7 +307,7 @@ function get_sets()
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Stikini Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back="Perimede Cape",
 		})
 	sets.midcast.Duration =  set_combine(sets.midcast.Recast, {
@@ -324,7 +324,7 @@ function get_sets()
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Stikini Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back="Perimede Cape",
 		})		
 	sets.midcast.Phalanx = set_combine(sets.midcast.Duration, {
@@ -349,7 +349,7 @@ function get_sets()
     left_ear="Malignance Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Stikini Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back="Perimede Cape",
 		})	
 -- Enfeebling Magic --
@@ -511,7 +511,7 @@ function get_sets()
     left_ear="Lugalbanda Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Gelatinous Ring +1",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +8','Indi. eff. dur. +20','Pet: Damage taken -4%','Damage taken-3%',}},
 	})
 ---- Aftercast ----
@@ -527,10 +527,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},
 	}
 	
@@ -544,10 +544,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},})	
     sets.aftercast.Luopan =  {
     main={ name="Idris", augments={'Path: A',}},
@@ -560,10 +560,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},
 	}
 	
@@ -578,10 +578,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},
 	})	
 	
@@ -596,10 +596,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},
 	})
     sets.aftercast.Town = {    main={ name="Idris", augments={'Path: A',}},
@@ -612,10 +612,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
 -- Resting Sets --
     sets.resting = {    main={ name="Idris", augments={'Path: A',}},
@@ -628,10 +628,10 @@ function get_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Shneddick Ring",
-    right_ring="Defending Ring",
+    right_ring="Murky ring",
     back={ name="Nantosuelta's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
 -- Melee Sets --
     sets.engaged = {	
@@ -645,7 +645,7 @@ function get_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Cetl Belt",
-    left_ear="Telos Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Azimuth Earring +2", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+20','Damage taken-8%','INT+15 MND+15',}},
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
