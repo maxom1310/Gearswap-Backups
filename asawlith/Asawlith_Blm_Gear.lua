@@ -467,9 +467,11 @@ function init_gear_sets()
     
     sets.midcast['Elemental Magic'] = {   ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
     head="Ea Hat +1",
-    body="Wicce Coat +3",
+    --body="Wicce Coat +3",
+	body="Nyame Mail",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Wicce Chausses +3",
+   -- legs="Wicce Chausses +3",
+	legs="Nyame Flanchard",
     feet="Wicce Sabots +3",
     neck={ name="Src. Stole +2", augments={'Path: A',}},
     waist="Hachirin-no-Obi",
@@ -507,15 +509,9 @@ function init_gear_sets()
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
     back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 
-	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], { head="Ea Hat +1",
-	body="Wicce Coat +3",
-    legs="Wicce Chausses +3",})
-	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {  head="Wicce Petasos +3",
-	body="Wicce Coat +3",
-    legs="Wicce Chausses +3",})
-	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, { head="Wicce Petasos +3",
-	body="Wicce Coat +3",
-    legs="Wicce Chausses +3",})
+	sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], { })
+	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {})
+	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, { })
 	
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Resistant
@@ -535,6 +531,54 @@ function init_gear_sets()
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Crepuscular Cloak"})
 	sets.midcast.Impact.Death = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Crepuscular Cloak"})	
     sets.midcast.Impact.OccultAcumen = set_combine(sets.midcast['Elemental Magic'].OccultAcumen, {head=empty,body="Crepuscular Cloak"})
+	
+	sets.midcast['Elemental Magic']['Aeroja'] = {   ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Ea Hat +1",
+    --body="Wicce Coat +3",
+	body="Nyame Mail",
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+   legs="Wicce Chausses +3",
+	--legs="Nyame Flanchard",
+    feet="Wicce Sabots +3",
+    neck={ name="Src. Stole +2", augments={'Path: A',}},
+    waist="Hachirin-no-Obi",
+    left_ear="Malignance Earring",
+    right_ear="Wicce Earring +2",
+    left_ring="Freke Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+	
+		sets.midcast['Elemental Magic']['Thundaja'] = {   ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Ea Hat +1",
+    --body="Wicce Coat +3",
+	body="Nyame Mail",
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+  legs="Wicce Chausses +3",
+	--legs="Nyame Flanchard",
+    feet="Wicce Sabots +3",
+    neck={ name="Src. Stole +2", augments={'Path: A',}},
+    waist="Hachirin-no-Obi",
+    left_ear="Malignance Earring",
+    right_ear="Wicce Earring +2",
+    left_ring="Freke Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+	
+		sets.midcast['Elemental Magic']['Stoneja'] = {   ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
+    head="Ea Hat +1",
+    --body="Wicce Coat +3",
+	body="Nyame Mail",
+    hands={ name="Agwu's Gages", augments={'Path: A',}},
+	legs="Wicce Chausses +3",
+
+    feet="Wicce Sabots +3",
+    neck={ name="Src. Stole +2", augments={'Path: A',}},
+    waist="Hachirin-no-Obi",
+    left_ear="Malignance Earring",
+    right_ear="Wicce Earring +2",
+    left_ring="Freke Ring",
+    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    back={ name="Taranus's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
 	
     -- Sets to return to when not performing an action.
     
