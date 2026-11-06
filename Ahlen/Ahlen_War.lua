@@ -323,11 +323,11 @@ sets.precast.JA.Restraint = {
     feet="Boii Calligae +3",
     neck="Moonlight Necklace",
     waist="Null Belt",
-    left_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
     right_ear="Boii Earring +2",
-    left_ring="Crepuscular Ring",
+    left_ring="Murky Ring",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 	
 		sets.precast.WS["Full Break"] = {    ammo="Pemphredo Tathlum",
     head="Boii Mask +3",

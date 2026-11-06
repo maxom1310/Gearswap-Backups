@@ -199,18 +199,18 @@ function init_gear_sets()
     -- 1159 Accuracy
 	sets.precast.WS["Howling Fist"] = {
     ammo="Crepuscular Pebble",
-    head={ name="Mpaca's Cap", augments={'Path: A',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-    legs={ name="Mpaca's Hose", augments={'Path: A',}},
-    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    head="Mpaca's Cap",
+    body="Nyame Mail",
+    hands="Nyame Gauntlets",
+    legs="Mpaca's Hose",
+    feet="Nyame Sollerets",
     neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
     waist="Moonbow Belt +1",
-    right_ear={ name="Schere Earring", augments={'Path: A',}},
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear="Moonshade Earring",
+    right_ear="Hoxne Earring",
+    left_ring="Niqmaddu Ring",
     right_ring="Ephramad's Ring",
-    left_ring="Gere Ring",
-    back={ name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    back={ name="Segomo's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
                                    }
     -- 1159 Accuracy
 	sets.precast.WS["Asuran Fists"] = {

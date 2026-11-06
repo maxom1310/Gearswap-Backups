@@ -731,17 +731,17 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].MagicAccuracy = {     ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",
-    body="Hashishin Mintan +3",
+    body="Sworn Platemail",
     hands="Hashi. Bazu. +3",
     legs="Hashishin Tayt +3",
-    feet="Hashi. Basmak +3",
+    feet="Sworn Sabatons",
     neck={ name="Mirage Stole +2", augments={'Path: A',}},
     waist="Null Belt",
-    left_ear="Digni. Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear={ name="Hashi. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','"Dbl.Atk."+6','STR+9 INT+9',}},
     left_ring="Stikini Ring +1",
-    right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Damage taken-5%',}},}
+    right_ring="Metamor. Ring +1",
+    back="Null Shawl",}
 
 	sets.midcast['Enfeebling Magic'] = {     ammo="Pemphredo Tathlum",
     head="Hashishin Kavuk +3",

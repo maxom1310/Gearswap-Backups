@@ -5,7 +5,7 @@ function user_job_setup()
 	state.WeaponskillMode:options('Match','Proc')
 	state.AutoBuffMode:options('Off','AutoMeleeMND','AutoMeleeStr','AutoMeleeDex','AutoInt')
 	state.CastingMode:options('Normal','Resistant', 'Fodder', 'Proc')
-    state.IdleMode:options('Normal','PDT','MDT','Aminon')
+    state.IdleMode:options('Normal','PDT','MDT','Amin')
     state.PhysicalDefenseMode:options('PDT','NukeLock')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
@@ -708,18 +708,18 @@ function init_gear_sets()
     right_ring="Shneddick Ring",
     back="Null Shawl",}
 	
-		sets.idle.Aminon = {       ammo="Homiliary",
-    head={ name="Viti. Chapeau +4", augments={'Enfeebling Magic duration','Magic Accuracy',}},
-    body="Lethargy Sayon +3",
+		sets.idle.Amin = {    ammo="Homiliary",
+    head="Null Masque",
+    body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Anu Torque",
     waist="Reiki Yotai",
-    right_ear="Dedition Earring",
     left_ear="Sherida Earring",
-    left_ring="Stikini Ring +1",
-    right_ring="Roller's Ring",
+    right_ear="Dedition Earring",
+    left_ring="Roller's Ring",
+	right_ring="Shneddick Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 		
 	sets.idle.MDT = {    ammo="Ghastly Tathlum +1",
@@ -868,15 +868,16 @@ function init_gear_sets()
 		
 	sets.engaged.Enspell = {
 	ammo="Coiste Bodhar",
-    head="Bunzi's Hat",
+    head="Sworn Crown",
     body="Sworn Platemail",
     hands="Sworn Gauntlets",
     feet="Sworn Sabatons",
     legs="Sworn brais",
-    neck="Anu Torque",
-    waist="Sailfi Belt +1", 
-    right_ear="Telos Earring",
-    left_ear="Sherida Earring",
+    neck="Null Loop",
+	waist="Orpheus's Sash",
+   -- waist="Sailfi Belt +1", 
+    right_ear="Leth. Earring +2",
+    left_ear="Alabaster Earring",
     right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},
     left_ring="Murky Ring",
     back="Null Shawl",
@@ -1057,8 +1058,8 @@ function init_gear_sets()
     hands="Sworn Gauntlets",
     feet="Sworn Sabatons",
     legs="Sworn Brais",
-    neck="Anu Torque",
-	waist="Sailfi Belt +1",  
+    neck="Null Loop",
+	waist="Orpheus's Sash",  
     right_ear="Telos Earring",
     left_ear="Alabaster Earring",
     right_ring={name="Chirich Ring +1",bag="Wardrobe 8"},

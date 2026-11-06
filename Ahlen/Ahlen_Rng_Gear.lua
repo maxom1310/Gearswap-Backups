@@ -5,7 +5,7 @@ function user_job_setup()
 	state.RangedMode:options('Normal','Acc','Fodder')
 	state.WeaponskillMode:options('Match','Normal', 'Acc')
 	state.IdleMode:options('Normal', 'PDT')
-	state.Weapons:options('None','Default','DualWeapons','DualSavageWeapons','DualKclub','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','Armageddon','Annihilator','Gandiva','Fomalhaut','Gastraphetes' )
+	state.Weapons:options('None','Default','DualSavageWeapons','DualKclub','DualEviscerationWeapons','DualMagicWeapons','DualMalevolence','Armageddon','Annihilator','Gandiva','Fomalhaut','Gastraphetes' )
 	
 	--Ikenga_vest_bonus = 190  -- It is 190 at R20. Uncomment if you need to manually adjust because you are using below R20
 	
@@ -353,7 +353,7 @@ function init_gear_sets()
     feet="Amini Bottillons +3",
     neck="Scout's Gorget +2",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Moonshade Earring",
+    left_ear="Hoxne Earring",
     right_ear="Amini Earring +2",
     left_ring="Regal Ring",
     right_ring="Ephramad's Ring",
@@ -366,17 +366,18 @@ function init_gear_sets()
     feet="Amini Bottillons +3",
     neck="Scout's Gorget +2",
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    left_ear="Moonshade Earring",
+    left_ear="Hoxne Earring",
     right_ear="Amini Earring +2",
     left_ring="Regal Ring",
     right_ring="Ephramad's Ring",
    back={ name="Belenus's Cape", augments={'STR+20','Rng.Acc.+20 Rng.Atk.+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},}
+	
 	sets.precast.WS['Namas Arrow'] = { head="Orion Beret +4",
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
     feet="Amini Bottillons +3",
-    neck={ name="Scout's Gorget +2", augments={'Path: A',}},
+    neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Hoxne Earring",
     right_ear={ name="Amini Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+20','Mag. Acc.+20','Crit.hit rate+8','STR+15 AGI+15',}},
@@ -627,13 +628,13 @@ function init_gear_sets()
 	sets.BulletPouch = {waist="Chr. Bul. Pouch"}
 	
 	-- Weapons sets
-	sets.weapons.Default = {main="Perun +1",sub="Nusku Shield",range="Fomalhaut"}
+	sets.weapons.Default = {}
 	sets.weapons.Armageddon = {main="Perun +1",sub="Nusku Shield",range="Armageddon"}
 	sets.weapons.Annihilator = {main="Perun +1",sub="Nusku Shield",range="Annihilator"}
 	sets.weapons.Gandiva = {main="Oneiros Knife",sub="Nusku Shield",range="Gandiva"}
 	sets.weapons.Fomalhaut = {main="Perun +1",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.Gastraphetes = {main="Tauret",sub="Nusku Shield",range="Gastraphetes"}
-	sets.weapons.DualWeapons = {main="Kustawi +1",sub="Kustawi",range="Fomalhaut"}
+	sets.weapons.DualWeapons = {}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Crepuscular Knife",range="Sparrowhawk +2"}
 	sets.weapons.DualKclub = {main="Naegling",sub="Kraken Club",range="Sparrowhawk +2"}
 	sets.weapons.DualEviscerationWeapons = {main="Tauret",sub="Blurred Knife +1",range="Fomalhaut"}
