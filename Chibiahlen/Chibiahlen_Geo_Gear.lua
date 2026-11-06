@@ -219,8 +219,8 @@ function init_gear_sets()
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+12','CHR+2','"Fast Cast"+7',}},
     neck="Voltsurge Torque",
     waist="Cornelia's Belt",
-    left_ear="Malignance Earring",
-    right_ear="Etiolation Earring",
+  left_ear="Alabaster Earring",
+    right_ear="Azimuth Earring +2", 
     left_ring="Defending Ring",
     right_ring="Kishar Ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +3','Indi. eff. dur. +20','Pet: Damage taken -1%',}},}
@@ -228,16 +228,16 @@ function init_gear_sets()
 	sets.midcast.Geomancy = {    main={ name="Idris", augments={'Path: A',}},
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head="Azimuth Hood +3",
-    body="Bagua tunic +1",
+    body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs="Azimuth Tights +3",
     feet="Azimuth Gaiters +3",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Cornelia's Belt",
-    left_ear="Malignance Earring",
-    right_ear="Azimuth Earring +1",
+  left_ear="Alabaster Earring",
+    right_ear="Azimuth Earring +2", 
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring="Murky ring",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +3','Indi. eff. dur. +20','Pet: Damage taken -1%',}},}
 
 
@@ -594,7 +594,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -612,7 +612,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -629,7 +629,7 @@ function init_gear_sets()
     feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -646,7 +646,7 @@ function init_gear_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -663,7 +663,7 @@ function init_gear_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -686,7 +686,7 @@ function init_gear_sets()
     feet={ name="Bagua Sandals +4", augments={'Enhances "Radial Arcana" effect',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Carrier's Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Alabaster Earring",
     right_ear="Azimuth Earring +2", 
     left_ring="Shneddick Ring",
     right_ring="Stikini Ring +1",
@@ -823,7 +823,8 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main='Idris',sub={ name="Bunzi's Rod", augments={'Path: A',}}}
 	sets.weapons.Max = {main='Maxentius',sub='Ammurapi Shield'}
 	sets.weapons.MaxDual = {main='Maxentius',sub="Bunzi's Rod"}
-	
+	sets.buff.Sleep = {main="Prime Maul"}
+	sets.WakeUpWeapons = {main="Prime Maul"}
 end
 
 -- Select default macro book on initial load or subjob change.

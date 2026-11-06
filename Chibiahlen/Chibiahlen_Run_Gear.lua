@@ -202,12 +202,12 @@ function init_gear_sets()
 		
 	-- Fast cast sets for spells
     sets.precast.FC = {
-    ammo="Staunch Tathlum +1",
-    head={ name="Agwu's Cap", augments={'Path: A',}},
+    ammo="Sapience Orb",
+    head="Sworn Crown",
     body="Sworn Platemail",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Agwu's Slops",
-    feet={ name="Agwu's Pigaches", augments={'Path: A',}},
+    legs="Sworn Brais",
+    feet="Sworn Sabatons",
     neck="Orunmila's Torque",
     waist="Plat. Mog. Belt",
     left_ear="Loquac. Earring",
@@ -217,7 +217,7 @@ function init_gear_sets()
     back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 			
 	sets.precast.FC.DT = {
-    ammo="Staunch Tathlum +1",
+    ammo="Sapience Orb",
     head="Agwu's Cap",
     body="Sworn Platemail",
     hands="Agwu's Gages",
@@ -231,7 +231,7 @@ function init_gear_sets()
     right_ring="Kishar Ring",
     back={ name="Ogma's Cape", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 		
-	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs="Futhark Trousers +3"})
+	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {}) --legs="Futhark Trousers +3"})
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
