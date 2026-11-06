@@ -67,8 +67,6 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	
 		
 	sets.aftercast.Idle = {
-    main={ name="Rostam", augments={'Path: B',}},
-    sub="Blurred Knife +1",
     range={ name="Anarchy +2", augments={'Delay:+60','TP Bonus +1000',}},
     ammo="Bronze Bullet",
     head="Nyame Helm",
@@ -295,13 +293,13 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands="Chasseur's Gants +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet="Lanun Bottes +4",
     neck={ name="Comm. Charm +2", augments={'Path: A',}},
     waist="Sailfi Belt +1",
     left_ear="Moonshade Earring",
     right_ear="Ishvara Earring",
-    left_ring="Epaminondas's ring",
-    right_ring="Cornelia's Ring",
+    left_ring="Sroda ring",
+    right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 		} --23 (no wsd, but kept for the acc, look to replace with herc when augmented)
 		
@@ -317,13 +315,13 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     body="Laksa. Frac +3",
     hands="Chasseur's Gants +3",
     legs="Nyame Flanchard",
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet="Lanun Bottes +4",
     neck="Fotia Gorget",
     waist="Aqua Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}},
 	} --54   ... replace w/lanun +3 feet for 10wsd
 		--need "AGI+WSD" herc gear for head, legs
@@ -338,15 +336,15 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	sets.precast.Normal.Leaden = {
   ammo="Bronze Bullet",
     head="Pixie Hairpin +1",
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body="Lanun Frac +4",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet="Lanun Bottes +4",
     neck={ name="Comm. Charm +2", augments={'Path: A',}},
     waist="Hachirin-no-Obi",
     left_ear="Friomisi Earring",
     right_ear="Moonshade Earring",
-    left_ring="Cornelia's Ring",
+    left_ring="Epaminondas's Ring",
     right_ring="Archon Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%','Damage taken-4%',}},
 	} 
@@ -366,7 +364,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Odr Earring",
     left_ring="Ilabrat ring",
-    right_ring="Cornelia's Ring",
+    right_ring="Ephramad's Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10','Damage taken-5%',}},
 	}
 	sets.precast['Burning Blade'] = {
@@ -416,17 +414,17 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	sets.precast.Normal.Wildfire = {
 	ammo="Living Bullet",
     head="Nyame Helm",
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body="Lanun Frac +4",
     hands="Nyame Gauntlets",
     legs="Nyame Flanchard",
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+    feet="Lanun Bottes +4",
     neck="Commodore Charm +2",
    -- waist="Hachirin-no-Obi",
 	 waist="Orpheus's Sash",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
     left_ring="Dingir Ring",
-    right_ring="Cornelia's Ring",
+	right_ring="Epaminondas's Ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	} 
 	sets.precast.ObiWildfire = set_combine(sets.precast.Normal.Wildfire, {waist="Hachirin-no-Obi",})
@@ -455,7 +453,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	--	neck="Magoraga Beads",})
 		
 	sets.precast.CorsairRoll = set_combine(sets.aftercast.Idle, {
-	--	  main={ name="Rostam", augments={'Path: C',}},
+		--  main={ name="Rostam", augments={'Path: C',}},
 	--	head="Lanun Tricorne +3",
 		neck="Regal Necklace",
 		hands="Chasseur's Gants +3",
@@ -487,12 +485,12 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	-- and not just at the point of activation like the rest.  Rules for both are in the function for precast
 -------------------------------------------
 		
-	sets.precast["Wild Card"] = {feet="Lanun Bottes +3"}
+	sets.precast["Wild Card"] = {feet="Lanun Bottes +4"}
 --	sets.precast["Phantom Roll"] = {""}  the JA doesn't actually call upon Phantom Roll 
 --	but rather the specific roll like Chaos and such.  So rules needed instead for CorsairRoll above
 	sets.precast["Double-Up"] = set_combine(sets.aftercast.Idle, {head="Lanun Tricorne +3",neck="Regal Necklace",hands="Chasseur's Gants +3",rring="Luzaf's Ring",back="Camulus's Mantle",})
 	sets.precast["Quick Draw"] = {feet="Chass. Bottes +1"}--head="Laksa. Tricorne +3",}--"}
-	sets.precast["Random Deal"] = {body="Lanun Frac +3"}
+	sets.precast["Random Deal"] = {body="Lanun Frac +4"}
 	sets.precast["Snake Eye"] = {}--legs="Lanun Culottes +1"}
 	sets.precast.Fold = {}--hands="Lanun Gants +1"}
 	sets.precast["Triple Shot"] = {body="Chasseur's Frac +1",}
@@ -503,7 +501,7 @@ RA_Array = {'RAnormal', 'RAacc','RAcrit'}
 	sets.buffs["Quick Draw"] = {
 		ammo="Living Bullet",
     head={ name="Herculean Helm", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','"Mag.Atk.Bns."+15',}},
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+    body="Lanun Frac +4",
     hands={ name="Herculean Gloves", augments={'Pet: DEX+12','"Mag.Atk.Bns."+22','"Treasure Hunter"+1','Accuracy+5 Attack+5','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
     legs={ name="Herculean Trousers", augments={'Attack+3','"Mag.Atk.Bns."+29','Damage taken-3%','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
     feet="Chass. Bottes +1",

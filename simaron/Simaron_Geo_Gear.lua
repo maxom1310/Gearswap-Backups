@@ -34,12 +34,12 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1",back="Nantosuelta's Cape"}
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +3"}
-	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +3"}
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +4"}
+	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +4"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
-	sets.buff.Entrust = {legs="Bagua Pants +3",feet="Azimuth Gaiters +3",
+	sets.buff.Entrust = {legs="Bagua Pants +4",feet="Azimuth Gaiters +3",
 	back="Lifestream Cape",}
 	
 	-- Relic hat for Blaze of Glory HP increase.
@@ -52,7 +52,7 @@ function init_gear_sets()
     head={ name="Merlinic Hood", augments={'Mag. Acc.+16','"Fast Cast"+7','"Mag.Atk.Bns."+9',}},
     body={ name="Merlinic Jubbah", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+4','"Mag.Atk.Bns."+11',}},
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'"Fast Cast"+7','MND+9','Mag. Acc.+1','"Mag.Atk.Bns."+5',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -84,7 +84,7 @@ function init_gear_sets()
 	--body="Twilight Cloak",
     body="Crepuscular Cloak",
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs="Geomancy Pants +3",
+    legs="Geomancy Pants +4",
     feet={ name="Merlinic Crackows", augments={'"Fast Cast"+7','MND+9','Mag. Acc.+1','"Mag.Atk.Bns."+5',}},
     neck="Voltsurge Torque",
     waist="Embla Sash",
@@ -113,6 +113,7 @@ function init_gear_sets()
     back={ name="Nantosuelta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 }
 sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -177,7 +178,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 
 
 	--Extra Indi duration as long as you can keep your 900 skill cap.
-	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back={ name="Lifestream Cape", augments={'Geomancy Skill +8','Indi. eff. dur. +20','Pet: Damage taken -1%','Damage taken-2%',}},legs="Bagua Pants +3",feet="Azimuth Gaiters +3"})
+	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {back={ name="Lifestream Cape", augments={'Geomancy Skill +8','Indi. eff. dur. +20','Pet: Damage taken -1%','Damage taken-2%',}},legs="Bagua Pants +4",feet="Azimuth Gaiters +3"})
 		
     sets.midcast.Cure = {    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
     head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
@@ -449,8 +450,8 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 --	head=empty,
  --   body="Twilight Cloak",
  --   hands="Regal Cuffs",
-  --  legs="Geomancy Pants +3",
-  --  feet="Geo. Sandals +3",
+  --  legs="Geomancy Pants +4",
+  --  feet="Geo. Sandals +4",
   --  neck={ name="Bagua Charm +2", augments={'Path: A',}},
   --  waist="Luminary Sash",
  --   left_ear="Crep. Earring",
@@ -517,11 +518,11 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 	sets.midcast['Enhancing Magic'] = {   main="Idris",
     sub="Ammurapi Shield",
     range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
-    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+    head={ name="Telchine Cap", augments={'Mag. Evasion+25','Enh. Mag. eff. dur. +10',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+23','Enh. Mag. eff. dur. +10',}},
     hands={ name="Telchine Gloves", augments={'Mag. Evasion+25','"Cure" potency +8%','Enh. Mag. eff. dur. +10',}},
-    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
-    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
+    legs={ name="Telchine Braconi", augments={'Mag. Evasion+23','Enh. Mag. eff. dur. +10',}},
+    feet={ name="Telchine Pigaches", augments={'Mag. Evasion+22','Enh. Mag. eff. dur. +10',}},
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Embla Sash",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -610,7 +611,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
   --  body="Zendik Robe",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -628,7 +629,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
   --  body="Zendik Robe",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -651,7 +652,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -669,7 +670,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -685,7 +686,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -701,7 +702,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
     body="Azimuth Coat +3",
     hands="Azimuth Gloves +3",
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet="Bagua Sandals +3",
+    feet="Bagua Sandals +4",
     neck={ name="Bagua Charm +2", augments={'Path: A',}},
     waist="Isa Belt",
     left_ear="Lugalbanda Earring",
@@ -716,7 +717,7 @@ sets.precast.WS['Judgment'] = {    range={ name="Dunna", augments={'MP+20','Mag.
 	
 	sets.defense.GeoLock = sets.midcast.Geomancy.Indi
 
-	sets.Kiting = {left_ring="Shneddick Ring",}
+	sets.Kiting = {feet="Geo. Sandals +4",left_ring="Shneddick Ring",}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {}
 	sets.TPEat = {}

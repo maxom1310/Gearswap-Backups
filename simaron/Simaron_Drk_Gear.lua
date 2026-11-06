@@ -119,7 +119,7 @@ function init_gear_sets()
     left_ear="Malignance Earring",
     right_ear="Heath. Earring +1",
     right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
-    right_ring="Metamor. ring +1",
+    left_ring="Metamor. ring +1",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
            
 	sets.midcast['Enfeebling Magic'] = { ammo="Pemphredo Tathlum",
@@ -133,7 +133,7 @@ function init_gear_sets()
     left_ear="Malignance Earring",
     right_ear="Heath. Earring +1",
     right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
-    right_ring="Metamor. ring +1",
+    left_ring="Metamor. ring +1",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},}
 		   
 	sets.midcast['Dread Spikes'] = set_combine(sets.midcast['Dark Magic'], {})
@@ -148,7 +148,7 @@ function init_gear_sets()
     left_ear="Malignance Earring",
     right_ear="Heath. Earring +1",
     right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
-    right_ring="Kishar Ring",
+    left_ring="Kishar Ring",
     back="Chuparrosa Mantle",})
            
 	sets.midcast.Stun = { ammo="Pemphredo Tathlum",
@@ -162,7 +162,7 @@ function init_gear_sets()
     left_ear="Malignance Earring",
     right_ear="Heath. Earring +1",
     right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
-    right_ring="Kishar Ring",
+    left_ring="Kishar Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Fast Cast"+10','Damage taken-5%',}},}
                    
 	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {ring1="Evanescence Ring",ring2="Archon Ring",back="Niht Mantle"})
@@ -178,7 +178,7 @@ function init_gear_sets()
     left_ear="Malignance Earring",
     right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Weapon skill damage +3%',}},
     right_ring={name="Stikini Ring +1",bag="Wardrobe 2"},
-    right_ring="Kishar Ring",
+    left_ring="Kishar Ring",
     back={ name="Ankou's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Fast Cast"+10','Damage taken-5%',}},}
 	
 	    sets.midcast['Elemental Magic'] = {     ammo="Aurgelmir Orb +1",
@@ -209,7 +209,7 @@ function init_gear_sets()
     feet="Heath. Sollerets +3",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Oneiros Rope",
-    left_ear="Wyvern Earring",
+    left_ear="Alabaster Earring",
     right_ear={ name="Schere Earring", augments={'Path: A',}},
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
@@ -298,9 +298,9 @@ function init_gear_sets()
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck="Elite Royal Collar",
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Defending Ring",
+    left_ear="Alabaster Earring",
+    right_ear="Telos Earring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 		
@@ -312,9 +312,9 @@ function init_gear_sets()
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck="Elite Royal Collar",
     waist={ name="Kentarch Belt +1", augments={'Path: A',}},
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
-    left_ring="Defending Ring",
+    left_ear="Alabaster Earring",
+    right_ear="Telos Earring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 
@@ -331,11 +331,11 @@ function init_gear_sets()
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck="Elite Royal Collar",
     waist="Plat. Mog. Belt",
-    left_ear={ name="Lugra Earring +1", augments={'Path: A',}},
+    left_ear="Alabaster Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
+    back="Null Shawl",}
 		
 	sets.defense.PDTReraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
@@ -349,7 +349,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear={ name="Lugra Earring +1", augments={'Path: A',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
 		
@@ -365,7 +365,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear={ name="Lugra Earring +1", augments={'Path: A',}},
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},}
      
@@ -378,69 +378,72 @@ function init_gear_sets()
 	-- Engaged sets
 	sets.engaged = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Sworn Platemail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    feet="Sworn Sabatons",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
     left_ring="Chirich Ring +1",
     right_ring="Chirich Ring +1",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-    sets.engaged.SomeAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    back="Null Shawl",}
+    sets.engaged.SomeAcc = { ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Sworn Platemail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    feet="Sworn Sabatons",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
     left_ring="Chirich Ring +1",
-    right_ring="Hetairoi Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-	sets.engaged.Acc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
+	sets.engaged.Acc = {  ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Sworn Platemail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    feet="Sworn Sabatons",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
     left_ring="Chirich Ring +1",
-    right_ring="Hetairoi Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-    sets.engaged.FullAcc = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
+    sets.engaged.FullAcc = { ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Sworn Platemail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    feet="Sworn Sabatons",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
     left_ring="Chirich Ring +1",
-    right_ring="Hetairoi Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
-    sets.engaged.Fodder = {    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
+    sets.engaged.Fodder = {  ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head={ name="Sakpata's Helm", augments={'Path: A',}},
-    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    body="Sworn Platemail",
     hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    feet="Sworn Sabatons",
     neck={ name="Abyssal Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Crep. Earring",
+    left_ear="Alabaster Earring",
+    right_ear="Dedition Earring",
     left_ring="Chirich Ring +1",
-    right_ring="Hetairoi Ring",
-    back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},}
+    right_ring="Chirich Ring +1",
+    back="Null Shawl",}
+	
+	
+	sets.Phalanx_Received = {head={ name="Yorium Barbuta", augments={'Mag. Evasion+18','"Occult Acumen"+10','Phalanx +3',}}, body="Sworn Platemail",feet="Sworn Sabatons",legs={ name="Sakpata's Cuisses", augments={'Path: A',}},}
 --Example sets:
 --[[
     sets.engaged.Adoulin = {}

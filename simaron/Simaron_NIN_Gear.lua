@@ -47,7 +47,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Yamarang",
         head="Mummu Bonnet +2",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
-        body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
+        body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Murky Ring",ring2="Valseur's Ring",
         back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
 
     -- Don't need any special gear for Healing Waltz.
@@ -365,7 +365,7 @@ function init_gear_sets()
     waist="Kasiri Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Kishar Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},})
 
@@ -379,7 +379,7 @@ function init_gear_sets()
     waist="Kasiri Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Kishar Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},})
 
@@ -425,7 +425,7 @@ function init_gear_sets()
    waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Eabani Earring",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},})
 
@@ -439,7 +439,7 @@ function init_gear_sets()
      waist="Null Belt",
     left_ear="Infused Earring",
     right_ear="Cryptic Earring",
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -453,7 +453,7 @@ function init_gear_sets()
    waist="Null Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring="Shneddick Ring",
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 
@@ -810,7 +810,7 @@ function init_gear_sets()
     waist="Plat. Mog. Belt",
     left_ear="Etiolation Earring",
     right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-    left_ring="Defending Ring",
+    left_ring="Murky Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
     back={ name="Andartia's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Fast Cast"+10','Damage taken-5%',}},}
 	-- Weapons sets
